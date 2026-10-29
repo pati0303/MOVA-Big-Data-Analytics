@@ -236,3 +236,15 @@ __marimo__/
 !.env.example
 .DS_Store
 Thumbs.db
+
+# MOVA AP 2.3: ausschließlich ausdrücklich synthetische Simulationsdaten
+!/data/raw/activities_simulated.csv
+!/data/raw/users_simulated.csv
+!/data/raw/offers_simulated.csv
+
+# Reproduzierbare Vergleichskopien bleiben lokal; aktive V2 und V1-Archiv versionieren
+/outputs/simulation_comparison/control_exponent_1_0/data/raw/
+/outputs/simulation_comparison/v2_exponent_1_3/data/raw/
+/outputs/simulation_comparison/control_exponent_1_0/outputs/tables/simulation_weekly_check.csv
+/outputs/simulation_comparison/v2_exponent_1_3/outputs/tables/simulation_weekly_check.csv
+/work/
