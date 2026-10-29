@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# MOVA: lokale Roh- und Referenzdaten (auch persönliche Garmin-Originaldaten)
+/data/raw/*
+!/data/raw/.gitkeep
+/data/reference/*
+!/data/reference/.gitkeep
+
+# Typische Garmin-Exporte und Aktivitätsdateien, unabhängig vom Ablageort
+*.[fF][iI][tT]
+*.[tT][cC][xX]
+*.[gG][pP][xX]
+*[gG][aA][rR][mM][iI][nN]*
+
+# Lokale Zugangsdaten und Betriebssystemdateien
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
