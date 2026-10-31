@@ -1,0 +1,68 @@
+{
+  "algorithm": "sklearn.linear_model.LinearRegression",
+  "coefficients": {
+    "activities_current_week": 0.22819007785063997,
+    "avg_activities_last_4_weeks": 0.42396047869339204
+  },
+  "data_version": "V2",
+  "evaluation_stage": "AP 5.5: rollierende Einwochenprognose mit unverändertem Modell",
+  "excluded_metadata": [
+    "user_id",
+    "week_index",
+    "week_start",
+    "week_end"
+  ],
+  "feature_names": [
+    "activities_current_week",
+    "avg_activities_last_4_weeks"
+  ],
+  "feature_order": [
+    "activities_current_week",
+    "avg_activities_last_4_weeks"
+  ],
+  "intercept": 0.8397931020190079,
+  "model_file": "outputs/models/regression_linear.joblib",
+  "model_sha256": "0b26c352ff98d31c02552c3226f839b6eef6b74032070b2086aae1686865a882",
+  "n_training_rows": 1800,
+  "n_users": 100,
+  "numerical_threads": 1,
+  "parameters": {
+    "copy_X": true,
+    "fit_intercept": true,
+    "n_jobs": null,
+    "positive": false,
+    "tol": 1e-06
+  },
+  "rank": 2,
+  "scaling": "none",
+  "scope": "Globales Modell für nächste Wochenaktivitätszahl über alle Sportarten; synthetische V2",
+  "singular_values": [
+    111.18990384766795,
+    42.37117244741501
+  ],
+  "software": {
+    "joblib": "1.5.3",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "python": "3.12.14",
+    "scikit_learn": "1.8.0"
+  },
+  "split_manifest_sha256": "536137414d579a30fef9fb946ac04e114fac50ffaff6462861fdb69cc984caff",
+  "target": "activities_next_week",
+  "test_data_used_for_training": false,
+  "test_evaluation_performed": false,
+  "train_input_weeks": [
+    4,
+    21
+  ],
+  "train_target_date_range": [
+    "2026-02-02",
+    "2026-06-07"
+  ],
+  "train_target_weeks": [
+    5,
+    22
+  ],
+  "training_file": "data/processed/regression_train.csv",
+  "training_sha256": "e984a547de12aca7d53ce908dd5051992bbd21aa83895a67bcd6fc0b541fb0b8"
+}
