@@ -1,0 +1,526 @@
+{
+  "as_of": "2026-07-05",
+  "category_analysis": {
+    "Freizeit": {
+      "slots_after": 45,
+      "slots_before": 45,
+      "users_with_entry_exit_or_position_change": 0
+    },
+    "Outdoor": {
+      "slots_after": 117,
+      "slots_before": 85,
+      "users_with_entry_exit_or_position_change": 18
+    },
+    "Sport": {
+      "slots_after": 288,
+      "slots_before": 320,
+      "users_with_entry_exit_or_position_change": 64
+    },
+    "Wellness": {
+      "slots_after": 25,
+      "slots_before": 25,
+      "users_with_entry_exit_or_position_change": 0
+    }
+  },
+  "change_groups": {
+    "composition_changed": 64,
+    "reordered_only": 0,
+    "unchanged": 36
+  },
+  "examples": [
+    {
+      "after": [
+        {
+          "category": "Outdoor",
+          "discount_pct": 5,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Hiking aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O009",
+          "offer_title": "FIKTIV – Wanderrucksack",
+          "price_eur": 90.0,
+          "ranking_position": 1,
+          "ranking_tier": "A",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Hiking aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O010",
+          "offer_title": "FIKTIV – Wanderführung",
+          "price_eur": 35.0,
+          "ranking_position": 2,
+          "ranking_tier": "A",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O011",
+          "offer_title": "FIKTIV – Trekkingstöcke",
+          "price_eur": 55.0,
+          "ranking_position": 3,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O012",
+          "offer_title": "FIKTIV – Regenjacke",
+          "price_eur": 120.0,
+          "ranking_position": 4,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O013",
+          "offer_title": "FIKTIV – Kletterkurs",
+          "price_eur": 70.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        }
+      ],
+      "before": [
+        {
+          "category": "Outdoor",
+          "discount_pct": 5,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O009",
+          "offer_title": "FIKTIV – Wanderrucksack",
+          "price_eur": 90.0,
+          "ranking_position": 1,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O010",
+          "offer_title": "FIKTIV – Wanderführung",
+          "price_eur": 35.0,
+          "ranking_position": 2,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O011",
+          "offer_title": "FIKTIV – Trekkingstöcke",
+          "price_eur": 55.0,
+          "ranking_position": 3,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O012",
+          "offer_title": "FIKTIV – Regenjacke",
+          "price_eur": 120.0,
+          "ranking_position": 4,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor.",
+          "offer_id": "O013",
+          "offer_title": "FIKTIV – Kletterkurs",
+          "price_eur": 70.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U002"
+        }
+      ],
+      "categories": [
+        "Freizeit",
+        "Outdoor"
+      ],
+      "change_group": "unchanged",
+      "sport_shares": {
+        "Cycling": 0.13636363636363635,
+        "Hiking": 0.11363636363636363,
+        "Padel": 0.022727272727272728,
+        "Running": 0.03409090909090909,
+        "Strength": 0.25,
+        "Swimming": 0.06818181818181818,
+        "Tennis": 0.10227272727272728,
+        "Walking": 0.2727272727272727
+      },
+      "user_id": "U002"
+    },
+    {
+      "after": [
+        {
+          "category": "Sport",
+          "discount_pct": 5,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Running aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O001",
+          "offer_title": "FIKTIV – Laufschuhe",
+          "price_eur": 110.0,
+          "ranking_position": 1,
+          "ranking_tier": "A",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 15,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Cycling aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O006",
+          "offer_title": "FIKTIV – Fahrradhelm",
+          "price_eur": 75.0,
+          "ranking_position": 2,
+          "ranking_tier": "A",
+          "user_id": "U001"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 5,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Hiking aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O009",
+          "offer_title": "FIKTIV – Wanderrucksack",
+          "price_eur": 90.0,
+          "ranking_position": 3,
+          "ranking_tier": "A",
+          "user_id": "U001"
+        },
+        {
+          "category": "Outdoor",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Outdoor. Im betrachteten Zeitraum wurden bei dir Aktivitäten der Sportart Hiking aufgezeichnet; der Angebotsbezug ist manuell bestätigt.",
+          "offer_id": "O010",
+          "offer_title": "FIKTIV – Wanderführung",
+          "price_eur": 35.0,
+          "ranking_position": 4,
+          "ranking_tier": "A",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 15,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O002",
+          "offer_title": "FIKTIV – Fitnesskurs",
+          "price_eur": 25.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        }
+      ],
+      "before": [
+        {
+          "category": "Sport",
+          "discount_pct": 5,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O001",
+          "offer_title": "FIKTIV – Laufschuhe",
+          "price_eur": 110.0,
+          "ranking_position": 1,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 15,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O002",
+          "offer_title": "FIKTIV – Fitnesskurs",
+          "price_eur": 25.0,
+          "ranking_position": 2,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 30,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O003",
+          "offer_title": "FIKTIV – Schwimmkurs",
+          "price_eur": 85.0,
+          "ranking_position": 3,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 10,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O004",
+          "offer_title": "FIKTIV – Tennistraining",
+          "price_eur": 45.0,
+          "ranking_position": 4,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        },
+        {
+          "category": "Sport",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Sport.",
+          "offer_id": "O005",
+          "offer_title": "FIKTIV – Padelturnier",
+          "price_eur": 30.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U001"
+        }
+      ],
+      "categories": [
+        "Freizeit",
+        "Outdoor",
+        "Sport"
+      ],
+      "change_group": "composition_changed",
+      "sport_shares": {
+        "Cycling": 0.08823529411764706,
+        "Hiking": 0.08823529411764706,
+        "Padel": 0.0,
+        "Running": 0.5,
+        "Strength": 0.0,
+        "Swimming": 0.0,
+        "Tennis": 0.0,
+        "Walking": 0.3235294117647059
+      },
+      "user_id": "U001"
+    },
+    {
+      "after": [
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O017",
+          "offer_title": "FIKTIV – Saunatag",
+          "price_eur": 28.0,
+          "ranking_position": 1,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 15,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O018",
+          "offer_title": "FIKTIV – Massage",
+          "price_eur": 65.0,
+          "ranking_position": 2,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O019",
+          "offer_title": "FIKTIV – Yogakurs",
+          "price_eur": 20.0,
+          "ranking_position": 3,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O020",
+          "offer_title": "FIKTIV – Thermeneintritt",
+          "price_eur": 35.0,
+          "ranking_position": 4,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O021",
+          "offer_title": "FIKTIV – Entspannungskurs",
+          "price_eur": 45.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        }
+      ],
+      "before": [
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O017",
+          "offer_title": "FIKTIV – Saunatag",
+          "price_eur": 28.0,
+          "ranking_position": 1,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 15,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O018",
+          "offer_title": "FIKTIV – Massage",
+          "price_eur": 65.0,
+          "ranking_position": 2,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O019",
+          "offer_title": "FIKTIV – Yogakurs",
+          "price_eur": 20.0,
+          "ranking_position": 3,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 25,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O020",
+          "offer_title": "FIKTIV – Thermeneintritt",
+          "price_eur": 35.0,
+          "ranking_position": 4,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        },
+        {
+          "category": "Wellness",
+          "discount_pct": 20,
+          "match_reason": "Dieses Angebot gehört zu deiner ausgewählten Interessenkategorie Wellness.",
+          "offer_id": "O021",
+          "offer_title": "FIKTIV – Entspannungskurs",
+          "price_eur": 45.0,
+          "ranking_position": 5,
+          "ranking_tier": "B",
+          "user_id": "U003"
+        }
+      ],
+      "categories": [
+        "Wellness"
+      ],
+      "change_group": "unchanged",
+      "sport_shares": {
+        "Cycling": 0.07407407407407407,
+        "Hiking": 0.018518518518518517,
+        "Padel": 0.12962962962962962,
+        "Running": 0.24074074074074073,
+        "Strength": 0.05555555555555555,
+        "Swimming": 0.07407407407407407,
+        "Tennis": 0.0,
+        "Walking": 0.4074074074074074
+      },
+      "user_id": "U003"
+    }
+  ],
+  "input_sha256": {
+    "data/processed/kmeans_user_features.csv": "bb6b0c4e9307ab286f9f6e76d04b9b1446a9ab322e31784c8883a6a596ca7a28",
+    "data/processed/user_clusters.csv": "79169f3d95ae9c22fc9cc94022a75d20777fe7b8eb77569bac3cdbc7a52e261d",
+    "data/processed/user_weekly_activities.csv": "c34a7bd16d1cdc3e91388cc35b8c784afde0b53c1dbfdd24de97148350359b74",
+    "data/raw/activities_simulated.csv": "c3789d26f00cba3ba14952cf99909b091cb263045b8993ed366fe5aa64a4ee6b",
+    "data/raw/offers_simulated.csv": "83748cb66918c08e3061889834e24452d0dc9feb6581690c4959cb3ba3775fa6",
+    "data/raw/users_simulated.csv": "6ba9f8398707412bf922c76e352d2a6a7f86857e7a54dbbf1421555b1dbf99f9",
+    "documentation/active_data_version.json": "f032e5898c1e4ead10da30f0f39d4a327df3e16a9adeddde457d24db6ddd18a5",
+    "documentation/offer_sport_tags_approved.csv": "a637ec2ff2cfb4fd7b3cfef1a441c144917560cf03bee2ea0cea79675989cfc9",
+    "outputs/models/kmeans_scaling_params.json": "1794271bbfaf53818511002a13247c8cb251d5871b0b62e62729d817356a24b4",
+    "src/recommendation_comparison.py": "145d71fbbb3285c16372e83fdf2177d1e87c4ef1e3377bf09b5a934addd745c7",
+    "src/recommendation_engine.py": "a4af5181484bd423de7b06cd49db9e86f7291559298d6ee7fea62ec7860bf84c"
+  },
+  "mean_common_offers": 3.48,
+  "metric_definitions": {
+    "fewer_than_five": "Includes zero eligible offers; positive-interest subset reported separately.",
+    "mean_common_offers_denominator": 100,
+    "ordered_list_changed": "Lists differ; includes composition changes.",
+    "shared_offer_position_changed": "At least one retained offer changes position; also possible with composition change.",
+    "sport_attribution": "One confirmed tag per actual offer; no duplicated slot counts.",
+    "tier_a_after_pct_denominator": 475,
+    "users_changed_pct_denominator": 100
+  },
+  "model_artifact_sha256": {
+    "outputs/models/kmeans_final.joblib": "db285f3d0ccf5315bb5a70cfc4750a31e59eb3f5d00a3f1d96473348c08d2a2f",
+    "outputs/models/regression_linear.joblib": "0b26c352ff98d31c02552c3226f839b6eef6b74032070b2086aae1686865a882"
+  },
+  "model_inference_performed": false,
+  "models_used_for_ranking": false,
+  "offers": 30,
+  "slots_after": 475,
+  "slots_before": 475,
+  "tier_a_after": 344,
+  "tier_a_after_pct": 72.42105263157895,
+  "tier_a_before": 0,
+  "tier_a_slots_by_sport": {
+    "Cycling": 52,
+    "Hiking": 66,
+    "Padel": 47,
+    "Running": 54,
+    "Strength": 43,
+    "Swimming": 40,
+    "Tennis": 42
+  },
+  "tier_b_after": 131,
+  "tier_b_before": 475,
+  "users": 100,
+  "users_changed": 64,
+  "users_changed_pct": 64.0,
+  "users_fewer_than_five_eligible": 5,
+  "users_no_positive_interests": 5,
+  "users_positive_interests_fewer_than_five_eligible": 0,
+  "users_with_tier_a": 81,
+  "variants": {
+    "A_before": {
+      "approved_tags": {},
+      "permissions_simulated": {
+        "garmin_permission": true,
+        "interests_permission": true,
+        "real_consent_record": false,
+        "simulated": true
+      }
+    },
+    "B_after": {
+      "approved_tags": {
+        "O001": [
+          "Running"
+        ],
+        "O003": [
+          "Swimming"
+        ],
+        "O004": [
+          "Tennis"
+        ],
+        "O005": [
+          "Padel"
+        ],
+        "O006": [
+          "Cycling"
+        ],
+        "O007": [
+          "Strength"
+        ],
+        "O009": [
+          "Hiking"
+        ],
+        "O010": [
+          "Hiking"
+        ]
+      },
+      "permissions_simulated": {
+        "garmin_permission": true,
+        "interests_permission": true,
+        "real_consent_record": false,
+        "simulated": true
+      }
+    }
+  }
+}

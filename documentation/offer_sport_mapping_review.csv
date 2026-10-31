@@ -1,0 +1,31 @@
+offer_id,category,title,proposed_sport_tags,evidence_from_title,review_status
+O001,Sport,FIKTIV – Laufschuhe,Running,Laufschuhe,proposed_unambiguous_pending_review
+O002,Sport,FIKTIV – Fitnesskurs,,Fitnesskurs: kein eindeutiger Bezug zu Strength oder einer anderen der acht Sportarten.,ambiguous_pending_review
+O003,Sport,FIKTIV – Schwimmkurs,Swimming,Schwimmkurs,proposed_unambiguous_pending_review
+O004,Sport,FIKTIV – Tennistraining,Tennis,Tennistraining,proposed_unambiguous_pending_review
+O005,Sport,FIKTIV – Padelturnier,Padel,Padelturnier,proposed_unambiguous_pending_review
+O006,Sport,FIKTIV – Fahrradhelm,Cycling,Fahrradhelm,proposed_unambiguous_pending_review
+O007,Sport,FIKTIV – Hantelset,Strength,Hantelset,proposed_unambiguous_pending_review
+O008,Sport,FIKTIV – Sportfestival,,Sportfestival: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O009,Outdoor,FIKTIV – Wanderrucksack,Hiking,Wanderrucksack,proposed_unambiguous_pending_review
+O010,Outdoor,FIKTIV – Wanderführung,Hiking,Wanderführung,proposed_unambiguous_pending_review
+O011,Outdoor,FIKTIV – Trekkingstöcke,,Trekkingstöcke: Bezug zu Hiking oder Walking möglich; Titel legt die Sportart nicht eindeutig fest.,ambiguous_pending_review
+O012,Outdoor,FIKTIV – Regenjacke,,Regenjacke: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O013,Outdoor,FIKTIV – Kletterkurs,,Kletterkurs: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O014,Outdoor,FIKTIV – Naturwochenende,,Naturwochenende: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O015,Outdoor,FIKTIV – Outdoor-Messe,,Outdoor-Messe: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O016,Outdoor,FIKTIV – Zelt,,Zelt: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O017,Wellness,FIKTIV – Saunatag,,Saunatag: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O018,Wellness,FIKTIV – Massage,,Massage: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O019,Wellness,FIKTIV – Yogakurs,,Yogakurs: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O020,Wellness,FIKTIV – Thermeneintritt,,Thermeneintritt: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O021,Wellness,FIKTIV – Entspannungskurs,,Entspannungskurs: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O022,Wellness,FIKTIV – Wellnesswochenende,,Wellnesswochenende: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O023,Wellness,FIKTIV – Meditationsworkshop,,Meditationsworkshop: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O024,Freizeit,FIKTIV – Kinoticket,,Kinoticket: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O025,Freizeit,FIKTIV – Museumseintritt,,Museumseintritt: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O026,Freizeit,FIKTIV – Konzert,,Konzert: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O027,Freizeit,FIKTIV – Kochkurs,,Kochkurs: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O028,Freizeit,FIKTIV – Stadtführung,,Stadtführung: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O029,Freizeit,FIKTIV – Brettspielabend,,Brettspielabend: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
+O030,Freizeit,FIKTIV – Theaterticket,,Theaterticket: kein eindeutiger Bezug zu einer der acht beobachteten Sportarten.,no_assignable_sport_pending_review
