@@ -1,0 +1,59 @@
+{
+  "absolute_error_quantiles": {
+    "0": 0.00568441842583578,
+    "0.25": 0.693430392692711,
+    "0.5": 1.2337544045306479,
+    "0.75": 2.005684418425836,
+    "0.9": 2.869516723653024,
+    "0.95": 3.766681936391524,
+    "0.99": 5.666574726729737,
+    "1": 6.312285940594208
+  },
+  "actual_max": 10.0,
+  "actual_mean": 2.38,
+  "actual_min": 0.0,
+  "baseline_evaluated": false,
+  "data_version": "V2",
+  "error_definition": "prediction minus actual",
+  "errors_above_3": 39,
+  "errors_above_5": 11,
+  "evaluation_design": "Rollierende Einwochenprognosen, unverändertes Modell",
+  "feature_names": [
+    "activities_current_week",
+    "avg_activities_last_4_weeks"
+  ],
+  "mae": 1.4898770575225395,
+  "mean_signed_error": 0.041382906274053645,
+  "model_file": "outputs/models/regression_linear.joblib",
+  "model_metadata_sha256": "8db82d9750ed95aa7d4864f2fc409a8ac4524111f79b94f3808bde907f3b809c",
+  "model_sha256": "0b26c352ff98d31c02552c3226f839b6eef6b74032070b2086aae1686865a882",
+  "n_observations": 400,
+  "n_users": 100,
+  "negative_prediction_share": 0.0,
+  "negative_predictions": 0,
+  "predicted_max": 7.1493184281126325,
+  "predicted_mean": 2.421382906274054,
+  "predicted_min": 0.8397931020190079,
+  "prediction_postprocessing": "none",
+  "rmse": 1.9085376545370092,
+  "target": "activities_next_week",
+  "test_file": "data/processed/regression_test.csv",
+  "test_sha256": "b0c11c94209323c01f098042261349a3ed506c408af5303a4ac9d5e84715c1fa",
+  "test_target_weeks": [
+    23,
+    24,
+    25,
+    26
+  ],
+  "unit": "Aktivitäten pro Nutzerwoche",
+  "zero_week_groups": {
+    "actual_positive": {
+      "mae": 1.3738568914979652,
+      "n_observations": 308
+    },
+    "actual_zero": {
+      "mae": 1.8782923959526365,
+      "n_observations": 92
+    }
+  }
+}

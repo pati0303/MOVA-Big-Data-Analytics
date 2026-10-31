@@ -1,0 +1,108 @@
+{
+  "cluster_center_space": "AP-4-standardisierte und gewichtete Koordinaten; feature_order beachten",
+  "cluster_centers": [
+    [
+      -0.7393367161639605,
+      -0.01099692538865449,
+      -0.05975571029549353,
+      0.0077075981165233036,
+      0.0018511217397951146,
+      0.036157289016612845,
+      -0.00643496954999829,
+      0.05186097379146038,
+      0.008824239578111175
+    ],
+    [
+      0.980050995845249,
+      0.014577319701239788,
+      0.07921105783356124,
+      -0.010217048666089098,
+      -0.002453812538798048,
+      -0.047929429626672695,
+      0.008530075915113884,
+      -0.06874594200263343,
+      -0.011697247812844633
+    ]
+  ],
+  "cluster_id_to_segment": {
+    "0": "Geringere Trainingshäufigkeit",
+    "1": "Höhere Trainingshäufigkeit"
+  },
+  "cluster_sizes": {
+    "0": 57,
+    "1": 43
+  },
+  "data_version": "V2",
+  "feature_names": [
+    "avg_activities_per_week",
+    "share_running",
+    "share_cycling",
+    "share_strength",
+    "share_swimming",
+    "share_walking",
+    "share_hiking",
+    "share_tennis",
+    "share_padel"
+  ],
+  "feature_order": [
+    "avg_activities_per_week",
+    "share_running",
+    "share_cycling",
+    "share_strength",
+    "share_swimming",
+    "share_walking",
+    "share_hiking",
+    "share_tennis",
+    "share_padel"
+  ],
+  "inertia": 126.49790652947819,
+  "input_contract": "Bereits gemäß gespeicherten AP-4-Parametern standardisierte und gewichtete Features; kein Refit und keine erneute Gewichtung",
+  "input_file": "data/processed/kmeans_user_features_scaled.csv",
+  "input_sha256": "73f1694e865c8f65b0eabb45f7a80bd439bbc9bfd4b6f281cffaa15da491d78f",
+  "labeling_basis": {
+    "0": 1.5350877192982457,
+    "1": 3.7477638640429345
+  },
+  "labeling_rule": "Nach unskalierter mittlerer avg_activities_per_week aufsteigend; Gleichstand führt zum Abbruch",
+  "model_file": "outputs/models/kmeans_final.joblib",
+  "model_sha256": "db285f3d0ccf5315bb5a70cfc4750a31e59eb3f5d00a3f1d96473348c08d2a2f",
+  "n_clusters": 2,
+  "n_iterations": 3,
+  "n_users": 100,
+  "numerical_threads": 1,
+  "parameters": {
+    "algorithm": "lloyd",
+    "copy_x": true,
+    "init": "k-means++",
+    "max_iter": 300,
+    "n_clusters": 2,
+    "n_init": 20,
+    "random_state": 42,
+    "tol": 0.0001,
+    "verbose": 0
+  },
+  "scope": "Deskriptive Segmentierung von 100 synthetischen V2-Nutzern; keine belegte Generalisierbarkeit",
+  "segment_semantics": "Relative Trainingshäufigkeit, keine Aussagen zu Fitness, Erfahrung oder Gesundheit",
+  "selection_decision": "Empirisch begründete Teamentscheidung: k=2 nach AP 5.1/5.2; gültig für erste synthetische MOVA-V2",
+  "selection_evidence_sha256": {
+    "outputs/tables/kmeans_candidate_comparison.csv": "ea0593d4d3ff5dc7b40129dada04c33458c4ac3e0c7e4dfeaad0f6c4e874115f",
+    "outputs/tables/kmeans_candidate_profiles.csv": "ba5bc402adb157937dc776efdcefeccd025ff0d7f52e42bbba79e6a3e1e5576a",
+    "outputs/tables/kmeans_k_selection.csv": "a8e5c21c75ff6036bdc109db419f7a10189a0f500502b2bdc995a8539123e448"
+  },
+  "silhouette_metric": "euclidean",
+  "silhouette_score": 0.30333715184382104,
+  "software": {
+    "joblib": "1.5.3",
+    "matplotlib": "3.10.8",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "python": "3.12.14",
+    "scikit_learn": "1.8.0"
+  },
+  "source_basis_commit": "1b26533d2ceea30478577bd519244c245dd3e558",
+  "source_sha256": {
+    "data/processed/kmeans_user_features.csv": "bb6b0c4e9307ab286f9f6e76d04b9b1446a9ab322e31784c8883a6a596ca7a28",
+    "data/processed/kmeans_user_features_scaled.csv": "73f1694e865c8f65b0eabb45f7a80bd439bbc9bfd4b6f281cffaa15da491d78f",
+    "outputs/models/kmeans_scaling_params.json": "1794271bbfaf53818511002a13247c8cb251d5871b0b62e62729d817356a24b4"
+  }
+}

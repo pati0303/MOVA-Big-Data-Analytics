@@ -1,0 +1,168 @@
+{
+  "absolute_mae_improvement": 0.22012294247746045,
+  "baseline": {
+    "absolute_error_max": 10.0,
+    "absolute_error_min": 0.0,
+    "mae": 1.71,
+    "mean_signed_error": 0.02,
+    "rmse": 2.3108440016582685
+  },
+  "baseline_definition": "predicted_baseline_next_week = activities_current_week; kein Training",
+  "by_actual_group": {
+    "actual_positive": {
+      "absolute_mae_improvement": 0.4345846669435933,
+      "baseline": {
+        "absolute_error_max": 8.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.8084415584415585,
+        "mean_signed_error": -0.38636363636363635,
+        "rmse": 2.356946076004881
+      },
+      "n_observations": 308,
+      "regression": {
+        "absolute_error_max": 6.312285940594208,
+        "absolute_error_min": 0.00568441842583578,
+        "mae": 1.3738568914979652,
+        "mean_signed_error": -0.5073043438896788,
+        "rmse": 1.8703168886365258
+      },
+      "relative_mae_improvement_pct": 24.030893611961712
+    },
+    "actual_zero": {
+      "absolute_mae_improvement": -0.49785761334394096,
+      "baseline": {
+        "absolute_error_max": 10.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.3804347826086956,
+        "mean_signed_error": 1.3804347826086956,
+        "rmse": 2.149317384052738
+      },
+      "n_observations": 92,
+      "regression": {
+        "absolute_error_max": 5.66545675268576,
+        "absolute_error_min": 0.8397931020190079,
+        "mae": 1.8782923959526365,
+        "mean_signed_error": 1.8782923959526365,
+        "rmse": 2.0312668199362336
+      },
+      "relative_mae_improvement_pct": -36.06527592727762
+    }
+  },
+  "by_target_week": [
+    {
+      "absolute_mae_improvement": 0.06108555804892757,
+      "baseline": {
+        "absolute_error_max": 7.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.63,
+        "mean_signed_error": -0.03,
+        "rmse": 2.238302928559939
+      },
+      "n_observations": 100,
+      "regression": {
+        "absolute_error_max": 5.915663953764776,
+        "absolute_error_min": 0.021894256929780198,
+        "mae": 1.5689144419510723,
+        "mean_signed_error": -0.0842082341457821,
+        "rmse": 2.001868687812238
+      },
+      "relative_mae_improvement_pct": 3.7475802484004643,
+      "target_week": 23
+    },
+    {
+      "absolute_mae_improvement": 0.4233815789671713,
+      "baseline": {
+        "absolute_error_max": 7.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.76,
+        "mean_signed_error": 0.36,
+        "rmse": 2.328089345364563
+      },
+      "n_observations": 100,
+      "regression": {
+        "absolute_error_max": 5.77725415708354,
+        "absolute_error_min": 0.024434849501743905,
+        "mae": 1.3366184210328287,
+        "mean_signed_error": 0.3017156897309397,
+        "rmse": 1.7333181674120177
+      },
+      "relative_mae_improvement_pct": 24.05577153222564,
+      "target_week": 24
+    },
+    {
+      "absolute_mae_improvement": 0.15315092427326382,
+      "baseline": {
+        "absolute_error_max": 10.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.69,
+        "mean_signed_error": -0.23,
+        "rmse": 2.2869193252058544
+      },
+      "n_observations": 100,
+      "regression": {
+        "absolute_error_max": 5.66545675268576,
+        "absolute_error_min": 0.00568441842583578,
+        "mae": 1.5368490757267361,
+        "mean_signed_error": -0.036930268213627715,
+        "rmse": 1.945598354294651
+      },
+      "relative_mae_improvement_pct": 9.062184868240465,
+      "target_week": 25
+    },
+    {
+      "absolute_mae_improvement": 0.24287370862047908,
+      "baseline": {
+        "absolute_error_max": 8.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.76,
+        "mean_signed_error": -0.02,
+        "rmse": 2.3874672772626644
+      },
+      "n_observations": 100,
+      "regression": {
+        "absolute_error_max": 6.312285940594208,
+        "absolute_error_min": 0.051773341365703995,
+        "mae": 1.517126291379521,
+        "mean_signed_error": -0.015045562275315278,
+        "rmse": 1.9423802012440345
+      },
+      "relative_mae_improvement_pct": 13.799642535254494,
+      "target_week": 26
+    }
+  ],
+  "data_version": "V2",
+  "difference_definition": "baseline absolute error minus regression absolute error",
+  "equality_rule": "Exakte Gleichheit der unveränderten absoluten Fehler",
+  "individual_outcomes": {
+    "baseline_better": {
+      "count": 171,
+      "share": 0.4275
+    },
+    "equal": {
+      "count": 0,
+      "share": 0.0
+    },
+    "regression_better": {
+      "count": 229,
+      "share": 0.5725
+    }
+  },
+  "mean_absolute_error_difference": 0.22012294247746053,
+  "n_observations": 400,
+  "n_users": 100,
+  "regression": {
+    "absolute_error_max": 6.312285940594208,
+    "absolute_error_min": 0.00568441842583578,
+    "mae": 1.4898770575225395,
+    "mean_signed_error": 0.041382906274053645,
+    "rmse": 1.9085376545370092
+  },
+  "relative_mae_improvement_pct": 12.872686694588332,
+  "source_sha256": {
+    "data/processed/regression_test.csv": "b0c11c94209323c01f098042261349a3ed506c408af5303a4ac9d5e84715c1fa",
+    "documentation/regression_split_manifest.json": "536137414d579a30fef9fb946ac04e114fac50ffaff6462861fdb69cc984caff",
+    "outputs/tables/regression_test_metrics.json": "76c78ffa7809683e76002f362eef3ded6266a8674cc17b1b13c7150498d1bf9f",
+    "outputs/tables/regression_test_predictions.csv": "4c02cb77171915889f3c818b6a2403d6370ec7b1d9d3a0faae52d72bd67d267b"
+  },
+  "unit": "Aktivitäten pro Nutzerwoche"
+}

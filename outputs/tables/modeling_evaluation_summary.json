@@ -1,0 +1,358 @@
+{
+  "actual_iteration": "AP 2: Data Understanding zurück zu Construct Data, Präferenzexponent 1,3 und erneute Qualitätsprüfung; V2 angenommen",
+  "ap6_recommendation": "Bedingte Freigabe zur regelbasierten Prototyp-Konzeption; keine produktive Freigabe",
+  "baseline_comparison": {
+    "absolute_mae_improvement": 0.22012294247746045,
+    "baseline": {
+      "absolute_error_max": 10.0,
+      "absolute_error_min": 0.0,
+      "mae": 1.71,
+      "mean_signed_error": 0.02,
+      "rmse": 2.3108440016582685
+    },
+    "baseline_definition": "predicted_baseline_next_week = activities_current_week; kein Training",
+    "by_actual_group": {
+      "actual_positive": {
+        "absolute_mae_improvement": 0.4345846669435933,
+        "baseline": {
+          "absolute_error_max": 8.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.8084415584415585,
+          "mean_signed_error": -0.38636363636363635,
+          "rmse": 2.356946076004881
+        },
+        "n_observations": 308,
+        "regression": {
+          "absolute_error_max": 6.312285940594208,
+          "absolute_error_min": 0.00568441842583578,
+          "mae": 1.3738568914979652,
+          "mean_signed_error": -0.5073043438896788,
+          "rmse": 1.8703168886365258
+        },
+        "relative_mae_improvement_pct": 24.030893611961712
+      },
+      "actual_zero": {
+        "absolute_mae_improvement": -0.49785761334394096,
+        "baseline": {
+          "absolute_error_max": 10.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.3804347826086956,
+          "mean_signed_error": 1.3804347826086956,
+          "rmse": 2.149317384052738
+        },
+        "n_observations": 92,
+        "regression": {
+          "absolute_error_max": 5.66545675268576,
+          "absolute_error_min": 0.8397931020190079,
+          "mae": 1.8782923959526365,
+          "mean_signed_error": 1.8782923959526365,
+          "rmse": 2.0312668199362336
+        },
+        "relative_mae_improvement_pct": -36.06527592727762
+      }
+    },
+    "by_target_week": [
+      {
+        "absolute_mae_improvement": 0.06108555804892757,
+        "baseline": {
+          "absolute_error_max": 7.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.63,
+          "mean_signed_error": -0.03,
+          "rmse": 2.238302928559939
+        },
+        "n_observations": 100,
+        "regression": {
+          "absolute_error_max": 5.915663953764776,
+          "absolute_error_min": 0.021894256929780198,
+          "mae": 1.5689144419510723,
+          "mean_signed_error": -0.0842082341457821,
+          "rmse": 2.001868687812238
+        },
+        "relative_mae_improvement_pct": 3.7475802484004643,
+        "target_week": 23
+      },
+      {
+        "absolute_mae_improvement": 0.4233815789671713,
+        "baseline": {
+          "absolute_error_max": 7.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.76,
+          "mean_signed_error": 0.36,
+          "rmse": 2.328089345364563
+        },
+        "n_observations": 100,
+        "regression": {
+          "absolute_error_max": 5.77725415708354,
+          "absolute_error_min": 0.024434849501743905,
+          "mae": 1.3366184210328287,
+          "mean_signed_error": 0.3017156897309397,
+          "rmse": 1.7333181674120177
+        },
+        "relative_mae_improvement_pct": 24.05577153222564,
+        "target_week": 24
+      },
+      {
+        "absolute_mae_improvement": 0.15315092427326382,
+        "baseline": {
+          "absolute_error_max": 10.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.69,
+          "mean_signed_error": -0.23,
+          "rmse": 2.2869193252058544
+        },
+        "n_observations": 100,
+        "regression": {
+          "absolute_error_max": 5.66545675268576,
+          "absolute_error_min": 0.00568441842583578,
+          "mae": 1.5368490757267361,
+          "mean_signed_error": -0.036930268213627715,
+          "rmse": 1.945598354294651
+        },
+        "relative_mae_improvement_pct": 9.062184868240465,
+        "target_week": 25
+      },
+      {
+        "absolute_mae_improvement": 0.24287370862047908,
+        "baseline": {
+          "absolute_error_max": 8.0,
+          "absolute_error_min": 0.0,
+          "mae": 1.76,
+          "mean_signed_error": -0.02,
+          "rmse": 2.3874672772626644
+        },
+        "n_observations": 100,
+        "regression": {
+          "absolute_error_max": 6.312285940594208,
+          "absolute_error_min": 0.051773341365703995,
+          "mae": 1.517126291379521,
+          "mean_signed_error": -0.015045562275315278,
+          "rmse": 1.9423802012440345
+        },
+        "relative_mae_improvement_pct": 13.799642535254494,
+        "target_week": 26
+      }
+    ],
+    "data_version": "V2",
+    "difference_definition": "baseline absolute error minus regression absolute error",
+    "equality_rule": "Exakte Gleichheit der unveränderten absoluten Fehler",
+    "individual_outcomes": {
+      "baseline_better": {
+        "count": 171,
+        "share": 0.4275
+      },
+      "equal": {
+        "count": 0,
+        "share": 0.0
+      },
+      "regression_better": {
+        "count": 229,
+        "share": 0.5725
+      }
+    },
+    "mean_absolute_error_difference": 0.22012294247746053,
+    "n_observations": 400,
+    "n_users": 100,
+    "regression": {
+      "absolute_error_max": 6.312285940594208,
+      "absolute_error_min": 0.00568441842583578,
+      "mae": 1.4898770575225395,
+      "mean_signed_error": 0.041382906274053645,
+      "rmse": 1.9085376545370092
+    },
+    "relative_mae_improvement_pct": 12.872686694588332,
+    "source_sha256": {
+      "data/processed/regression_test.csv": "b0c11c94209323c01f098042261349a3ed506c408af5303a4ac9d5e84715c1fa",
+      "documentation/regression_split_manifest.json": "536137414d579a30fef9fb946ac04e114fac50ffaff6462861fdb69cc984caff",
+      "outputs/tables/regression_test_metrics.json": "76c78ffa7809683e76002f362eef3ded6266a8674cc17b1b13c7150498d1bf9f",
+      "outputs/tables/regression_test_predictions.csv": "4c02cb77171915889f3c818b6a2403d6370ec7b1d9d3a0faae52d72bd67d267b"
+    },
+    "unit": "Aktivitäten pro Nutzerwoche"
+  },
+  "current_week_diagnostics": {
+    "current_week_positive": {
+      "absolute_mae_improvement": 0.23019371207549288,
+      "baseline": {
+        "absolute_error_max": 10.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.8388157894736843,
+        "mean_signed_error": 0.4375,
+        "rmse": 2.3986015662640203
+      },
+      "n_observations": 304,
+      "regression": {
+        "absolute_error_max": 6.127644193111472,
+        "absolute_error_min": 0.021654073438123866,
+        "mae": 1.6086220773981914,
+        "mean_signed_error": 0.043892963758103434,
+        "rmse": 2.024639319465367
+      },
+      "relative_mae_improvement_pct": 12.518584699633244
+    },
+    "current_week_zero": {
+      "absolute_mae_improvement": 0.1882321720836917,
+      "baseline": {
+        "absolute_error_max": 8.0,
+        "absolute_error_min": 0.0,
+        "mae": 1.3020833333333333,
+        "mean_signed_error": -1.3020833333333333,
+        "rmse": 2.0077973005261263
+      },
+      "n_observations": 96,
+      "regression": {
+        "absolute_error_max": 6.312285940594208,
+        "absolute_error_min": 0.00568441842583578,
+        "mae": 1.1138511612496416,
+        "mean_signed_error": 0.03343439090789599,
+        "rmse": 1.4820468034142396
+      },
+      "relative_mae_improvement_pct": 14.456230816027524
+    }
+  },
+  "data_version": "V2",
+  "diagnostic_scope": "Post-hoc-Diagnose anhand bekannter Eingänge; keine Auswahl oder Nachbearbeitung einer Prognose",
+  "future_iterations_status": "Nur Vorschläge, nicht umgesetzt",
+  "kmeans": {
+    "ari_pairwise_max": 1.0,
+    "ari_pairwise_mean": 1.0,
+    "ari_pairwise_min": 1.0,
+    "cluster_sizes": {
+      "0": 57,
+      "1": 43
+    },
+    "inertia": 126.49790652947819,
+    "n_clusters": 2,
+    "n_pairs": 190,
+    "n_seeds": 20,
+    "n_users": 100,
+    "profiles": [
+      {
+        "avg_activities_per_week": 1.5350877192982457,
+        "avg_duration_per_week": 97.05438596491229,
+        "cluster_id": 0,
+        "n_users": 57,
+        "segment_label": "Geringere Trainingshäufigkeit",
+        "share_cycling": 0.1367778913109712,
+        "share_hiking": 0.13466670605216158,
+        "share_padel": 0.06771488128912717,
+        "share_running": 0.14770971714350412,
+        "share_strength": 0.12755837825349842,
+        "share_swimming": 0.09335521745057584,
+        "share_tennis": 0.08097315820202637,
+        "share_walking": 0.21124405029813514,
+        "sport_diversity": 6.578947368421052,
+        "top_3_sports": "walking / running / cycling"
+      },
+      {
+        "avg_activities_per_week": 3.7477638640429345,
+        "avg_duration_per_week": 249.54856887298746,
+        "cluster_id": 1,
+        "n_users": 43,
+        "segment_label": "Höhere Trainingshäufigkeit",
+        "share_cycling": 0.19925811191053108,
+        "share_hiking": 0.14018318426329135,
+        "share_padel": 0.0632875829413061,
+        "share_running": 0.1594961510619089,
+        "share_strength": 0.1193766461920005,
+        "share_swimming": 0.0915958311291846,
+        "share_tennis": 0.05300434130111093,
+        "share_walking": 0.17379815120066627,
+        "sport_diversity": 7.441860465116279,
+        "top_3_sports": "cycling / walking / running"
+      }
+    ],
+    "segments": {
+      "0": "Geringere Trainingshäufigkeit",
+      "1": "Höhere Trainingshäufigkeit"
+    },
+    "silhouette_score": 0.30333715184382104,
+    "suitability": "Für erste grobe Segmentierung im synthetischen Prototyp geeignet"
+  },
+  "limitations": [
+    "Nur synthetische V2, keine reale Garmin-Validierung",
+    "Regression: vier Testwochen derselben 100 Nutzer, abhängige Beobachtungen",
+    "K-Means: interne Bewertung auf Fitdaten, keine neue Stichprobe",
+    "ARI misst nur Initialisierungsstabilität bei unveränderten Daten",
+    "Regression schwächer nach MAE bei tatsächlichen Nullzielen; große Einzelfehler",
+    "Kein Empfehlungs- oder finanzieller Nutzen nachgewiesen"
+  ],
+  "n_users": 100,
+  "real_user_production_validated": false,
+  "regression": {
+    "absolute_error_quantiles": {
+      "0": 0.00568441842583578,
+      "0.25": 0.693430392692711,
+      "0.5": 1.2337544045306479,
+      "0.75": 2.005684418425836,
+      "0.9": 2.869516723653024,
+      "0.95": 3.766681936391524,
+      "0.99": 5.666574726729737,
+      "1": 6.312285940594208
+    },
+    "actual_max": 10.0,
+    "actual_mean": 2.38,
+    "actual_min": 0.0,
+    "baseline_evaluated": false,
+    "data_version": "V2",
+    "error_definition": "prediction minus actual",
+    "errors_above_3": 39,
+    "errors_above_5": 11,
+    "evaluation_design": "Rollierende Einwochenprognosen, unverändertes Modell",
+    "feature_names": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks"
+    ],
+    "mae": 1.4898770575225395,
+    "mean_signed_error": 0.041382906274053645,
+    "model_file": "outputs/models/regression_linear.joblib",
+    "model_metadata_sha256": "8db82d9750ed95aa7d4864f2fc409a8ac4524111f79b94f3808bde907f3b809c",
+    "model_sha256": "0b26c352ff98d31c02552c3226f839b6eef6b74032070b2086aae1686865a882",
+    "n_observations": 400,
+    "n_test_observations": 400,
+    "n_training_observations": 1800,
+    "n_users": 100,
+    "negative_prediction_share": 0.0,
+    "negative_predictions": 0,
+    "predicted_max": 7.1493184281126325,
+    "predicted_mean": 2.421382906274054,
+    "predicted_min": 0.8397931020190079,
+    "prediction_postprocessing": "none",
+    "rmse": 1.9085376545370092,
+    "suitability": "Nur eingeschränkt für synthetischen Prototyp geeignet; unverbindliche Niveauprognose",
+    "target": "activities_next_week",
+    "test_file": "data/processed/regression_test.csv",
+    "test_sha256": "b0c11c94209323c01f098042261349a3ed506c408af5303a4ac9d5e84715c1fa",
+    "test_target_weeks": [
+      23,
+      24,
+      25,
+      26
+    ],
+    "unit": "Aktivitäten pro Nutzerwoche",
+    "zero_week_groups": {
+      "actual_positive": {
+        "mae": 1.3738568914979652,
+        "n_observations": 308
+      },
+      "actual_zero": {
+        "mae": 1.8782923959526365,
+        "n_observations": 92
+      }
+    }
+  },
+  "source_sha256": {
+    "documentation/crisp_dm_log.md": "bceb1d1360194c82064f1251fcc7d903cf6afee6ef6b44a7a7ae654df166abc8",
+    "documentation/decisions.md": "2d9cc1c017e3efc464ad6bd26ee28a7c0d9b22cfd82058081eabb8ebab55361d",
+    "documentation/kmeans_inference_contract.md": "ff439ca18269fae3f722d995e977bac65e3f95197d88701f82d8ca9f228fc61f",
+    "documentation/kmeans_modeling_execution.md": "0ed61bf5e2f770c53076312bcee942314d7580e160e50dd0d6fc387fc70d6553",
+    "documentation/regression_modeling_execution.md": "ce7d5832611b7b0638cf0167e20b948a27cd8ea0bdfb6a6bdd8a0c6a48cc7c4b",
+    "outputs/models/kmeans_final_metadata.json": "f0863192f4b22f14a60acd17db332a5506bc1369d34bdc6d79f5fbb2d2e9823b",
+    "outputs/models/regression_linear_metadata.json": "8db82d9750ed95aa7d4864f2fc409a8ac4524111f79b94f3808bde907f3b809c",
+    "outputs/tables/kmeans_candidate_comparison.csv": "ea0593d4d3ff5dc7b40129dada04c33458c4ac3e0c7e4dfeaad0f6c4e874115f",
+    "outputs/tables/kmeans_final_cluster_profiles.csv": "5aa0b9ee497f1b0f29db8413be318e23e1113a9f24a2355d628a4df18995110b",
+    "outputs/tables/kmeans_k_selection.csv": "a8e5c21c75ff6036bdc109db419f7a10189a0f500502b2bdc995a8539123e448",
+    "outputs/tables/regression_baseline_comparison.csv": "cd208b9f245135c748e8b09f88242d5e235a6a8040973970f9b49493269b9182",
+    "outputs/tables/regression_baseline_metrics.json": "5bfb9409145dbbd7147b9a5f9952f01a556fdb8329c53a9cf2700e2de1b36712",
+    "outputs/tables/regression_test_metrics.json": "76c78ffa7809683e76002f362eef3ded6266a8674cc17b1b13c7150498d1bf9f"
+  }
+}
