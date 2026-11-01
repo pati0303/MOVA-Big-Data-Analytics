@@ -1,0 +1,4 @@
+# Preserve the exact LF bytes validated by the data/model source manifests.
+* text=auto eol=lf
+*.png binary
+*.joblib binary

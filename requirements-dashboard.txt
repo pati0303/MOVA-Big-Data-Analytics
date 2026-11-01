@@ -1,0 +1,4 @@
+# Python 3.12; preserve the validated AP-5 model environment.
+-r requirements-modeling.txt
+streamlit==1.66.1
+plotly==6.4.0
