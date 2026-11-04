@@ -1,0 +1,26 @@
+test_bad_calendar_and_legacy_values_rejected (test_cycle2.Cycle2Tests.test_bad_calendar_and_legacy_values_rejected) ... ok
+test_calendar_reference_and_zero_count (test_cycle2.Cycle2Tests.test_calendar_reference_and_zero_count) ... ok
+test_exact_six_fits_training_only_and_frozen_prediction (test_cycle2.Cycle2Tests.test_exact_six_fits_training_only_and_frozen_prediction) ... ok
+test_folds_and_label_availability (test_cycle2.Cycle2Tests.test_folds_and_label_availability) ... ok
+test_future_change_preserves_earlier_inputs (test_cycle2.Cycle2Tests.test_future_change_preserves_earlier_inputs) ... ok
+test_input_boundary_rejects_test_access_and_discards_later_weeks (test_cycle2.Cycle2Tests.test_input_boundary_rejects_test_access_and_discards_later_weeks) ... ok
+test_missing_duplicate_and_invalid_history_rejected (test_cycle2.Cycle2Tests.test_missing_duplicate_and_invalid_history_rejected) ... ok
+test_no_overwrite_and_output_boundary (test_cycle2.Cycle2Tests.test_no_overwrite_and_output_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 5.053s
+
+OK
+
+test_future_change_cannot_change_earlier_inputs (test_data_preparation_regression.RegressionPreparationTests.test_future_change_cannot_change_earlier_inputs) ... ok
+test_independent_calendar_reference_for_all_rows (test_data_preparation_regression.RegressionPreparationTests.test_independent_calendar_reference_for_all_rows) ... ok
+test_missing_history_and_duplicate_week_stop (test_data_preparation_regression.RegressionPreparationTests.test_missing_history_and_duplicate_week_stop) ... ok
+test_month_boundaries_and_group_isolation (test_data_preparation_regression.RegressionPreparationTests.test_month_boundaries_and_group_isolation) ... ok
+test_real_zero_history_and_observation_edges (test_data_preparation_regression.RegressionPreparationTests.test_real_zero_history_and_observation_edges) ... ok
+test_validator_detects_future_value_in_window (test_data_preparation_regression.RegressionPreparationTests.test_validator_detects_future_value_in_window) ... ok
+test_wrong_target_and_invalid_counts_rejected (test_data_preparation_regression.RegressionPreparationTests.test_wrong_target_and_invalid_counts_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.148s
+
+OK

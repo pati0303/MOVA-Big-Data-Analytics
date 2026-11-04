@@ -1,0 +1,221 @@
+[
+  {
+    "coefficients": [
+      0.23237856308930085,
+      0.4258655791668044
+    ],
+    "design_condition_number": 8.375261422502392,
+    "design_rank": 3,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7264519182583343
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7264519182583343,
+        "avg_activities_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks"
+    ],
+    "fold": 1,
+    "intercept": 0.7530784453842587,
+    "model": "linear_2",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  },
+  {
+    "coefficients": [
+      0.2324257388908592,
+      0.4270727525709215,
+      0.0032735926728292906
+    ],
+    "design_condition_number": 14.613747719566414,
+    "design_rank": 4,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7264519182583343,
+        "zero_weeks_last_4_weeks": -0.4936109718331208
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7264519182583343,
+        "avg_activities_last_4_weeks": 1.0,
+        "zero_weeks_last_4_weeks": -0.6589871096128685
+      },
+      "zero_weeks_last_4_weeks": {
+        "activities_current_week": -0.4936109718331208,
+        "avg_activities_last_4_weeks": -0.6589871096128685,
+        "zero_weeks_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks",
+      "zero_weeks_last_4_weeks"
+    ],
+    "fold": 1,
+    "intercept": 0.7471859948738084,
+    "model": "linear_3",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  },
+  {
+    "coefficients": [
+      0.2701412155869183,
+      0.4280740026224382
+    ],
+    "design_condition_number": 8.257623188876774,
+    "design_rank": 3,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7359096570313531
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7359096570313531,
+        "avg_activities_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks"
+    ],
+    "fold": 2,
+    "intercept": 0.7033922504638015,
+    "model": "linear_2",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  },
+  {
+    "coefficients": [
+      0.2704456042271718,
+      0.44952639602547195,
+      0.05340218233938227
+    ],
+    "design_condition_number": 14.265393248425628,
+    "design_rank": 4,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7359096570313531,
+        "zero_weeks_last_4_weeks": -0.4901433307770383
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7359096570313531,
+        "avg_activities_last_4_weeks": 1.0,
+        "zero_weeks_last_4_weeks": -0.6585404674199857
+      },
+      "zero_weeks_last_4_weeks": {
+        "activities_current_week": -0.4901433307770383,
+        "avg_activities_last_4_weeks": -0.6585404674199857,
+        "zero_weeks_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks",
+      "zero_weeks_last_4_weeks"
+    ],
+    "fold": 2,
+    "intercept": 0.6035689956750148,
+    "model": "linear_3",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  },
+  {
+    "coefficients": [
+      0.24136778082058738,
+      0.4052253626575004
+    ],
+    "design_condition_number": 8.210788653005173,
+    "design_rank": 3,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7246763520393738
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7246763520393738,
+        "avg_activities_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks"
+    ],
+    "fold": 3,
+    "intercept": 0.8473938425810781,
+    "model": "linear_2",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  },
+  {
+    "coefficients": [
+      0.24129575780220608,
+      0.4131899111605605,
+      0.018976433868521478
+    ],
+    "design_condition_number": 14.37229014326514,
+    "design_rank": 4,
+    "feature_correlations": {
+      "activities_current_week": {
+        "activities_current_week": 1.0,
+        "avg_activities_last_4_weeks": 0.7246763520393738,
+        "zero_weeks_last_4_weeks": -0.47879999345287105
+      },
+      "avg_activities_last_4_weeks": {
+        "activities_current_week": 0.7246763520393738,
+        "avg_activities_last_4_weeks": 1.0,
+        "zero_weeks_last_4_weeks": -0.6658768027623666
+      },
+      "zero_weeks_last_4_weeks": {
+        "activities_current_week": -0.47879999345287105,
+        "avg_activities_last_4_weeks": -0.6658768027623666,
+        "zero_weeks_last_4_weeks": 1.0
+      }
+    },
+    "features": [
+      "activities_current_week",
+      "avg_activities_last_4_weeks",
+      "zero_weeks_last_4_weeks"
+    ],
+    "fold": 3,
+    "intercept": 0.811271735824582,
+    "model": "linear_3",
+    "parameters": {
+      "copy_X": true,
+      "fit_intercept": true,
+      "n_jobs": null,
+      "positive": false,
+      "tol": 1e-06
+    }
+  }
+]

@@ -1,7 +1,7 @@
 """Session transitions independent of Streamlit, with explicit permission reset."""
 MODES = ('USER VIEW', 'ANALYTICS LAB')
 SECTIONS = ('Data Understanding', 'Data Preparation', 'K-Means', 'Regression',
-            'Evaluation', 'Empfehlungssystem', 'CRISP-DM')
+            'Evaluation', 'Empfehlungssystem', 'CRISP-DM', 'CRISP-DM – Zweiter Modellierungszyklus')
 PERSONAL_KEYS = ('personal_result', 'personal_activity', 'personal_error')
 
 

@@ -1,0 +1,9 @@
+{
+  "adopt_extended": false,
+  "final_full_training_fit_performed": false,
+  "interpretation": "Internal temporal validation of a post-hoc hypothesis; no independent test confirmation",
+  "pooled_mae_improvement": -0.0004926958533926218,
+  "rule": "Adopt linear_3 iff pooled MAE is strictly lower than linear_2 and MAE is strictly lower in at least 2/3 folds",
+  "selected_structure": "linear_2",
+  "winning_folds": 2
+}

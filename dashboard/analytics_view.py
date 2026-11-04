@@ -9,6 +9,7 @@ from dashboard.data_access import DataAccessError
 from dashboard.design import plotly_layout, COLORS
 from dashboard.user_view import number
 from dashboard.state import capabilities
+from dashboard.cycle2 import TITLE as CYCLE2_TITLE, render_cycle2
 
 
 def chart(fig, key, height=300):
@@ -330,7 +331,7 @@ def crisp(d,state):
 
 
 PAGES={'Data Understanding':understanding,'Data Preparation':preparation,'K-Means':kmeans,'Regression':regression,
-       'Evaluation':evaluation,'Empfehlungssystem':recommendations,'CRISP-DM':crisp}
+       'Evaluation':evaluation,'Empfehlungssystem':recommendations,'CRISP-DM':crisp,CYCLE2_TITLE:render_cycle2}
 
 
 def analytics_view(state):

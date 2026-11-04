@@ -1,0 +1,29 @@
+{
+  "artifact_sha256": {
+    "data/processed/cycle2/regression_development.csv": "884258c33f4ad8e403b99c80bbab791acf51b7746a951f124b9f9b3ee27c91a6",
+    "outputs/cycle2/comparison.csv": "f072f517daf1d157869555a1130fddf56cf47d4a54483aa91be40183c8df272a",
+    "outputs/cycle2/decision.json": "3abe0db204b2334e488d9bd0c37be06356923b343300729567b5843d7252a04f",
+    "outputs/cycle2/metrics_by_fold.csv": "e467bae35b673140fd936ef779ddacfeb39691a603a6d10520c72174259eabea",
+    "outputs/cycle2/metrics_by_week.csv": "d81c009c947d601fbe1e750f7d4c3cfec66004add6db9556489659e50733f1e0",
+    "outputs/cycle2/models/fold_parameters.json": "7d8e03ea72d7e6f14fbe8359f4b97dab2b37d1556b5577ca70fbec49ac2aef13",
+    "outputs/cycle2/paired_errors.csv": "cf82e8e4814aadee07ed4e986e93b624ec3c165bb6fed22c35a05ead4147c779",
+    "outputs/cycle2/validation_manifest.json": "e7cb9223eb393600a529e1d2d34c08bb30f7f54150f28d3c081573a03c98f346",
+    "outputs/cycle2/validation_predictions.csv": "ef8f5e4b684d2845a4d54268e568ed3d6c64b9485fecdf2bf33e0944c1120585",
+    "outputs/cycle2/zero_week_analysis.csv": "291ed0fab380a35fcd585313fb85137970c05187d5cc4d281e74f45f8babff24"
+  },
+  "code_sha256": {
+    "src/cycle2_compare.py": "7051bb20441e91811a49e57c0f6ff1e17382f3653745a12bd3dea4e0b41f78a0"
+  },
+  "numerical_threads": 1,
+  "software": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "python": "3.12.14",
+    "sklearn": "1.8.0"
+  },
+  "source_base_commit": "dd8208abda5371b178d39095b25f6f6140681167",
+  "source_sha256": {
+    "data/processed/regression_train.csv": "e984a547de12aca7d53ce908dd5051992bbd21aa83895a67bcd6fc0b541fb0b8",
+    "data/processed/user_weekly_activities.csv": "c34a7bd16d1cdc3e91388cc35b8c784afde0b53c1dbfdd24de97148350359b74"
+  }
+}
