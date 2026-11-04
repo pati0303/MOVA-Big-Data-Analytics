@@ -1,0 +1,28 @@
+{
+  "approved_before_execution": true,
+  "decision_rule": "strict pooled MAE improvement AND at least two strict fold MAE improvements",
+  "folds": [
+    [
+      1,
+      9,
+      10,
+      13
+    ],
+    [
+      2,
+      13,
+      14,
+      17
+    ],
+    [
+      3,
+      17,
+      18,
+      21
+    ]
+  ],
+  "hypothesis": "Historical zero count adds predictive information beyond current activity and four-week average",
+  "legacy_test_excluded": true,
+  "scope": "exactly persistence, linear_2, linear_3",
+  "window": "t-3..t"
+}

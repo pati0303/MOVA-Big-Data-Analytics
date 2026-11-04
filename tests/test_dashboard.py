@@ -161,7 +161,7 @@ class StreamlitTests(unittest.TestCase):
         app.segmented_control[0].set_value('USER VIEW').run()
         self.assertEqual(app.selectbox[0].value, 'U042')
         app.segmented_control[0].set_value('ANALYTICS LAB').run()
-        self.assertEqual(app.sidebar.radio[0].value, 'CRISP-DM')
+        self.assertEqual(app.sidebar.radio[0].value, SECTIONS[-1])
 
     def test_grants_mode_change_user_change_and_revocation(self):
         app = self.app()

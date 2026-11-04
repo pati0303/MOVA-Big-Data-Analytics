@@ -1,0 +1,72 @@
+{
+  "folds": [
+    {
+      "fold": 1,
+      "train_input_weeks": [
+        4,
+        9
+      ],
+      "train_rows": 600,
+      "train_target_weeks": [
+        5,
+        10
+      ],
+      "validation_input_weeks": [
+        10,
+        13
+      ],
+      "validation_rows": 400,
+      "validation_target_weeks": [
+        11,
+        14
+      ]
+    },
+    {
+      "fold": 2,
+      "train_input_weeks": [
+        4,
+        13
+      ],
+      "train_rows": 1000,
+      "train_target_weeks": [
+        5,
+        14
+      ],
+      "validation_input_weeks": [
+        14,
+        17
+      ],
+      "validation_rows": 400,
+      "validation_target_weeks": [
+        15,
+        18
+      ]
+    },
+    {
+      "fold": 3,
+      "train_input_weeks": [
+        4,
+        17
+      ],
+      "train_rows": 1400,
+      "train_target_weeks": [
+        5,
+        18
+      ],
+      "validation_input_weeks": [
+        18,
+        21
+      ],
+      "validation_rows": 400,
+      "validation_target_weeks": [
+        19,
+        22
+      ]
+    }
+  ],
+  "frozen_model_within_validation_block": true,
+  "history_window": "t-3..t",
+  "legacy_test_used": false,
+  "postprocessing": "none",
+  "target": "t+1"
+}
