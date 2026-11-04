@@ -250,3 +250,22 @@ Geprüft werden die fünf neuen Markdowndateien, vorhandene Zielpfade/Abbildunge
 - Kein neues Modelltraining, keine Modell-/Dashboardtests und keine Datengenerierung ausgeführt. Historische Prüfzahlen sind als historische Nachweise gekennzeichnet.
 
 Die Qualität der gerenderten PDF-Seiten bleibt bis zum tatsächlichen Export offen. Auch eine automatisierte Linkprüfung belegt weder die Richtigkeit einer persönlichen Teamangabe noch bestandene Live-Kompetenz.
+
+
+## 10. Fortschreibung: retrospektives technisches Nutzenkriterium
+
+Diese Fortschreibung folgt zeitlich auf die ursprüngliche Lab-Log-Rekonstruktion. Sie verändert keine historischen Anforderungen oder früheren Resultate. Der oben dokumentierte Erstprüfstand bleibt als solcher lesbar; inzwischen sind die fünf Rekonstruktionsdokumente im Referenzcommit `d73166871bf42ffa457415661d298268bf25d553` gesichert. Die jetzige Ergänzung ist erneut nur lokal, ohne Commit/Push.
+
+| Kriterium / Aspekt | Neuer konkreter Nachweis | Aktualisierter Status |
+| --- | --- | --- |
+| B1 fachlicher Nutzenbezug | §14.2 und [Auswertungsbericht](recommendation_sport_fit_retrospective.md): mehr sportbezogen passende Slots bei gleichen Interessengrenzen/Listenlängen | ERFÜLLT für technisch operationalisierten Nutzenbezug; nur retrospektiv |
+| B1 ursprünglich festgelegte fachliche Nutzenschwelle | Neue Metrik ausdrücklich nachträglich; keine frei erfundene Mindestquote | Weiterhin TEILWEISE ERFÜLLT für Gesamt-B1; ursprüngliche geschäftliche Schwelle und externe Validierung fehlen |
+| B3/B6 richtige Einordnung von Kennzahlen | 251/475 → 344/475, +93 und +19,58 Prozentpunkte; Abdeckung bleibt 81 Nutzer | ERFÜLLT schriftlich; keine Relevanz-/Kauf-/Umsatzbehauptung, keine Vermischung mit Modellgüte |
+| B5 Reproduzierbarkeit | [Eigenständiges Standardbibliothek-Skript](../src/recommendation_sport_fit.py), [JSON-Provenienz](../outputs/tables/recommendation_sport_fit_retrospective.json), [Tests](../tests/test_recommendation_sport_fit.py) | ERFÜLLT für diese ergänzende Kennzahl; übrige Abgabe-/Live-Lücken bleiben |
+| Zeitliche Verfügbarkeit | Profile bis 05.07.2026, finale Tagfreigaben vom 31.10.2026 als rückblickende Annotation | ERFÜLLT als retrospektiver Definitionsrahmen; kein vorgetäuschter damaliger Onlinevergleich |
+| Wissenschaftliche Grenze | Synthetische Daten, kein echtes Nutzerfeedback; interne Regelpassung statt unabhängiger Relevanzmessung | ERFÜLLT als offengelegte Grenze; reale Geschäftswirkung weiterhin OFFEN |
+
+Tatsächlich ausgeführt: zwölf neue Tests, zweimalige Skriptausführung mit bytegleicher Ergebnisdatei. Gespeicherte Originalkennzahlen (475 Slots, 344 A-Slots nachher, 81 Nutzer mit A, fünf leere Listen) werden zusätzlich gegen die ursprüngliche Summary geprüft. Die frühere formale A-Zahl 0 bleibt unverändert und wird nicht durch die 251 retrospektiven Sportmatches ersetzt. Kein neues Modelltraining; die Engine wird vom Auswertungsskript nicht importiert. Der abschließende Integritäts- und Linkcheck folgt als Prüfabschluss im Auswertungsbericht.
+
+
+**Prüfabschluss der Fortschreibung:** 54 Empfehlungstests entdeckt, 53 bestanden und ein pauschaler Alt-Integritätstest gezielt übersprungen, weil die drei beauftragten Dokumentänderungen dessen HEAD-Gleichheitsannahme verletzen. Der erste unbeschränkte Lauf hatte genau diesen Fehlschlag; kein Testcode wurde angepasst. Stattdessen bestätigt der SHA-256-Abgleich von 240 Ausgangsdateien die Unverändertheit außerhalb genau dieser drei Dokumente. Alle zwölf neuen und 41 übrigen bestehenden Empfehlungstests bestanden mit aktiven Fit-Sperren. 145 relative Verweise und sämtliche verwendeten E-IDs geprüft; keine fehlenden Ziele. Einzelheiten einschließlich Reproduktionsbefehlen und Grenzen stehen im Auswertungsbericht. Keine Modellläufe und keine Änderung der Engine oder ursprünglicher Daten/Ergebnisse.

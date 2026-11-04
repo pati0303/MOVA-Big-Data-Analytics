@@ -225,6 +225,24 @@ Im sichtbaren Arbeitsverlauf traten weitere dokumentarische Probleme auf: Bilder
 
 Die Originalvorgaben erlauben KI uneingeschränkt und verlangen keinen allgemeinen Werkzeugnachweis, fordern für das Lab-Log aber ausdrücklich KI-Irrwege und deren Prüfung. Die schriftliche Offenlegung unterstützt Nachvollziehbarkeit, ersetzt keine mündliche Eigenleistung. Für LN B sollen beide Autorinnen Verfahren, Code und Entscheidungen erklären können, auch wenn die jeweils andere den betreffenden Abschnitt präsentiert hat. Eine dokumentierte Antwort ist kein Beleg, dass diese Live-Kompetenz bereits geprüft wurde.
 
+### 14.2 Nachträgliche technische Nutzenevaluation des Empfehlungssystems
+
+Nach Abschluss beider Modellierungszyklen und nach der Rekonstruktion des Lab-Logs wurde am 04.11.2026 ein ergänzendes technisches Nutzenkriterium formuliert. Es war **nicht ursprünglich vereinbart** und wird **retrospektiv** auf die gespeicherten Empfehlungslisten angewendet. Die fachliche Frage lautet, ob die Sportpriorisierung mehr Angebote mit bestätigtem Bezug zu einer historisch beobachteten Sportart in die ausgegebenen Listen bringt, während Interessengrenzen und Listenversorgung unverändert bleiben. Dies ist eine zusätzliche deskriptive Analyse, kein dritter CRISP-DM-Modellierungszyklus [E41].
+
+Ein Slot ist ein Angebot innerhalb der gespeicherten Liste eines Nutzers. Als sportbezogen passend zählt er genau einmal, wenn mindestens ein endgültig bestätigter Angebotstag zu einer Sportart mit positivem historischem Anteil dieses Nutzers gehört. Beide Varianten werden mit derselben endgültigen Tagzuordnung und denselben Profilen bewertet. Die positiven Interessenkategorien werden separat kontrolliert. Nutzer mit leeren Listen bleiben im Nutzerbestand, tragen aber keine Slots zum Nenner bei. Die ursprüngliche formale Stufe A darf nicht mit dieser symmetrischen Nachbewertung verwechselt werden: Vorher war kein Tag aktiv, trotzdem waren rückblickend bereits passende Angebote enthalten [E42].
+
+| Retrospektive technische Kennzahl | Ohne Sportpriorisierung | Mit Sportpriorisierung |
+| --- | ---: | ---: |
+| Empfehlungsslots | 475 | 475 |
+| Sportbezogen passende Slots | 251 | 344 |
+| Matchanteil | 52,84 % | 72,42 % |
+| Nutzer mit mindestens einem Match | 81 | 81 |
+| Angebote außerhalb positiver Kategorien | 0 | 0 |
+
+Der Matchanteil steigt um **93 Slots bzw. 19,58 Prozentpunkte**, ohne die Anzahl versorgter Nutzer zu erhöhen. Jeweils 95 Nutzer erhalten Empfehlungen; fünf ohne positive Interessen erhalten keine Liste. Die Auswertung verwendet ausschließlich vier bestehende CSV-Dateien, prüft gespeicherte Listen und erzeugt eine separate Ergebnisdatei. Zwölf neue automatisierte Tests sichern Definition, Eingabekonsistenz, Prozentrechnung und Wiederholbarkeit ab; keine Modelle werden dafür inferiert oder trainiert [E43].
+
+Die Profile enden am historischen Demo-Stichtag 05.07.2026. Die später am 31.10.2026 bestätigten Angebotstags werden hier ausdrücklich rückblickend als gemeinsame Annotation verwendet, nicht als Behauptung damaliger Verfügbarkeit. Es fließen keine späteren Aktivitäten oder zukünftigen Nutzerreaktionen ein. Technische Regelpassung ist keine gemessene Nutzerrelevanz: Es wurden keine echten Nutzer befragt, die Profile und Angebote sind synthetisch. Kaufwahrscheinlichkeit, Zufriedenheit und wirtschaftliche Wirkung bleiben unbewiesen. Das Ergebnis ergänzt den technisch demonstrierten Nutzen, ersetzt aber keine ursprünglich festgelegte fachliche Nutzenschwelle und bleibt getrennt von der Regressionsgüte.
+
 ## 15. Managementempfehlung und abschließende Bewertung
 
 Die Empfehlung lautet, MOVA als wissenschaftlich reflektierten Demonstrator weiterzuführen und vorerst keine kommerzielle Wirksamkeit oder reale Prognosequalität zu behaupten. Die ursprüngliche Zwei-Merkmals-Regression bleibt bestehen, weil die einzige freigegebene Erweiterung ihr Übernahmekriterium nicht erfüllt. Das negative Ergebnis ist kein Scheitern des zweiten Zyklus: Es verhindert eine unbegründete Komplexitätserhöhung und demonstriert die Rolle vorab festgelegter Entscheidungskriterien.
@@ -317,7 +335,7 @@ python -m unittest discover -s tests -p 'test_dashboard*.py' -v
 
 Die Zyklus-2-Suite `python -m unittest discover -s tests -p 'test_cycle2.py' -v` enthält dagegen einen ausdrücklich trainierenden Vergleichstest. Eine vollständige `unittest discover`-Suite ist ebenfalls nicht trainingsfrei. Der ältere Runner `tests/run_without_training.py` sperrt Fit-Methoden und überspringt bestimmte frühere Trainingstests. Er kennt aber den neuen Zyklus-2-Vergleichstest nicht als Ausschluss; nach AP9 darf er nicht ungeprüft als erfolgreich lauffähige trainingsfreie Gesamtsuite empfohlen werden. Das ist ein dokumentierter Wartungspunkt, keine in dieser Arbeit vorgenommene Codeänderung [E37].
 
-Historische Nachweise: AP8 157 bestanden plus 21 ausgeschlossen; AP9 acht Zyklus-2-, sieben Aufbereitungs- und 58 Dashboardtests bestanden. Die Summen beziehen sich auf verschiedene Stände und überlappende Tests; sie dürfen nicht zu einer vermeintlichen Gesamtzahl addiert werden. Im aktuellen Auftrag wurden nur Inhalte, Dateiverweise, Vollständigkeit und Unverändertheit der vorhandenen Dateien geprüft. Neue Modellgüte- oder Laufzeitergebnisse werden nicht behauptet.
+Historische Nachweise: AP8 157 bestanden plus 21 ausgeschlossen; AP9 acht Zyklus-2-, sieben Aufbereitungs- und 58 Dashboardtests bestanden. Die Summen beziehen sich auf verschiedene Stände und überlappende Tests; sie dürfen nicht zu einer vermeintlichen Gesamtzahl addiert werden. Im aktuellen Auftrag wurden nur Inhalte, Dateiverweise, Vollständigkeit und Unverändertheit der vorhandenen Dateien geprüft. Neue Modellgüte- oder Laufzeitergebnisse werden nicht behauptet. Die spätere Ergänzung in §14.2 dokumentiert separat eine neue rein deskriptive Auswertung gespeicherter Empfehlungslisten mit eigenen Tests, ohne Modellläufe.
 
 ## Anhang B – Quellen, Abbildungen und PDF-Redaktion
 
