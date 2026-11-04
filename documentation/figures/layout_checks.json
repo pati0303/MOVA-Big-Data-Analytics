@@ -1,0 +1,97 @@
+{
+  "step_count_per_detail": 24,
+  "phase_count_per_detail": 6,
+  "column_checks": [
+    {
+      "figure": "cycle1",
+      "phase": "Business Understanding",
+      "last_text_plus_gap": 871.0,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle1",
+      "phase": "Data Understanding",
+      "last_text_plus_gap": 871.0,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle1",
+      "phase": "Data Preparation",
+      "last_text_plus_gap": 1019.2,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle1",
+      "phase": "Modeling",
+      "last_text_plus_gap": 871.0,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle1",
+      "phase": "Evaluation",
+      "last_text_plus_gap": 724.7,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle1",
+      "phase": "Deployment",
+      "last_text_plus_gap": 871.0,
+      "column_end": 1700
+    },
+    {
+      "figure": "02_crisp_dm_zyklus_1",
+      "text_elements": 58,
+      "text_intersections": 0,
+      "outside_canvas": 0
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Business Understanding",
+      "last_text_plus_gap": 899.7,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Data Understanding",
+      "last_text_plus_gap": 820.7,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Data Preparation",
+      "last_text_plus_gap": 942.8,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Modeling",
+      "last_text_plus_gap": 770.5,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Evaluation",
+      "last_text_plus_gap": 724.7,
+      "column_end": 1700
+    },
+    {
+      "figure": "cycle2",
+      "phase": "Deployment",
+      "last_text_plus_gap": 871.0,
+      "column_end": 1700
+    },
+    {
+      "figure": "03_crisp_dm_zyklus_2",
+      "text_elements": 58,
+      "text_intersections": 0,
+      "outside_canvas": 0
+    },
+    {
+      "figure": "01_crisp_dm_gesamtprozess",
+      "text_elements": 37,
+      "text_intersections": 0,
+      "outside_canvas": 0
+    }
+  ],
+  "status": "all measured text blocks fit"
+}
