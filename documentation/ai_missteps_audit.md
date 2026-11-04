@@ -1,75 +1,82 @@
-# MOVA – Audit von KI-Irrwegen und deren Prüfung
+# MOVA – KI-Einsatz, Irrwege und menschliche Qualitätskontrolle
 
-**Neue Rekonstruktion, 04.11.2026.** Grundlage sind vorhandene Projektberichte, Code und der in diesem Chat ausdrücklich bereitgestellte Teamkontext. Keine originalgetreue Wiederherstellung des früheren Audits. Der Zweck ist eine ehrliche Trennung zwischen technischem Fehlversuch, methodischer Kontrolle, fachlich hinterfragtem Vorschlag und tatsächlich belegter KI-Ursache.
+**Neue quellenbasierte Rekonstruktion; redaktionell präzisiert am 04.11.2026.** Dieses Audit behandelt ausschließlich die vier vom Team bestätigten Fälle. Die Kennungen K1–K3 und K5 bleiben für bestehende Verweise erhalten. Es werden keine zusätzlichen Fehler, Ursprungs-Prompts oder KI-Ursachen rekonstruiert.
 
-## 1. Bewertungs- und Belegrahmen
+## 1. Belegrahmen und gemeinsame Verantwortung
 
-Die Originalvorgaben für LN B erlauben KI uneingeschränkt, ohne allgemeinen Nutzungsnachweis zu verlangen. Gleichzeitig verlangt Kriterium 5 des Bewertungsbogens dokumentierte KI-Irrwege und deren Prüfung. Ein nachträgliches Erfinden von Irrwegen wäre weder fachlich hilfreich noch mit diesem Anspruch vereinbar. Eine genaue Produkt-/Modellversion oder ein wörtlicher Prompt wird nur genannt, wenn er vorliegt; für die historischen Fälle liegt dies aktuell nicht vollständig vor.
+Hanna und Patricia nutzten nach eigener Angabe ChatGPT und Codex gemeinsam zur fachlichen Reflexion, Entwicklung und Dokumentation. Beide übernahmen die Verantwortung für die Prüfung der Vorschläge und Ergebnisse; eine künstliche Aufteilung einzelner Debugging-Handlungen wird nicht vorgenommen. Die gemeinsame Arbeitsweise ist eine Teamangabe. Die Repositoryberichte belegen die technischen Ereignisse und Korrekturen, aber nicht, wer jeden einzelnen Prüfschritt ausführte.
 
-Die Buchstaben **B** und **C** werden entsprechend der verbindlichen Teamvorgabe übernommen: Streamlit-Test-API, README-Rücknahme und mobile Überlagerung = B; Zufallsstromkontrolle = C. Die ursprüngliche Definition einer übergeordneten A/B/C-Taxonomie liegt nicht vor. Deshalb wird keine formale Bedeutung als Professorenvorgabe oder Evidenzskala erfunden. Der Belegstatus wird separat ausgeschrieben.
+Drei Belegebenen sind zu unterscheiden: **Teamangabe** zum Entstehungs- und Entscheidungsverlauf, **Repositorynachweis** zum technischen Ereignis bzw. Ergebnis und **Primärbeleg der KI-Zuschreibung** wie ein ursprünglicher Gesprächsausschnitt. Ein technischer Fehler im KI-unterstützten Projekt ist nicht automatisch ein nachgewiesener Fehler eines bestimmten KI-Systems. Die frühere Buchstabentaxonomie wird hier nicht benötigt und nicht als Bewertungsregel ausgegeben.
 
-## 2. Historische Fälle
+## 2. Übersicht der vier Fälle
 
-| Fall | Vorgegebene Kategorie | Ereignis belegt? | Korrektur/Prüfung belegt? | KI-Ursache belegt? |
-| --- | --- | --- | --- | --- |
-| K1 Streamlit-Test-API | B | Ja, Bericht | Ja, öffentliche Mapping-Schnittstelle und nachfolgende Tests | Teilweise; Originalprompt/Initialdiff fehlt |
-| K2 README-Änderung und Rücknahme | B | Ja, Bericht | Ja, Integritätstest und Rücknahme | Teilweise; ursprünglicher Vorschlag fehlt |
-| K3 Mobile Phasenüberlagerung | B | Ja, Bericht | Ja, vertikale Darstellung und Desktop-/Mobilkontrolle | Teilweise; Layoutursprung nicht aus Code allein zurechenbar |
-| K4 Zufallsstromkontrolle | C | Ja, Code und Vergleichsdaten | Ja, gepaarter Kontrolllauf | Kein KI-Fehler nachgewiesen |
-| K5 Empfehlungs-Erweiterung als zweiter Zyklus | Nicht vorgegeben | Teamangabe | Regressionszyklus tatsächlich umgesetzt | Originalgespräch fehlt; offener Kandidat |
+| Fall | Art | Nachweis des Ereignisses und der Korrektur | Status der KI-Zuschreibung |
+| --- | --- | --- | --- |
+| K5 Methodischer Vorschlag: Empfehlungssystem als zweiter Zyklus | Konkreter ChatGPT-Vorschlag laut Team | Teamangabe zum Vorschlag; Repository belegt den stattdessen durchgeführten Regressionszyklus | ChatGPT als Urheber vom Team ausdrücklich benannt; ursprünglicher Chat noch nicht archiviert, daher kein unabhängig prüfbarer Primärbeleg |
+| K1 Nicht öffentliche Streamlit-Test-API | Technischer Fehlversuch in KI-unterstützter Entwicklung | Ausführungsbericht und korrigierter Testbestand | Konkreter KI-Ursprung nicht abschließend belegt |
+| K2 Nicht vorgesehene README-Änderung | Überschreitung des vereinbarten Änderungsumfangs | Integritätsbefund und Rücknahme im Ausführungsbericht dokumentiert | KI-Verursachung möglich, nicht eindeutig nachgewiesen |
+| K3 Mobile Phasenüberlagerung | Visueller Fehler in KI-unterstützt entwickelter Ansicht | Bericht über Befund/Korrektur und aktuelle vertikale Darstellung | Konkreter KI-Ursprung nicht eindeutig belegt |
 
-### K1 – Nicht öffentliche Streamlit-Test-API
+## 3. K5 – Methodischer KI-Vorschlag und fachliche Gegenprüfung
 
-**Problem:** Laut [Dashboard-Ausführungsbericht](dashboard_execution.md), Passage bei Zeilen 205–206 im Referenzstand, verwendete ein früher Test eine nicht öffentliche Session-State-Eigenschaft der neuen Streamlit-Version. Der Ansatz band die Prüfung an ein nicht zugesichertes Implementierungsdetail statt an die öffentliche Schnittstelle.
+**Ausgangssituation und KI-Unterstützung:** Nach der ersten Evaluation diskutierten Hanna und Patricia mit ChatGPT mögliche Weiterentwicklungen. Nach ihrer ausdrücklichen Schilderung schlug ChatGPT eine Erweiterung des regelbasierten Empfehlungssystems als möglichen zweiten CRISP-DM-Zyklus vor.
 
-**Korrektur und Kontrolle:** Der Test wurde auf die öffentliche Mapping-Schnittstelle umgestellt. Nachfolgende Dashboardtests bestanden laut demselben Bericht. Das ist ein konkreter technischer Fehlversuch mit nachgewiesener Korrektur. Der damalige Stacktrace und der erste Codezustand sind nicht als gesonderter Chatbeleg archiviert.
+**Problem und kritische Prüfung:** Das Team wollte die bekannte Schwäche der Aktivitätsprognose durch eine erneute datengetriebene Modellierung untersuchen. Eine Änderung von Angebotsregeln kann fachlich sinnvoll sein, weist aber allein keine neue Schätzung und Evaluation eines Prognosemodells nach. Hanna und Patricia prüften deshalb, welche Forschungsfrage die vorgeschlagene Regeländerung tatsächlich beantworten würde. Sie verwarfen sie als Weg für diese konkrete erneute Modellierungsfrage, nicht als generell unzulässiges Verfahren.
 
-**Lernpunkt:** Vermeintlich plausible Bibliotheksaufrufe müssen an der verwendeten Version und der öffentlichen API geprüft werden. Der Bericht belegt die Fehlverwendung, nicht aus sich heraus deren alleinige Verursachung durch KI. Für eine explizite KI-Zuschreibung sollte der ursprüngliche Vorschlag ergänzt werden.
+**Korrektur und Ergebnis:** Stattdessen wurde die Zahl historischer Nullwochen in t−3 bis t als zusätzliches Regressionsmerkmal untersucht. Beide OLS-Varianten wurden in drei chronologischen Folds neu geschätzt. Die Erweiterung wurde wegen des höheren gepoolten MAE gemäß der vorab definierten UND-Regel verworfen. Der fachliche Anlass war die Nullzielschwäche aus Zyklus 1; die Prüfungsanforderung ersetzt diese Begründung nicht.
 
-### K2 – README-Ergänzung gegen bestehenden Integritätsvertrag
+**Lerneffekt:** Ein plausibler Entwicklungsvorschlag muss auf Zielvariable, Lernverfahren und Aussagekraft seiner Evaluation geprüft werden. Eine Regelwirkungsanalyse und eine neue Modellgüteprüfung beantworten unterschiedliche Fragen.
 
-**Problem:** Der [Dashboardbericht](dashboard_execution.md), Passage bei Zeilen 207–208, hält fest, dass ein AP6-Integritätstest eine eigene README-Ergänzung erkannte. Die Ergänzung war im betreffenden Arbeitsschritt nicht zulässig; die technische Fehlannahme bestand darin, eine allgemeine Dokumentationsverbesserung unabhängig vom vereinbarten Änderungsumfang vorzunehmen.
+**Repositorynachweis:** [recommendation_execution.md, §12](recommendation_execution.md) grenzt die Regelwirkung ausdrücklich von neuer ML-Evaluation ab. [cycle2/report.md, §§1, 4 und 5](cycle2/report.md), [Foldparameter](../outputs/cycle2/models/fold_parameters.json) und [Entscheidung](../outputs/cycle2/decision.json) belegen den tatsächlich gewählten Weg und sein Ergebnis. Sie beweisen nicht rückwirkend den ursprünglichen ChatGPT-Vorschlag.
 
-**Korrektur und Kontrolle:** Die Ergänzung wurde vollständig zurückgenommen. Die Startanleitung wurde in den vorgesehenen Dashboardbericht aufgenommen; der bestehende Testcode blieb unverändert. Der heutige veraltete README-Status allein beweist den Rücknahmevorgang nicht. Der Ausführungsbericht ist dafür der konkrete historische Beleg.
+**Nachweisstatus der KI-Zuschreibung:** Konkrete Zuschreibung an ChatGPT durch das Team; Originalgespräch, Datum und Wortlaut sind noch nicht als Primärbeleg archiviert. Keine wörtliche Aussage oder automatische Einstufung als KI-Halluzination wird erfunden.
 
-**Lernpunkt:** Auch gut gemeinte Textänderungen benötigen einen passenden Auftrag und dürfen Reproduzierbarkeitsverträge nicht still verändern. Nicht jede angezeigte Testabweichung ist ein Modellfehler. Ein ursprünglicher Chat-/Diffnachweis der KI-Beteiligung bleibt offen.
+## 4. K1 – Nicht öffentliche Streamlit-Test-API
 
-### K3 – Überlagerte CRISP-DM-Phasenbeschriftungen auf Mobilbreite
+**Ausgangssituation und KI-Unterstützung:** Im KI-unterstützten Aufbau der Streamlit-Prüfungen sollte das Verhalten des Session State kontrolliert werden. Ein früher Test verwendete laut Ausführungsbericht eine nicht öffentliche Session-State-Eigenschaft.
 
-**Problem:** Die [visuelle Dashboardprüfung](dashboard_execution.md), Passage bei Zeilen 775–783, beschreibt überlagerte Phasenbeschriftungen bei mobiler Darstellung. Die Anwendung konnte technisch laufen, während die Visualisierung bei kleiner Breite unleserlich wurde. Ein Starttest allein hätte diesen Fehler nicht zuverlässig erfasst.
+**Problem und kritische Prüfung:** Der Zugriff band die Testimplementierung an ein internes Detail statt an eine zugesicherte Schnittstelle. In der gemeinsamen Qualitätskontrolle wurde der fehlgeschlagene Ansatz anhand der verwendeten Streamlit-Version und des nachfolgenden Testverhaltens geprüft. Die Teamverantwortung ist gemeinsam; ein vollständiger persönlicher Debugging-Verlauf liegt nicht vor.
 
-**Korrektur und Kontrolle:** Die Darstellung wurde für Mobilbreite vertikal angeordnet und auf Desktop sowie Mobil erneut geprüft. Der Bericht nennt insbesondere 390 × 1000 Pixel und Kontrollen gegen horizontalen Seitenüberlauf. Die früheren temporären Screenshots unter `work/` sind nicht als allgemeiner dauerhafter Checkoutnachweis zu behandeln.
+**Korrektur und Ergebnis:** Die Testimplementierung wurde auf die öffentliche Mapping-Schnittstelle umgestellt. Der historische Bericht dokumentiert anschließend bestandene Dashboardtests. Eine Änderung des Prognosemodells war dafür nicht erforderlich. Der Testcode und der Bericht werden in diesem Redaktionsauftrag nicht neu ausgeführt oder verändert.
 
-**Lernpunkt:** Erfolgreiche Ausführung und visuelle Nutzbarkeit sind verschiedene Qualitätsdimensionen. Responsive Layouts benötigen Prüfung bei Zielauflösungen. Die KI-Verursachung ist ohne ursprünglichen Layoutvorschlag nicht vollständig nachgewiesen; der Fehler selbst ist dokumentiert.
+**Lerneffekt:** Syntaktisch plausible Bibliotheksaufrufe müssen gegen Version und öffentliche API geprüft werden. Eine technische Testkorrektur ist keine neue fachliche Modellierungsiteration.
 
-### K4 – Zufallsstromkontrolle als methodische Absicherung
+**Repositorynachweis:** [dashboard_execution.md](dashboard_execution.md), Absatz „Ein früher Dashboard-Testlauf …“ bei Zeilen 205–206 im vorhandenen Stand; aktuelle Zugriffe über `session_state[...]` in [tests/test_dashboard.py](../tests/test_dashboard.py).
 
-**Problem:** Präferenzexponent und technische Zufallsstromstruktur änderten sich zwischen historischem V1 und V2. Ein unkontrollierter Vergleich hätte Häufigkeitsunterschiede möglicherweise fälschlich der Präferenzverstärkung zugeordnet.
+**Nachweisstatus der KI-Zuschreibung:** Fehlversuch und Korrektur sind im Repository dokumentiert. Ob der konkrete interne Zugriff durch einen KI-Vorschlag, menschliche Bearbeitung oder ihr Zusammenwirken entstand, ist nicht abschließend belegt. Originalprompt und erster fehlerhafter Testzustand fehlen als gesonderter Primärbeleg.
 
-**Prüfung:** [Kontrollskript](../src/simulation_preference_comparison.py), [Vergleichstabelle](../outputs/simulation_comparison/comparison_metrics.csv) und [Iterationsprotokoll](crisp_dm_log.md) belegen den Vergleich Exponent 1,0 gegen 1,3 bei gleichem neuen Zufallsaufbau. Die Wochenzählungen sind dabei identisch; der Top-2-Anteil steigt um etwa 6,507 Prozentpunkte. Die Unterschiede 6.665→6.465 Aktivitäten im historischen V1/V2-Vergleich sind kein isolierter Exponenteneffekt.
+## 5. K2 – Nicht vorgesehene README-Änderung
 
-**Einordnung:** Kategorie C laut Team. Der Fall illustriert eine erkannte Konfundierung und ihre methodische Kontrolle. Es ist nicht belegt, dass eine KI zuvor die falsche Kausalaussage formuliert hatte. Daher wird daraus kein künstlicher zusätzlicher KI-Fehler konstruiert.
+**Ausgangssituation und KI-Unterstützung:** Im KI-unterstützten Entwicklungsprozess wurde die README ergänzt, obwohl der betreffende Arbeitsschritt einen begrenzten Änderungsumfang und die Erhaltung des bestehenden Bestands vorsah.
 
-### K5 – Regelbasierte Empfehlungserweiterung als möglicher zweiter Zyklus
+**Problem und kritische Prüfung:** Ein AP6-Integritätstest erkannte die Abweichung. Hanna und Patricia behandeln diesen Befund als Qualitätskontrolle des vereinbarten Umfangs: Eine inhaltlich möglicherweise hilfreiche Ergänzung ist nicht automatisch im aktuellen Schritt zulässig. Die Schlussfolgerung folgt dem Integritätsvertrag, nicht einem Wunsch nach einer besseren Bewertung.
 
-**Teamangabe:** In einer ChatGPT-Diskussion wurde zunächst eine Erweiterung des regelbasierten Empfehlungssystems als zweiter Zyklus erwogen. Hanna und Patricia hinterfragten den Vorschlag, weil sie eine erneute datengetriebene Modellierung und Evaluation durchführen wollten. Der tatsächlich folgende [Regressionszyklus](cycle2/report.md) ist im Repository belegt.
+**Korrektur und Ergebnis:** Die README-Ergänzung wurde vollständig zurückgenommen; die Startanleitung blieb im vorgesehenen Dashboardbericht. Die bestehenden AP6-Tests wurden nicht umgeschrieben, um die Abweichung zu verdecken. Der heutige README-Inhalt allein wäre kein ausreichender Nachweis des früheren Rücknahmevorgangs.
 
-**Fachliche Prüfung:** Eine kontrollierte Regeländerung kann eine sinnvolle CRISP-DM-Arbeit sein. Sie weist aber nicht automatisch eine neue Schätzung eines datengetriebenen Modells nach. Für MOVA wurde deshalb die historische Nullwochenzahl als begrenzte Modellierungshypothese untersucht. Der Weg ist fachlich durch die erste Fehleranalyse motiviert; die Bewertungsanforderung erklärt den Projektumfang, ersetzt aber nicht die fachliche Begründung.
+**Lerneffekt:** Änderungsumfang, Integrität und technische Funktion müssen gemeinsam geprüft werden. Dokumentation darf bestehende Reproduzierbarkeitsverträge nicht stillschweigend verletzen.
 
-**Offen:** Originalgespräch, Datum, Wortlaut, anschließende Rückfrage und Prüfentscheidung. Ohne diese Belege bleibt K5 ein plausibler, ausdrücklich vom Team berichteter Kandidat; keine wörtliche KI-Aussage wird erfunden. Eine allgemeine Ablehnung regelbasierter Verfahren wäre aus diesem Fall nicht gerechtfertigt.
+**Repositorynachweis:** [dashboard_execution.md](dashboard_execution.md), Absatz zum „AP-6-Integritätstest“ bei Zeilen 207–208; die dort dokumentierte Startanleitung. Die spätere retrospektive Sportpassungsanalyse hat eine eigene, separat offengelegte Testausnahme und ist nicht mit diesem historischen Fall zu verwechseln.
 
-## 3. Zusätzliche Fälle im sichtbaren aktuellen Arbeitsverlauf
+**Nachweisstatus der KI-Zuschreibung:** Änderung, Testbefund und Rücknahme sind dokumentiert. Eine KI-Verursachung ist möglich, aber ohne ursprünglichen Vorschlag oder entsprechend zuordenbaren Änderungsverlauf nicht eindeutig nachgewiesen.
 
-Diese Fälle sind in diesem Chat nachvollziehbar, aber noch nicht als dauerhaftes Gesprächsartefakt im Repository archiviert. Sie werden von K1–K5 getrennt und erhalten keine frei erfundene B/C-Einstufung.
+## 6. K3 – Mobile Phasenüberlagerung
 
-**K6 – Dateiexistenz mit nutzbarer Bereitstellung verwechselt.** Die drei PNGs waren gültig, dekodierbar und in der Cloud vorhanden. Die direkte Chatdarstellung bot dem Team jedoch keinen funktionierenden Download. Die technische Prüfung beantwortete zunächst nicht die praktische Übertragungsfrage. Korrigiert wurde die Aussage durch explizite Trennung von Cloudpfad und lokalem Speicherort; später wurden die Grafiken auf den autorisierten Dokumentationsbranch übertragen. Ursache der fehlenden UI-Vorschau ist nicht gesichert. Kein beschädigtes Bild und keine bewiesene Halluzination über die Dateiexistenz.
+**Ausgangssituation und KI-Unterstützung:** Die KI-unterstützt entwickelte Dashboardansicht sollte die CRISP-DM-Phasen verständlich darstellen. Die Desktopdarstellung allein reichte nicht als Nachweis der Lesbarkeit auf kleinen Bildschirmen.
 
-**K7 – Unvollständiger Lieferumfang und verspätete Klärung.** Der Commit `7282cef20cdcc871ff78b2c9e879b98cd880f4f5` trägt auf Wunsch den Titel „docs: Add MOVA lab log draft and CRISP-DM figures“, enthält aber ausschließlich zehn Dateien unter `documentation/figures/`. Die fünf genannten Lab-Log-Dokumente waren lokal nicht auffindbar. Der Grafikstand wurde vor Eingang der Antwort auf die Rückfrage bereits gepusht. Das Team erhielt anschließend den tatsächlichen Umfang offengelegt. Der Titel kann Vollständigkeit suggerieren; Commitinhalt und Übergabestatus müssen deshalb ausdrücklich geprüft werden. Der Vorgang beweist nicht, wann oder weshalb die früheren fünf Dateien verloren gingen.
+**Problem und kritische Prüfung:** Bei der visuellen Mobilprüfung wurden überlagerte Beschriftungen der sechs Phasen erkannt. Die gemeinsame Qualitätskontrolle bezog deshalb neben dem erfolgreichen Programmstart die tatsächliche Lesbarkeit und den horizontalen Seitenüberlauf ein. Die konkrete Reihenfolge persönlicher Bedienhandlungen ist nicht einzeln protokolliert.
 
-**K8 – Veralteter trainingsfreier Runner nach Suite-Erweiterung.** Ein statischer Abgleich zeigt, dass [run_without_training.py](../tests/run_without_training.py) ältere Trainingstests überspringt, den neuen Fit-Test in [test_cycle2.py](../tests/test_cycle2.py) aber nicht. Eine ungeprüfte Übernahme der alten Gesamtprüfanleitung könnte daher scheitern. Die Fit-Sperre verhindert unerlaubtes Training, macht die neue Suite jedoch nicht automatisch erfolgreich. Der aktuelle Entwurf weist darauf hin; es wurde kein neuer Fehlerlauf ausgeführt und kein Code verändert. Eine ursächliche KI-Zuschreibung wird nicht behauptet.
+**Korrektur und Ergebnis:** Eine vertikale Phasendarstellung ersetzte die problematische Anordnung. Laut Bericht wurde anschließend auf Desktop und Mobil erneut geprüft, unter anderem bei 390 × 1000 Pixeln. Die aktuelle Funktion `crisp` verwendet eine vertikale Anordnung. Eine neue Browserprüfung wird hier nicht behauptet.
 
-## 4. Konsequenz für Lab-Log und Vortrag
+**Lerneffekt:** Erfolgreiche Ausführung und visuelle Nutzbarkeit sind verschiedene Qualitätsdimensionen. Automatisierte Funktionsprüfungen müssen für responsive Darstellungen durch Sichtkontrollen bei relevanten Bildschirmgrößen ergänzt werden.
 
-Für die schriftliche Darstellung sind K1–K3 als belegte technische Fehlversuche mit dokumentierter Kontrolle verwendbar, jeweils mit begrenzter KI-Zuschreibung. K4 ist eine methodische Qualitätskontrolle. K5 benötigt den ursprünglichen Chat, K6/K7 einen archivierten Ausschnitt des aktuellen Verlaufs. K8 ist eine aktuelle statische Wartungsfeststellung. Eine ausreichende Zahl vermeintlicher Irrwege wird nicht durch Umdeklarieren methodischer Kontrollen erreicht.
+**Repositorynachweis:** [dashboard_execution.md](dashboard_execution.md), Mobilprüfung bei Zeilen 775–783; aktuelle Funktion `crisp` in [dashboard/analytics_view.py](../dashboard/analytics_view.py). Historische temporäre Screenshots werden nicht als garantiert verfügbarer Repositorybeleg ausgegeben.
 
-Beide Teammitglieder sollten an einem konkreten Fall erklären können, woran der Fehler erkennbar war, welche Alternative gewählt wurde, wie die Korrektur überprüft wurde und welche Grenze des Nachweises bleibt. Das entspricht eigenem methodischem Verständnis; es wird hier als Lernziel formuliert, nicht als bereits bestandene Live-Leistung. Vor der Abgabe sind geeignete Gesprächsausschnitte ohne persönliche oder vertrauliche Nebeninhalte zu sichern.
+**Nachweisstatus der KI-Zuschreibung:** Darstellungsfehler und Korrektur sind dokumentiert. Der konkrete KI-Ursprung der ursprünglichen Anordnung ist nicht eindeutig nachgewiesen; aus der allgemeinen KI-Unterstützung folgt keine gesicherte Einzelursache.
+
+## 7. Abgleich mit LN B und verbleibende Nachweisgrenzen
+
+Die Originalunterlagen erlauben KI uneingeschränkt, verlangen im Lab-Log aber eine Reflexion von KI-Irrwegen und ihrer Prüfung. Kriterium 5 nennt außerdem begründete Entscheidungen und sichtbare Beiträge beider Teammitglieder; Kriterium 6 fordert die ehrliche Darstellung von Irrwegen. Die Kalibrierung unterscheidet fehlerfreie Reproduktion von eigenem tiefem Verständnis in der Live-Situation. Diese Kriterien werden zur Prüfung der Darstellung verwendet, nicht als nachträgliche Motivation der damaligen fachlichen Entscheidungen.
+
+Die vier Fälle enthalten Ausgangssituation, Problem, gemeinsame Gegenprüfung, Korrektur, Ergebnis und Lernpunkt. Ihre technische Beleglage ist konkretisiert. **Vollständig abgesicherte KI-Zuschreibungen liegen dennoch nicht für alle Fälle vor:** Beim methodischen Vorschlag fehlt der archivierte Originalchat trotz ausdrücklicher Teamzuschreibung; bei den drei technischen Problemen ist die konkrete KI-Verursachung offen. Deshalb bleibt der entsprechende Teil des Qualitätschecks teilweise erfüllt. Es gibt keine Mindestanzahl erfundener Irrwege und keine automatische Notenverbesserung durch die Anzahl der Fälle.
+
+Vor Abgabe können vorhandene Originalgespräche bzw. erste Diffs datensparsam ergänzt werden. Beide Autorinnen sollten unabhängig voneinander erklären können, warum der jeweilige Vorschlag oder Ansatz problematisch war und welche Kontrolle die Korrektur trägt. Ein schriftlicher Fallbericht wird nicht mit bereits nachgewiesener Live-Kompetenz gleichgesetzt. Die Identität der zwei Original-PDFs und der vollständige Kriterienabgleich sind im [Qualitätscheck](final_lab_log_quality_check.md) dokumentiert.

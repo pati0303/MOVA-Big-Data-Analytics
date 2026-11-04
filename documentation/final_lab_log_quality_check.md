@@ -40,7 +40,7 @@ Die Überprüfung trennt fachliche Begründung und Bewertungsabgleich. Nullwoche
 | R13 | Entscheidungen und Begründungen | Fenster, Gewichtung, Split, Modellwahl, Baseline, UND-Regel mit Problem/Alternative/Kontrolle/Folge | ERFÜLLT | Keine hypothetischen Alternativen als getestet ausgeben |
 | R14 | Verworfene Wege | Größere k gegen k=2; Zusatzmerkmal verworfen; abgelehnte Zukunfts-/Zufallssplitregeln als methodische Ausschlüsse | ERFÜLLT | Empfehlungszyklus als Entstehungsgeschichte noch primär belegen |
 | R15 | Beiträge beider Teammitglieder | §1.2: gemeinsame Arbeit, keine klassische Trennung; Videoorganisation separat | TEILWEISE ERFÜLLT | Team bestätigt konkrete gemeinsame Entscheidungs-/Prüfbeispiele; keine erfundenen Einzelrollen |
-| R16 | KI-Irrwege und deren Prüfung im Lab-Log | §14 und Audit K1–K8; technische Ereignisse von KI-Zuschreibung getrennt | TEILWEISE ERFÜLLT | Ursprüngliche KI-Vorschläge und Reaktionen archivieren; K5-Originalchat fehlt |
+| R16 | KI-Irrwege und deren Prüfung im Lab-Log | §14 und genau vier Auditfälle K5 sowie K1–K3; Teamzuschreibung von technischen Ereignissen getrennt | TEILWEISE ERFÜLLT | Ursprüngliche KI-Vorschläge und Reaktionen archivieren; Originalchat des ChatGPT-Vorschlags (K5) fehlt |
 | R17 | Vortrag 15 Minuten | Historische Video-/Demoanleitung vorhanden; keine finale Live-Probe belegt | OFFEN | Live-Vortrag planen und stoppen; Video ist ohne ausdrückliche Freigabe kein Ersatz |
 | R18 | Höchstens zwölf Inhaltsfolien | Kein finaler Foliensatz vorliegend | OFFEN | Inhaltsfolien zählen und finalen Satz bereitstellen |
 | R19 | Unterhaltsam, aussagekräftig; Frage→Irrwege→Erkenntnis | Entwurf hat Erzählbogen; Grafiken vorhanden | TEILWEISE ERFÜLLT | Folien, Dramaturgie, Publikumsaktivierung und freie Erzählung praktisch proben |
@@ -123,7 +123,7 @@ Die Überprüfung trennt fachliche Begründung und Bewertungsabgleich. Nullwoche
 | Entscheidungen mit Begründung | Nachweismatrix E08–E34 | ERFÜLLT | Originalschwelle für Geschäftsnutzen bleibt offen |
 | Reproduzierbarkeit: Code/Workflow und Daten | Anhang A mit Versionen, Seeds, Reihenfolge, Pfaden, Splits und Artefakten | TEILWEISE ERFÜLLT | Frischer unabhängiger Checkout/Abgabepaket nicht heute getestet; privater Zugriff und Trainingsschutz beachten |
 | Beiträge beider sichtbar | §1.2, konkrete gemeinsame Arbeitsweise | TEILWEISE ERFÜLLT | Teambeispiele bestätigen, keine künstlichen Zuständigkeiten erzeugen |
-| KI-Irrwege und Prüfung dokumentiert | Audit K1–K8, fachliche Kontrolle vorhanden | TEILWEISE ERFÜLLT | Originalprompts/Chats für KI-Zuschreibung fehlen teilweise |
+| KI-Irrwege und Prüfung dokumentiert | Audit K5 und K1–K3, je Fall fachliche/technische Gegenprüfung dokumentiert | TEILWEISE ERFÜLLT | Originalprompts/Chats für KI-Zuschreibung fehlen teilweise |
 | PDF/Web-App tatsächlich fertig und abgegeben | Nur Markdown-Zwischenstand | OFFEN | Finales Format und Abgabe; siehe K.-o.-Prüfung |
 
 **Gesamtstand B5: TEILWEISE ERFÜLLT.** Die aktuelle lokale Markdownfassung ist keine abgeschlossene Abgabe.
@@ -269,3 +269,22 @@ Tatsächlich ausgeführt: zwölf neue Tests, zweimalige Skriptausführung mit by
 
 
 **Prüfabschluss der Fortschreibung:** 54 Empfehlungstests entdeckt, 53 bestanden und ein pauschaler Alt-Integritätstest gezielt übersprungen, weil die drei beauftragten Dokumentänderungen dessen HEAD-Gleichheitsannahme verletzen. Der erste unbeschränkte Lauf hatte genau diesen Fehlschlag; kein Testcode wurde angepasst. Stattdessen bestätigt der SHA-256-Abgleich von 240 Ausgangsdateien die Unverändertheit außerhalb genau dieser drei Dokumente. Alle zwölf neuen und 41 übrigen bestehenden Empfehlungstests bestanden mit aktiven Fit-Sperren. 145 relative Verweise und sämtliche verwendeten E-IDs geprüft; keine fehlenden Ziele. Einzelheiten einschließlich Reproduktionsbefehlen und Grenzen stehen im Auswertungsbericht. Keine Modellläufe und keine Änderung der Engine oder ursprünglicher Daten/Ergebnisse.
+
+
+## 11. Redaktioneller Abgleich: vier Fälle zu KI-Einsatz und Qualitätskontrolle
+
+Die Darstellung in Entwurf §14 und im KI-Audit wurde auf genau vier vom Team bestätigte Fälle konzentriert. Die bisherigen Fallkennungen bleiben zur Verweisstabilität erhalten: K5 methodischer Vorschlag, K1 Streamlit-Test-API, K2 README-Änderung, K3 mobile Phasenüberlagerung. Andere zuvor diskutierte organisatorische oder technische Vorkommnisse werden in diesem KI-Abschnitt nicht als zusätzliche Irrwege geführt. Methodische Kontrollen der Datengenerierung verbleiben in ihrem fachlichen Kontext.
+
+| Anforderung aus den Originalunterlagen | Konkreter Nachweis / aktuelle Darstellung | Status und verbleibende Grenze |
+| --- | --- | --- |
+| R, LN B: KI-Irrwege und deren Prüfung | Alle vier Fälle mit Ausgangssituation, Unterstützung, Problem, gemeinsamer Gegenprüfung, Korrektur, Ergebnis und Lernpunkt | ERFÜLLT für die inhaltliche Fallstruktur; Zuschreibung noch teilweise offen |
+| B5: Entscheidungen mit Begründung | Methodischer Vorschlag anhand Forschungsfrage geprüft; API-Vertrag, Integrität und Lesbarkeit tragen technische Entscheidungen | ERFÜLLT schriftlich; keine nachträgliche Begründung durch Bewertungswünsche |
+| B5: Beiträge beider sichtbar | Hanna und Patricia als gemeinsam verantwortliches Team; keine erfundene individuelle Debugging-Aufteilung | TEILWEISE ERFÜLLT: Teamangabe, keine unabhängige personenbezogene Ablaufdokumentation |
+| B5: KI-Irrwege und Prüfung dokumentiert | [Audit](ai_missteps_audit.md), [Entwurf](final_lab_log_draft.md), Nachweise E23, E35 und E44–E46 | TEILWEISE ERFÜLLT: konkrete technische Befunde belegt; Originalchat/Initialdiffs für lückenlose KI-Zuschreibung fehlen |
+| B6: Irrwege ehrlich zeigen, Zahlen/Aussagen richtig einordnen | Konkreter ChatGPT-Vorschlag laut Team klar von Problemen mit ungesicherter KI-Ursache getrennt | ERFÜLLT schriftlich hinsichtlich transparenter Evidenzgrenzen; keine pauschale Halluzinationsbehauptung |
+| Gemeinsame Regeln: KI erlaubt, allgemeiner Nutzungsnachweis nicht nötig | Kein künstlicher vollständiger Promptkatalog verlangt; vorhandene Herkunftsbelege als Absicherung konkreter Zuschreibungen benannt | ERFÜLLT; freiwillige Primärbelege nicht als zusätzliche formale Professorenpflicht ausgegeben |
+| B7 und Fragenmaßstab: Erzählbogen/eigenes Verständnis | Konkrete Lernpunkte und fachliche Gegenfragen für beide Autorinnen vorhanden | TEILWEISE ERFÜLLT als Vorbereitung; Vortrag und selbstständige Live-Erklärung weiterhin OFFEN |
+
+**Abgleich mit den Original-PDFs:** R („Rahmen und Ablauf“, nur LN B und dafür geltende gemeinsame Regeln), S. 1: gemeinsame Regeln und LN-B-Absatz zum Lab-Log. B („Bewertungsbogen LN B“), S. 1: Kriterien 5–7 und Kalibrierungsfußnote. Die PDFs verlangen keine bestimmte Anzahl behaupteter KI-Fehler und keine gesicherte KI-Ursache für jedes technische Problem. Sie rechtfertigen deshalb weder erfundene Irrwege noch eine nachträgliche Umdeutung methodischer Kontrollen. Die fallbezogene Zuschreibungsgrenze bleibt Teil der wissenschaftlichen Reflexion.
+
+**Beleggrenzen:** Beim ChatGPT-Vorschlag ist die Urheberschaft ausdrücklich vom Team benannt, aber der ursprüngliche Gesprächsausschnitt fehlt als unabhängig prüfbarer Beleg. Die Streamlit-API-Korrektur, README-Rücknahme und mobile Layoutkorrektur sind im Dashboard-Ausführungsbericht dokumentiert; ihre konkrete KI-Verursachung ist nicht abschließend geklärt. Gemeinsame Verantwortung folgt der Teamangabe, nicht einem aus Commits abgeleiteten persönlichen Tätigkeitsnachweis. Keine neue technische oder mündliche Abnahme wurde ausgeführt.
