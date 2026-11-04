@@ -9,7 +9,7 @@ Stand 04.11.2026. Diese Liste ist eine neue Zusammenstellung. Sie trennt fehlend
 | O01 | Lab-Log liegt nur als Markdown vor | LN B verlangt PDF oder Web-App; Nichtabgabe ist K.-o. | PDF setzen oder vollständige Lab-Log-Web-App bereitstellen; finale Fassung tatsächlich einreichen |
 | O02 | Moodle-Frist und Prüfungstermin fehlen | Alle Unterlagen müssen vor Termin abgegeben werden | Konkrete Frist/Termin aus verbindlicher Mitteilung übernehmen und Einreichung bestätigen |
 | O03 | Erreichbarkeit des privaten Repositorys / Abgabepakets | Code/Daten müssen dem Prüfer vorliegen; Reproduzierbarkeit ist K.-o.-relevant | Berechtigten Zugang oder vollständiges Code-/Datenpaket prüfen, Referenzcommit nennen |
-| O04 | Endgültige Daten-/Datenschutzkontrolle des Pakets | Keine personenbezogenen Daten ohne Freigabe; Quellenangabe Pflicht | Nur freigegebene/synthetische aktive Daten übergeben; private Referenzexporte und Credentials ausschließen |
+| O04 | Endgültige Daten-/Datenschutzkontrolle des Pakets | Beide bestätigen rein strukturelle Nutzung des Garmin-Exports (94 × 44), keine Werte-/Verteilungsübernahme oder echten Garmin-Trainingsdaten | Nutzung im Entwurf §3.1 und E47 geklärt; abschließenden Paketcheck dennoch durchführen, private Referenzexporte und Credentials ausschließen |
 | O05 | Vortragsdauer unbekannt | K.-o. unter 10/über 20 Minuten; sehr gut 15 Minuten ±30 Sekunden | Gestoppte Live-Probe mit beiden Autorinnen; Video nur nach ausdrücklicher Erlaubnis als Prüfungsersatz |
 | O06 | Vorabanmeldung von Frage und Datensatz nicht belegt | R/B verlangen Anmeldung | Vorhandene Mail/Moodle-Bestätigung und Datum nachreichen; keine Anmeldung rückdatieren |
 
@@ -17,7 +17,7 @@ Stand 04.11.2026. Diese Liste ist eine neue Zusammenstellung. Sie trennt fehlend
 
 | ID | Punkt | Vorhandene Substanz | Noch erforderlich |
 | --- | --- | --- | --- |
-| O07 | Fachliches Erfolgskriterium neben MAE | Nutzenhypothese, Modellregel und Grenzen | Offen erklären, dass keine vorab validierte geschäftliche Nutzenschwelle vorliegt. Künftiges Kriterium fachlich mit Anspruchsgruppen definieren, nicht nachträglich als historisch ausgeben |
+| O07 | Ursprüngliche fachliche Nutzenschwelle und reale Geschäftswirkung | Retrospektive Sechs-Bereiche-Tabelle in §15.1, überprüfte technische Sportpassung und vor Zyklus 2 übernommene Heuristik vorhanden | Anfangs fehlende quantitative Akzeptanzschwellen sind nun persönlich bestätigt und ehrlich dokumentiert, keine noch wiederherzustellende Festlegung. Reale Relevanz-/Wirtschaftsmessung und prospektive fachliche Schwelle bleiben für künftige Untersuchungen offen |
 | O08 | Reale Übertragbarkeit / unabhängiger Test | Synthetischer Test und interne Validierung | Als Grenze belassen; neue empirische Untersuchung wäre eigener Auftrag, kein Teil dieser Rekonstruktion |
 | O09 | Unsicherheit / Abhängigkeit | Nutzer-/Wochenabhängigkeit und kleine Gruppen erläutert | Keine Signifikanz oder Intervalle erfinden; eventuelle zukünftige Unsicherheitsanalyse separat planen |
 | O10 | Geschäftswirkung der Empfehlungen | 64 veränderte Listen und 344 A-Slots belegt | Keine Relevanz-/Conversion-/Umsatzverbesserung behaupten; tatsächliche Labels/Nutzungsdaten fehlen |
@@ -30,12 +30,12 @@ Stand 04.11.2026. Diese Liste ist eine neue Zusammenstellung. Sie trennt fehlend
 | --- | --- | --- |
 | O13 | Vollständige Namen und Matrikelnummern | Teamdaten für Deckblatt; Vornamen Hanna und Patricia sind bekannt |
 | O14 | Tatsächlicher persönlicher Arbeitszeitraum und Aufwand | Nur wenn zuverlässig vorhanden; Richtwert 30 h/Person ist kein ausgefülltes Zeitprotokoll |
-| O15 | Konkrete gemeinsame Beiträge | Team bestätigt z. B. gemeinsame Entscheidung zur Zufallsstromkontrolle und zur Foldregel; keine künstliche Einzelaufteilung |
+| O15 | Konkrete gemeinsame Beiträge | Gemeinsame Übernahme der von Codex vorgeschlagenen UND-Regel vor Vergleich sowie rein strukturelle Garmin-Nutzung sind jetzt ausdrücklich von Hanna und Patricia bestätigt (E47/E49). Weitere vorhandene gemeinsame Prüfbeispiele ggf. ergänzen, keine künstliche Einzelaufteilung |
 | O16 | Videoorganisation | Falls im Log konkret beschrieben: tatsächliche organisatorische Teilaufgaben nennen; nicht aus der fachlichen Arbeitsteilung ableiten |
 | O17 | Original-KI-Belege K1–K3 | Promptausschnitt oder dokumentierter Vorschlag/Initialdiff, Reaktion und Kontrolle; technischer Fehler bereits belegt, KI-Ursache nur teilweise |
 | O18 | Originalgespräch Empfehlungszyklus K5 | Vorschlag, fachliche Rückfrage und Entscheidung zum Regressionszyklus archivieren |
-| O19 | Aktuelle Chatfälle K6/K7 | Für formale Verwendung geeignete, datensparsame Gesprächsauszüge sichern; Dokumentverlustursache nicht behaupten |
-| O20 | Bedeutung der alten Kategorien B/C | Ursprüngliche Auditdefinition falls vorhanden; derzeit nur Teamzuordnung übernommen, kein offizielles Schema erfunden |
+| O19 | Dauerhafte Quellenablage der persönlichen Bestätigungen | Geeignete datensparsame Gesprächsauszüge zu E47–E49 ggf. archivieren; diese Quellenfrage nicht als zusätzlichen KI-Irrweg darstellen |
+| O20 | Historische Auditkategorien B/C | Für die aktuelle Vier-Fälle-Darstellung nicht erforderlich; kein offener inhaltlicher Bewertungsbedarf und keine Professorenvorgabe daraus ableiten |
 
 ## 4. Vortrag und Live-Kompetenz
 
@@ -54,3 +54,12 @@ Es fehlen ein finaler Foliensatz mit höchstens zwölf Inhaltsfolien, eine konkr
 ## 6. Was ausdrücklich keine offene Nachmodellierung ist
 
 Die Entscheidung gegen das Zusatzmerkmal bleibt unverändert. Es werden keine neuen Modellvarianten gesucht, keine Testfälle neu zur Auswahl verwendet und keine Ergebnisse nachgebessert. Ein wissenschaftlich korrektes negatives Ergebnis muss nicht in eine Verbesserung umgeschrieben werden. Offene Punkte beziehen sich auf Nachweise, Übergabe und Prüfungsvorbereitung; neue Forschung benötigt eine neue begründete Hypothese und gesonderte Freigabe.
+
+
+## 7. Durch persönliche Bestätigung geklärt – keine fortbestehenden Sachlücken
+
+Hanna und Patricia bestätigen den ursprünglichen Garmin-Export mit 94 Zeilen/44 Spalten und dessen ausschließlich strukturelle Nutzung. Keine Exportwerte, Verteilungen oder personenbezogenen Aktivitätsdaten wurden zur synthetischen Erzeugung übernommen; keine empirische Kalibrierung oder echten Garmin-Trainingsdaten. Das begründet keine Repräsentativität und keine produktive Garmin-Anbindung. Der private Export muss dafür nicht in das öffentliche/prüfbare Modellpaket übernommen werden. Eine neue externe Prüfung seines Inhalts wurde nicht durchgeführt.
+
+Beide bestätigen außerdem: Zu Projektbeginn waren die später ausdrücklich bewerteten konkreten Erfolgskriterien noch nicht bekannt; zunächst standen Geschäftsidee, Methodenverständnis und Demonstrator im Vordergrund. Die nun vorhandene übergreifende Tabelle ist retrospektiv. Das frühere Fehlen quantitativer Akzeptanzschwellen wird nicht durch eine erfundene Vorabfestlegung „geschlossen“.
+
+Davon getrennt ist die spätere Zyklus-2-Regel: Codex schlug sie vor; beide übernahmen sie gemeinsam vor dem Vergleich. Gepoolter MAE-Gewinn UND mindestens zwei Foldgewinne bilden eine fachlich motivierte Projektheuristik, keinen Signifikanztest. Diese Herkunft und Übernahme sind jetzt persönlich bestätigt. Dauerhafte Archivierung der Chatbestätigungen, ursprünglicher ChatGPT-Vorschlag zum Empfehlungszyklus, finale Abgabe und Live-Prüfung bleiben eigenständige Nachweisthemen.

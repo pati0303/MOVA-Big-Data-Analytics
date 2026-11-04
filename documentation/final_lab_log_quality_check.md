@@ -29,7 +29,7 @@ Die Überprüfung trennt fachliche Begründung und Bewertungsabgleich. Nullwoche
 | R02 | Selbst gewählte Fragestellung | Entwurf §1.1–2: Aktivitätsanalyse, Prognose und Angebote | ERFÜLLT | Keine künstliche Ergebnisfrage nachschieben |
 | R03 | Selbst gewählter Datensatz; öffentlich oder freigegeben | Entwurf §3.1 und Anhang A.1: synthetische V2, Generator, Manifeste | TEILWEISE ERFÜLLT | Dozentenzustimmung zur synthetischen Datengrundlage dokumentieren; eigene Generierung ersetzt keine externe Quellenangabe |
 | R04 | Richtwert 500–50.000 Zeilen | 6.465 aktive Aktivitätszeilen; weitere Modelltabellen transparent anders aggregiert | ERFÜLLT | Richtwert ist keine Forderung, jede Tabelle müsse mindestens 500 Zeilen haben |
-| R05 | Keine personenbezogenen Daten ohne Freigabe | Aktive Modell-/Angebotsdaten synthetisch; Garmin nur Strukturreferenz laut Konzept | TEILWEISE ERFÜLLT | Finales Abgabepaket auf nicht versehentlich enthaltene persönliche Referenzdaten prüfen; ggf. Freigabe klären |
+| R05 | Keine personenbezogenen Daten ohne Freigabe | Aktive Daten synthetisch; Hanna und Patricia bestätigen Garmin-Export 94 × 44 ausschließlich als Feldstrukturreferenz, keine Werte-/Verteilungsübernahme, Kalibrierung oder echten Garmin-Trainingsdaten (E47) | TEILWEISE ERFÜLLT für Endabgabe; Nutzung persönlich geklärt | Finales Paket auf versehentlich enthaltene private Referenzdaten prüfen; keine neue Prüfung des Exportinhalts behaupten |
 | R06 | Problemstellung und Datensatz vorab beim Dozenten angemeldet | Keine Anmeldung im geprüften Bestand | OFFEN | Vorhandene Bestätigung/Datum nachreichen; nicht rückwirkend behaupten |
 | R07 | Iterativ-inkrementell nach CRISP-DM | Entwurf §§2–13; Datenrücksprung und zweite Hypothese | ERFÜLLT | Live nachvollziehbar erklären |
 | R08 | Mindestens zwei vollständige Zyklen | Zyklus 1 §§2–7, Zyklus 2 §§9–13; beide mit Modellierung/Evaluation | ERFÜLLT | Nicht nur sechs Fits oder Generatorvarianten als Zyklen zählen |
@@ -66,13 +66,13 @@ Die Überprüfung trennt fachliche Begründung und Bewertungsabgleich. Nullwoche
 | Unterkriterium | Beleg im Entwurf / Repository | Status | Lücke gegenüber vollständiger 1,0-Beschreibung |
 | --- | --- | --- | --- |
 | Klare Fragestellung und Entscheidungsbezug | §§1–2, 9, 15; E01/E24/E25 | ERFÜLLT | Fachlich begrenzte Entscheidung erläutern: Modell übernehmen oder verwerfen |
-| Fachliches Erfolgskriterium: Nutzen und Schwelle | Geschäftsvision und Nutzenhypothese vorhanden | TEILWEISE ERFÜLLT | Keine validierte vorab festgelegte Nutzer-/Geschäftsnutzenschwelle. Für sehr gute Bewertung offen benennen und künftigen fachlichen Prüfplan begründen; keine Rückdatierung |
-| Analytisches Erfolgskriterium | Persistenzvergleich; Zyklus 2 geringerer gepoolter MAE UND ≥2 Foldgewinne | ERFÜLLT | Keine nachträgliche RMSE-Optimierung |
+| Fachliches Erfolgskriterium: Nutzen und Schwelle | Geschäftsvision, retrospektive Kriterienübersicht (§15.1) und technische Sportpassung vorhanden; anfänglich keine quantitativen Akzeptanzschwellen laut persönlicher Bestätigung (E48) | TEILWEISE ERFÜLLT | Messbare technische Bewertung vorhanden; keine ursprüngliche geschäftliche Nutzenschwelle oder echte Wirkungsvalidierung. Transparente Reflexion statt Rückdatierung |
+| Analytisches Erfolgskriterium | Maße im Projektverlauf eingesetzt; Codex-Vorschlag zur Zyklus-2-UND-Regel gemeinsam vor Vergleich übernommen (E24/E49) | ERFÜLLT für vorab geregelten Zyklus-2-Vergleich | Nicht als ursprüngliche umfassende Kriterienplanung ausgeben; keine nachträgliche RMSE-Optimierung und kein Signifikanztest |
 | Rahmen | Synthetische Daten, bekannte Nutzer, Zeit-/Datenschutzgrenzen | ERFÜLLT | Persönliche organisatorische Angaben aus R06/R26 offen |
 | Risiken benannt | §§3, 6, 12, 15: Messausfall, Synthetik, Testkenntnis, Abhängigkeit | ERFÜLLT | Risiken live auf Managemententscheidung übertragen |
 | Fragestellung im Verlauf geschärft | Nullzielanalyse→historische Nullzählung | ERFÜLLT | Geschäftsfrage nicht mit rein analytischer Verbesserung gleichsetzen |
 
-**Gesamtstand B1: TEILWEISE ERFÜLLT.** Die analytische Entscheidung ist präzise; ein fachlich operationalisiertes Nutzenkriterium ist nicht vollständig belegt. Eine mögliche 1,0 wird nicht aus der MAE-Regel allein abgeleitet.
+**Gesamtstand B1: TEILWEISE ERFÜLLT.** Analytische Maße, vorab übernommene Zyklus-2-Heuristik und eine retrospektiv operationalisierte technische Nutzenmetrik sind belegt. Eine anfängliche quantitative Akzeptanzplanung und empirisch validierte Geschäftsnutzenschwelle fehlen. Die persönliche Bestätigung macht die zeitliche Einordnung klarer, ersetzt aber keine externe Wirkungsprüfung. Eine mögliche 1,0 wird weder aus der MAE-Regel noch aus der nachträglichen Tabelle allein abgeleitet.
 
 ### 4.2 Data Understanding und Preparation – 12 % (B2)
 
@@ -207,7 +207,7 @@ Die Schwellen sind von normalen Stufenabzügen zu unterscheiden. Ein K.-o. begre
 | KO1 | Kein Lab-Log abgegeben | Lokaler Markdownentwurf vorhanden; keine finale PDF/Web-App oder Einreichung nachgewiesen | OFFEN bis tatsächliche rechtzeitige Abgabe; vorhandene Datei allein genügt nicht |
 | KO2 | CRISP-DM-Phasen nicht erkennbar oder nur ein einziger Durchlauf | Zwei vollständige Zyklen schriftlich und durch Modellevaluation belegt | ERFÜLLT hinsichtlich Vermeidung des K.-o.; deutlich in Endfassung beibehalten |
 | KO3 | Vortragsdauer unter 10 oder über 20 Minuten | Kein gestoppter Live-Lauf | OFFEN; dies ist die K.-o.-Schwelle, nicht das Zielintervall für gute/sehr gute Note |
-| KO4 | Personenbezogene Daten ohne Freigabe **oder** Datensatz ohne Quellenangabe | Aktive Daten synthetisch und Generator/Version belegt; finales Abgabepaket noch ungeprüft | TEILWEISE ERFÜLLT hinsichtlich Vermeidung; persönliche Referenzexporte ausschließen und Quellen/Generator mit abgeben |
+| KO4 | Personenbezogene Daten ohne Freigabe **oder** Datensatz ohne Quellenangabe | Aktive Daten synthetisch und Generator/Version belegt; rein strukturelle Garmin-Nutzung persönlich bestätigt (E47); finales Abgabepaket noch ungeprüft | TEILWEISE ERFÜLLT hinsichtlich Vermeidung; persönliche Referenzexporte ausschließen und Quellen/Generator mit abgeben |
 | KO5 | Code/Workflow nicht abgegeben – Ergebnis nicht reproduzierbar | Vollständige Dateien und historische Reproduktion vorhanden; Übergabe/Zugriff noch nicht bestätigt | TEILWEISE ERFÜLLT hinsichtlich Vermeidung; Code/Daten/Version erreichbar abgeben und fremden Zugriff prüfen |
 
 Aus diesem Zwischenstand lässt sich weder ein bestehender K.-o.-Verstoß noch die endgültige Vermeidung aller K.-o.-Risiken behaupten. Vor allem Abgabe und Vortragszeit sind zukünftige Ereignisse.
@@ -254,7 +254,7 @@ Die Qualität der gerenderten PDF-Seiten bleibt bis zum tatsächlichen Export of
 
 ## 10. Fortschreibung: retrospektives technisches Nutzenkriterium
 
-Diese Fortschreibung folgt zeitlich auf die ursprüngliche Lab-Log-Rekonstruktion. Sie verändert keine historischen Anforderungen oder früheren Resultate. Der oben dokumentierte Erstprüfstand bleibt als solcher lesbar; inzwischen sind die fünf Rekonstruktionsdokumente im Referenzcommit `d73166871bf42ffa457415661d298268bf25d553` gesichert. Die jetzige Ergänzung ist erneut nur lokal, ohne Commit/Push.
+Diese Fortschreibung folgt zeitlich auf die ursprüngliche Lab-Log-Rekonstruktion. Sie verändert keine historischen Anforderungen oder früheren Resultate. Der oben dokumentierte Erstprüfstand bleibt als solcher lesbar; inzwischen sind die fünf Rekonstruktionsdokumente im Referenzcommit `d73166871bf42ffa457415661d298268bf25d553` gesichert. Zum Zeitpunkt dieser früheren Fortschreibung war die Ergänzung nur lokal; sie wurde später mit `d0c758fb0345dae76cbafc9e666af9555a73a140` gesichert. Der jeweils aktuelle uncommittete Redaktionsstand ist davon zu unterscheiden.
 
 | Kriterium / Aspekt | Neuer konkreter Nachweis | Aktualisierter Status |
 | --- | --- | --- |
@@ -288,3 +288,24 @@ Die Darstellung in Entwurf §14 und im KI-Audit wurde auf genau vier vom Team be
 **Abgleich mit den Original-PDFs:** R („Rahmen und Ablauf“, nur LN B und dafür geltende gemeinsame Regeln), S. 1: gemeinsame Regeln und LN-B-Absatz zum Lab-Log. B („Bewertungsbogen LN B“), S. 1: Kriterien 5–7 und Kalibrierungsfußnote. Die PDFs verlangen keine bestimmte Anzahl behaupteter KI-Fehler und keine gesicherte KI-Ursache für jedes technische Problem. Sie rechtfertigen deshalb weder erfundene Irrwege noch eine nachträgliche Umdeutung methodischer Kontrollen. Die fallbezogene Zuschreibungsgrenze bleibt Teil der wissenschaftlichen Reflexion.
 
 **Beleggrenzen:** Beim ChatGPT-Vorschlag ist die Urheberschaft ausdrücklich vom Team benannt, aber der ursprüngliche Gesprächsausschnitt fehlt als unabhängig prüfbarer Beleg. Die Streamlit-API-Korrektur, README-Rücknahme und mobile Layoutkorrektur sind im Dashboard-Ausführungsbericht dokumentiert; ihre konkrete KI-Verursachung ist nicht abschließend geklärt. Gemeinsame Verantwortung folgt der Teamangabe, nicht einem aus Commits abgeleiteten persönlichen Tätigkeitsnachweis. Keine neue technische oder mündliche Abnahme wurde ausgeführt.
+
+
+## 12. Fortschreibung: Datenherkunft, retrospektive Kriterienübersicht und Regelherkunft
+
+Aktuelle Redaktionsgrundlage: Branch `feature/final-lab-log`, vorhandener Commit `5cd8f653b58e2655f3946ae19cafbd6920a426b2`; diese vier Dokumentergänzungen sind zunächst uncommittet. Originalgrundlage weiterhin ausschließlich LN B und dafür geltende gemeinsame Regeln aus R sowie der vollständige Bewertungsbogen B, jeweils S. 1.
+
+| Prüfaspekt / Originalbezug | Konkrete neue Darstellung | Status / Nachweisgrenze |
+| --- | --- | --- |
+| Datenherkunft und Datenqualität (R, B2, KO4) | §3.1/E47: Garmin-Export 94 × 44 nur für Feldverständnis; keine konkreten Werte, Verteilungen oder personenbezogenen Aktivitätsdaten übernommen; synthetische Erzeugung ohne empirische Kalibrierung daran | ERFÜLLT als ausdrücklich persönliche Bestätigung beider Teammitglieder und konsistente Herkunftsdarstellung; kein unabhängiges Audit der privaten Datei |
+| Wissenschaftliche Aussagekraft (B2/B6) | Keine echten Garmin-Trainingsdaten, keine Repräsentativität aus Export, keine produktive Anbindung | ERFÜLLT als klare Abgrenzung; reale Validität/Wirkung weiterhin nicht belegt |
+| Erfolgskriterien fachlich und analytisch (B1/B3) | §15.1/E48 enthält sechs überprüfbare Bereiche mit vorhandenen Dateien: Raster, Segmentierung, Test-MAE, Sportpassung, Reproduzierbarkeit und wirtschaftliche Wirkungsgrenze | ERFÜLLT für retrospektive Übersicht; B1 insgesamt weiterhin TEILWEISE ERFÜLLT, weil keine anfänglichen quantitativen Schwellen/empirischen Geschäftsnutzenbelege nachträglich entstehen |
+| Chronologie/Entscheidungen (R, B4/B5) | Persönlich bestätigt: anfangs Kriterienanforderung noch unbekannt, Fokus auf Idee/Verständnis/Demonstrator; spätere Maße von abschließender Gesamttabelle getrennt | ERFÜLLT hinsichtlich ehrlicher zeitlicher Einordnung; keine Rückdatierung oder vorgetäuschten Mindestwerte |
+| Zyklus-2-Regel und gemeinsame Beiträge (B3/B5) | §9/E49: Codex schlug vor; Hanna und Patricia übernahmen gemeinsam vor Durchführung; gepoolter MAE sinkt UND ≥2 Foldgewinne | ERFÜLLT als persönliche Herkunfts-/Übernahmebestätigung plus Protokoll/Ergebnisdateien; kein ursprünglicher Automatismus und keine Verschiebung fachlicher Verantwortung auf KI |
+| Methodische Begründung (B3/B6) | Gesamtgewinn über alle Fälle und Gewinn in mehr als einem Zeitblock; zwei kleine Foldgewinne reichen bei Gesamtverlust nicht | ERFÜLLT schriftlich; Heuristik ist kein Signifikanztest, Unabhängigkeits-/Robustheitsnachweis oder Garantie künftiger Güte |
+| Ergebnisentscheidung (B3/B4) | Zusatzmerkmal entsprechend negativem Gesamtresultat verworfen, keine neue Modellierung | ERFÜLLT durch vorhandene Entscheidung; Originalresultate unverändert |
+| Motivation und Prüfungsmaßstab | Verbesserung/Weiterentwicklung der Analyse aus Nullzielproblem; Bewertungsbogen nur zur heutigen Prüfung der Darstellung genutzt | ERFÜLLT; keine nachträgliche Bewertungsvorgabe als fachliche Ursache ausgegeben |
+
+Die persönliche Bestätigung beseitigt die offene Beschreibung der tatsächlichen Garmin-Nutzung und der Herkunft der Vergleichsregel. Sie ist kein neuer datenschutzrechtlicher Freigabenachweis für eine öffentliche Weitergabe der privaten Datei. Auch die neue Tabelle macht aus beobachteten Werten keine prospektiven Schwellen. Anmeldung, konkrete Frist, endgültiges Abgabepaket, Literatur-/Grafikquelle, ursprünglicher ChatGPT-Vorschlag und tatsächliche Vortrags-/Live-Kompetenz bleiben gesondert zu klären. Es wird keine Note zugesichert.
+
+
+**Abschlussprüfung dieser Redaktion:** 180 relative Verweise auf vorhandene Ziele geprüft, alle verwendeten E-IDs auflösbar; Nachweismatrix mit 49 Einträgen. Die sechs Tabellenbereiche und die gerundeten Raster-/Silhouette-/MAE-/Sportpassungswerte wurden rein lesend gegen vorhandene CSV-/JSON-Dateien abgeglichen. Alle zehn ursprünglichen Teilkompetenzen und fünf K.-o.-Kriterien bleiben im Check enthalten; die neuen Aussagen sind insbesondere B1, B2, B3, B5 und B6 zugeordnet. Der SHA-256-Abgleich bestätigt ausschließlich die vier erlaubten Dokumentänderungen und 240 unveränderte andere versionierte Dateien einschließlich Daten, Modellen, Dashboard, Grafiken und KI-Audit. `git diff --check` ohne Befund. Keine Modell-/Testläufe, keine Datei vorgemerkt, kein Commit, Push oder PR.
