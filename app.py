@@ -46,7 +46,7 @@ if st.session_state['mode'] == 'ANALYTICS LAB':
         st.session_state['lab_widget'] = st.session_state['lab_section']
         st.radio('Forschungsbereich', SECTIONS, key='lab_widget',
                  on_change=lambda: st.session_state.update(lab_section=st.session_state['lab_widget']))
-        st.caption('Geprüfte Projektergebnisse · vier Demo-Experimente über diese Navigation.')
+        st.caption('Interaktive Einblicke in unsere Daten, Modelle und beide CRISP-DM-Zyklen.')
     analytics_view(st.session_state)
 else:
     user_view(st.session_state)
