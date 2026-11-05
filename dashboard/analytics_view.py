@@ -262,6 +262,10 @@ def evaluation(d,state):
 
 def recommendations(d,state):
     st.caption('Fragestellung · Wie verändern bestätigte Sporttags die Top-5-Zusammensetzung?')
+    st.markdown('**Stufe A – Sportbezogen:** Das Angebot gehört zu einer positiv ausgewählten Interessenkategorie und besitzt zusätzlich einen bestätigten Bezug zu einer beobachteten Sportart.')
+    st.markdown('**Stufe B – Interessenbasiert:** Das Angebot gehört zu einer positiv ausgewählten Interessenkategorie, besitzt aber keinen zusätzlich bestätigten Sportartenbezug.')
+    st.caption('Stufe A wird bei der Sortierung bevorzugt. Die Einstufung beschreibt die technische Sportpassung, nicht die tatsächliche Angebotsqualität oder Kaufwahrscheinlichkeit.')
+    st.caption('Gespeicherter Variantenvergleich: Nur Interessen berücksichtigt (ohne bestätigte Tags) gegenüber Interessen und Sportarten berücksichtigt (mit acht bestätigten Tags). In beiden Varianten verwenden wir dieselben Freigaben und Interessen; nur die Tagzuordnung unterscheidet sich.')
     r=d.recommendation_totals()
     with st.expander('Gesamtergebnis · Empfehlungsslots und Rangstufen',expanded=not (capabilities(state)['activity'] and capabilities(state)['offers'])):
         metrics([('Untersuchte Nutzer',str(r['users'])),('Unveränderte Listen',str(r['change_groups']['unchanged'])),('Andere Zusammensetzung',str(r['change_groups']['composition_changed'])),('A-Slots nachher',str(r['tier_a_after']))])
@@ -275,7 +279,7 @@ def recommendations(d,state):
     if personal_gate(state,offers=True):
         c=d.recommendation_case(state['selected_user_id'],garmin_permission=True,interests_permission=True)
         before={o['offer_id']:o for o in c['before']};after={o['offer_id']:o for o in c['after']}
-        for col,items,label in zip(st.columns(2),[c['before'],c['after']],['Ohne bestätigte Tags','Mit acht bestätigten Tags']):
+        for col,items,label in zip(st.columns(2),[c['before'],c['after']],['Nur Interessen berücksichtigt','Interessen und Sportarten berücksichtigt']):
             with col:
                 st.markdown('#### '+label)
                 if not items:st.info('Keine positiven Kategorien: keine personalisierten Angebote.')
@@ -317,16 +321,26 @@ def crisp(d,state):
                             line=dict(color='#30483B'),hovertext=list(PHASES),hoverinfo='text'))
     fig.update_xaxes(visible=False,range=[-.12,1]);fig.update_yaxes(visible=False,range=[5.5,-.5]);chart(fig,'crisp_phases',280)
     goal,text,paths=PHASES[phase];st.markdown('### '+goal);st.write(text)
+    if phase=='Business Understanding':
+        st.markdown('- Wir segmentieren Aktivitätsprofile mit K-Means.\n- Wir prognostizieren die Aktivitätszahl der Folgewoche durch lineare Regression.\n- Wir wählen passende Angebote anhand von Interessen und beobachteten Sportarten regelbasiert aus.')
+        st.caption('K-Means und Regression bestimmen die Angebotsreihenfolge nicht direkt.')
     for path in paths:st.code(path,language=None)
     st.markdown('### Tatsächliche Iteration · MOVA-ITER-001')
     st.write('Data Understanding → Construct Data → erneute Qualitätsprüfung: Die breite Sportartenvielfalt war auffällig. Der Präferenzexponent wurde von 1,0 auf 1,3 erhöht, um individuelle Schwerpunkte zu verstärken. Das ist eine fachliche Änderung, keine bloße Fehlerkorrektur.')
+    st.markdown('**V1 historisch:** Unsere ursprünglich generierte Datensimulation.\n\n**Kontrolle 1,0:** Gleicher Zufallsstromaufbau wie V2, aber ursprünglicher Präferenzexponent 1,0.\n\n**V2 1,3:** Gleicher Zufallsstromaufbau wie die Kontrolle, jedoch Präferenzexponent 1,3 zur stärkeren Gewichtung individueller Sportartenschwerpunkte.')
     metric=st.selectbox('Iterationskennzahl',['Top2_Mittel_%','Mittlere_Sportartenanzahl','Nutzer_8_Sportarten','Aktivitaeten','Nullwochen'],key='iteration_metric')
+    explanations={
+        'Top2_Mittel_%':'Durchschnittlicher Anteil der beiden häufigsten Sportarten an allen Aktivitäten eines Nutzers, anschließend über alle Nutzer gemittelt.',
+        'Mittlere_Sportartenanzahl':'Durchschnittliche Anzahl unterschiedlicher Sportarten, die ein Nutzer während der 26 Wochen ausgeübt hat.',
+        'Nutzer_8_Sportarten':'Anzahl der Nutzer, die während der 26 Wochen alle acht Sportarten ausgeübt haben.',
+        'Aktivitaeten':'Gesamtzahl der Aktivitäten aller Nutzer während der 26 Wochen.',
+        'Nullwochen':'Anzahl der Nutzerwochen mit genau null Aktivitäten während der 26 Wochen.'}
+    st.caption(explanations[metric])
     df=d.iteration(metric)
     fig=go.Figure(go.Bar(x=df.Variante,y=df.Wert,marker_color=[COLORS['blue'],COLORS['orange'],COLORS['accent']]))
     fig.update_yaxes(title=metric);chart(fig,'iteration_compare')
     st.dataframe(df,hide_index=True,width='stretch')
-    takeaway('Der gepaarte Kontrolle→V2-Vergleich isoliert den Exponenteneffekt: Top-2-Anteil +6,507 Prozentpunkte, acht Sportarten 58→40. Häufigkeitsunterschiede V1→V2 stammen auch aus umgestellten Zufallsströmen und sind kein belegter Exponenteneffekt.')
-    st.info('Technische Git-Probleme, Bugfixes und wiederholte Prüfungen sind keine fachlichen CRISP-DM-Iterationen. Eine verbesserte Simulation ist noch kein Nachweis besserer ML-Modelle oder realer Datenqualität.')
+    takeaway('Wir beurteilen den Exponenteneffekt anhand von Kontrolle 1,0 → V2 1,3: Top-2-Anteil +6,507 Prozentpunkte; Nutzer mit allen acht Sportarten in 26 Wochen: 58 → 40. V1 → V2 ist wegen des anderen Zufallsstromaufbaus kein isolierter Exponentenvergleich.')
     sources('documentation/crisp_dm_log.md','outputs/simulation_comparison/comparison_metrics.csv','outputs/simulation_comparison/comparison_report.md')
 
 
