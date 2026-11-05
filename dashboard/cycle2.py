@@ -75,6 +75,7 @@ def render_cycle2(d,state):
         st.markdown('**Zusätzlich untersucht**\n\n- Anzahl der Nullwochen in den letzten vier Wochen\n- Fenster: **t−3 bis t**, Werte **0 bis 4**')
     st.caption('Anschauliches Rechenbeispiel, keine Messreihe: [0, 0, 4, 4] und [1, 1, 2, 4] haben beide aktuell 4 Aktivitäten und Mittelwert 2 – aber 2 bzw. 0 Nullwochen.')
     st.markdown('### Modellvergleich · gepoolter MAE')
+    st.write('„Gepoolter MAE“ bezeichnet den gemeinsamen durchschnittlichen absoluten Vorhersagefehler über alle 1.200 Validierungsfälle. Je niedriger der Wert, desto besser.')
     metrics([(LABELS[m],number(s.loc[m,'mae'])) for m in LABELS])
     fig=go.Figure(go.Bar(x=[LABELS[m] for m in LABELS],y=[s.loc[m,'mae'] for m in LABELS],
         marker_color=[COLORS['orange'],COLORS['accent'],COLORS['blue']],
@@ -91,6 +92,9 @@ def render_cycle2(d,state):
                 legendgroup=label,showlegend=i==0,marker_color=color,text=[f'{label} t={a}–{b}'],textposition='inside',
                 hovertemplate=f'{label}: Eingabewochen {a}–{b}<extra></extra>'))
     fig.update_layout(barmode='overlay');fig.update_xaxes(title='Relative Projektwoche · Ziel jeweils t+1',dtick=1,range=[3,22]);chart(fig,'cycle2_timeline',260)
+    st.write('Für eine einzelne Vorhersage nutzen wir die aktuelle und die drei vorherigen abgeschlossenen Wochen (t−3 bis t); die Zielwoche liegt bei t+1. Für das Training verwenden wir viele solcher Vierwochenbeispiele. Der Trainingszeitraum wächst von Fold zu Fold:')
+    st.markdown('- **Fold 1:** Training Eingabewochen 4–9; Validierung 10–13.\n- **Fold 2:** Training Eingabewochen 4–13; Validierung 14–17.\n- **Fold 3:** Training Eingabewochen 4–17; Validierung 18–21.')
+    st.write('Wir trainieren beide Regressionsvarianten in jedem Fold separat erneut. Jeder Fold enthält 400 Validierungsfälle, insgesamt 1.200. Die ursprünglichen 400 Testfälle aus Zyklus 1 verwenden wir nicht erneut für die Modellauswahl.')
     fig=go.Figure()
     for model,color in [('linear_2',COLORS['accent']),('linear_3',COLORS['blue'])]:
         subset=folds[folds.model==model].sort_values('fold')
@@ -98,11 +102,11 @@ def render_cycle2(d,state):
             text=[number(v) for v in subset.mae],textposition='outside',cliponaxis=False))
     fig.update_layout(barmode='group');fig.update_yaxes(title='MAE · Aktivitäten pro Nutzerwoche',range=[0,float(folds.mae.max())*1.2]);chart(fig,'cycle2_folds',330)
     st.caption('Beide Regressionen je Fold neu geschätzt; innerhalb des Validierungsblocks unverändert. Nur bereits abgeschlossene Wochen fließen in die Prognose ein.')
-    st.info('Die ursprünglichen 400 Testfälle bleiben von Entwicklung und Modellentscheidung ausgeschlossen. Die Hypothese entstand nach Zyklus 1: Diese interne Validierung ist keine unabhängige Testbestätigung.')
+    st.info('Wir verwendeten nur die ursprünglichen Trainingsdaten. Die Hypothese entstand aus bekannten Ergebnissen von Zyklus 1; diese interne Validierung ist deshalb kein unabhängiger Bestätigungstest.')
     st.markdown('### Evaluation · zukünftige Nullwochen')
     targets=groups[(groups.grouping=='actual_target')&(groups.group=='actual_zero')].set_index('model')
     metrics([('Tatsächliche Nullziele',str(int(targets.loc['linear_2','n']))),('MAE · 2 Merkmale',number(targets.loc['linear_2','mae'])),('MAE · 3 Merkmale',number(targets.loc['linear_3','mae']))])
-    st.warning('Keine Verbesserung bei zukünftigen Nullwochen. Ob eine Zielwoche null Aktivitäten enthält, ist bei der Prognose unbekannt – diese Gruppe dient nur der nachträglichen Diagnose.')
+    st.warning('Die zusätzliche Nullwocheninformation verbesserte die Prognose bei später tatsächlich beobachteten Nullzielwochen nicht. Ob die zukünftige Zielwoche null Aktivitäten hat, ist zum Prognosezeitpunkt unbekannt. Diese Aufteilung dient nur der nachträglichen Fehleranalyse.')
     with st.expander('Alle Kennzahlen und historische Nullwochen'):
         display=r['summary'].copy();display['model']=display.model.map(LABELS)
         st.dataframe(display.rename(columns={'model':'Verfahren','n':'Fälle','mae':'MAE','rmse':'RMSE','mean_signed_error':'Mittlerer Fehler','negative_predictions':'Negative Prognosen'}),hide_index=True,width='stretch')
@@ -111,7 +115,7 @@ def render_cycle2(d,state):
     st.markdown('### Zusätzliches Merkmal verworfen.' if not r['decision']['adopt_extended'] else '### Zusätzliches Merkmal übernommen.')
     delta=float(s.loc['linear_3','mae']-s.loc['linear_2','mae'])
     if not r['decision']['adopt_extended']:
-        st.success(f'Entscheidung: Das ursprüngliche Modell bleibt bestehen. Gepoolter MAE der Erweiterung: {delta:+.6f} gegenüber dem bisherigen Ansatz.')
+        st.success(f'Wir übernehmen das zusätzliche Merkmal nicht: Der gepoolte MAE stieg um ungefähr {number(delta)}. Die Drei-Merkmal-Variante war zwar in {r["decision"]["winning_folds"]} von 3 Folds besser, aber unsere vor dem Experiment festgelegte UND-Regel verlangte beide Bedingungen. Das ursprüngliche Modell bleibt erhalten.')
     st.markdown(f"- Niedrigerer gepoolter MAE: **{'erfüllt' if delta<0 else 'nicht erfüllt'}**\n- Niedrigerer MAE in mindestens zwei Folds: **{r['decision']['winning_folds']} von 3**\n- Übernahme verlangt **beide** Bedingungen.")
     st.markdown('### Sechs CRISP-DM-Phasen · zweiter Zyklus')
     phases=[('Business Understanding','Nullwochen-Schwäche → Hypothese und Erfolgskriterium festgelegt.'),
