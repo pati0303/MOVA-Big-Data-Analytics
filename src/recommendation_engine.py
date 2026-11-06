@@ -103,11 +103,11 @@ def verify_tracked_bytes(root, path):
     # AP-4 scaling metadata contains the processed input source hashes.
     expected = manifest['sha256'].get(path) or scaling.get('source_sha256', {}).get(path)
     if expected is None:
-        # All other processed inputs are checked against the fixed base Git tree.
-        import subprocess
-        expected_bytes = subprocess.check_output(
-            ['git', '-C', str(root), 'show', f'a8f97ad75c378329a614a322bd541f372de0b072:{path}'])
-        expected = hashlib.sha256(expected_bytes).hexdigest()
+        # Committed hashes also work in shallow clones and source archives.
+        preserved = json.loads((root / 'documentation/ml_recommendations_preservation_v1.json').read_text())
+        expected = preserved['sha256'].get(path)
+        if expected is None:
+            raise ValueError(f'No verified source hash: {path}')
     if digest != expected:
         raise ValueError(f'Unverified V2 source: {path}')
 

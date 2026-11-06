@@ -3,10 +3,9 @@ import csv
 import hashlib
 import json
 from pathlib import Path
-import subprocess
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-ENGINE_BASE = 'a8f97ad75c378329a614a322bd541f372de0b072'
+SOURCE_MANIFEST = 'documentation/ml_recommendations_preservation_v1.json'
 
 
 class DataAccessError(RuntimeError):
@@ -41,16 +40,15 @@ def load_user_ids(root=PROJECT_ROOT):
 
 
 def check_engine_basis(root=PROJECT_ROOT):
-    """Check local Git objects needed by the existing loader; no remote access."""
+    """Check committed source hashes without requiring historical Git objects."""
     root = Path(root)
     paths = ('data/processed/user_weekly_activities.csv',
              'data/processed/kmeans_user_features.csv', 'data/processed/user_clusters.csv')
     try:
-        for path in paths:
-            subprocess.run(['git', '-C', str(root), 'cat-file', '-e', f'{ENGINE_BASE}:{path}'],
-                           check=True, capture_output=True, timeout=10)
-        return True
-    except (OSError, subprocess.SubprocessError):
+        expected = json.loads((root / SOURCE_MANIFEST).read_text())['sha256']
+        return all(hashlib.sha256((root / path).read_bytes()).hexdigest() == expected[path]
+                   for path in paths)
+    except (OSError, ValueError, KeyError, TypeError):
         return False
 
 

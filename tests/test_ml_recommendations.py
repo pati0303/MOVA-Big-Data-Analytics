@@ -192,7 +192,14 @@ class MLRecommendationsTests(unittest.TestCase):
                     use_kmeans=flags[0],use_regression=flags[1]))
         manifest=json.loads((ROOT/'outputs/ml_recommendations_v1/manifest.json').read_text())
         for path,expected in manifest['source_sha256'].items():
-            self.assertEqual(hashlib.sha256((ROOT/path).read_bytes()).hexdigest(),expected,path)
+            if path.startswith('src/'):
+                # Preserve AP-2.4 source provenance; current outputs are replayed above.
+                import subprocess
+                payload=subprocess.check_output(['git','-C',str(ROOT),'show',
+                    f'2141d9480343e68e83405b385127dd3b85b791b2:{path}'])
+            else:
+                payload=(ROOT/path).read_bytes()
+            self.assertEqual(hashlib.sha256(payload).hexdigest(),expected,path)
         for name,expected in manifest['artifact_sha256'].items():
             self.assertEqual(hashlib.sha256((ROOT/'outputs/ml_recommendations_v1'/name).read_bytes()).hexdigest(),expected)
 

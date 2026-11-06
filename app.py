@@ -54,9 +54,9 @@ else:
 with st.expander('Projektstatus und technische Voraussetzungen'):
     st.write('AP 7.5a: User View und Analytics Lab für die lokale Demonstration geprüft. Nur synthetische Projektdaten.')
     if check_engine_basis():
-        st.success('Lokale Git-Basis für den bestehenden Engine-Loader verfügbar.')
+        st.success('Geprüfte Quelldateien für den Engine-Loader verfügbar.')
     else:
-        st.warning('Lokale Git-Basis für den Engine-Loader fehlt. Das Grundgerüst ist nutzbar; '
-                   'vollständigen Projektbestand einschließlich Git-Historie vor der Demo wiederherstellen.')
+        st.warning('Quelldateien für den Engine-Loader fehlen oder sind verändert. '
+                   'Bitte den vollständigen unveränderten Projektbestand bereitstellen.')
     st.caption('Nur das gespeicherte Regressionsmodell wird bei Garmin-Freigabe verwendet, ohne Training. Keine persönlichen Resultate werden gecacht.')
 st.markdown('<div class="mova-footer">MOVA — Move beyond. &nbsp; / &nbsp; Hochschulprojekt Big Data Analytics · Synthetischer Demonstrator</div>', unsafe_allow_html=True)

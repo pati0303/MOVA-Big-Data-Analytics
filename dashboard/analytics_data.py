@@ -5,13 +5,12 @@ import hashlib
 import importlib
 import json
 from pathlib import Path
-import subprocess
 import sys
 import numpy as np
 import pandas as pd
 from dashboard.data_access import PROJECT_ROOT, DataAccessError
 
-BASIS = '23ac008651de490d59e9ec5ceae590ba97daf0e5'
+SOURCE_MANIFEST = 'documentation/ml_recommendations_preservation_v1.json'
 K_VALUES = (2, 3, 6, 8)
 RAW = 'data/raw/activities_simulated.csv'
 WEEKS = 'data/processed/user_weekly_activities.csv'
@@ -40,12 +39,12 @@ class ResearchData:
         if path not in self._bytes:
             try:
                 actual = (self.root / path).read_bytes()
-                expected = subprocess.check_output(['git','-C',str(self.root),'show',f'{BASIS}:{path}'],
-                                                   stderr=subprocess.PIPE,timeout=10)
-                if hashlib.sha256(actual).digest() != hashlib.sha256(expected).digest():
+                manifest = json.loads((self.root / SOURCE_MANIFEST).read_text())
+                expected = manifest['sha256'][path]
+                if hashlib.sha256(actual).hexdigest() != expected:
                     raise ValueError('Quellhash stimmt nicht mit dem bestätigten Projektbestand überein.')
                 self._bytes[path] = actual
-            except (OSError, ValueError, subprocess.SubprocessError) as exc:
+            except (OSError, ValueError, KeyError, TypeError) as exc:
                 raise DataAccessError(f'Lab-Quelle fehlt oder ist nicht verifiziert: {path}') from exc
         return self._bytes[path]
 
