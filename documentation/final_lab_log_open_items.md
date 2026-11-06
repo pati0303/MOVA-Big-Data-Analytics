@@ -1,0 +1,70 @@
+# MOVA – Offene Punkte der neuen Lab-Log-Rekonstruktion
+
+Stand 04.11.2026. Diese Liste ist eine neue Zusammenstellung. Sie trennt fehlende Nachweise von bewiesenen Projektmängeln. Die verbindlichen LN-B-Originalanforderungen sind vollständig im [Qualitätscheck](final_lab_log_quality_check.md) erfasst. Personenbezogene oder wissenschaftliche Angaben werden nicht ergänzt, solange sie nicht vorliegen.
+
+## 1. Vor finaler Abgabe und zur Vermeidung von K.-o.-Risiken
+
+| ID | Offener Punkt | Warum relevant | Benötigter Abschluss |
+| --- | --- | --- | --- |
+| O01 | Lab-Log liegt nur als Markdown vor | LN B verlangt PDF oder Web-App; Nichtabgabe ist K.-o. | PDF setzen oder vollständige Lab-Log-Web-App bereitstellen; finale Fassung tatsächlich einreichen |
+| O02 | Moodle-Frist und Prüfungstermin fehlen | Alle Unterlagen müssen vor Termin abgegeben werden | Konkrete Frist/Termin aus verbindlicher Mitteilung übernehmen und Einreichung bestätigen |
+| O03 | Erreichbarkeit des privaten Repositorys / Abgabepakets | Code/Daten müssen dem Prüfer vorliegen; Reproduzierbarkeit ist K.-o.-relevant | Berechtigten Zugang oder vollständiges Code-/Datenpaket prüfen, Referenzcommit nennen |
+| O04 | Endgültige Daten-/Datenschutzkontrolle des Pakets | Beide bestätigen rein strukturelle Nutzung des Garmin-Exports (94 × 44), keine Werte-/Verteilungsübernahme oder echten Garmin-Trainingsdaten | Nutzung im Entwurf §3.1 und E47 geklärt; abschließenden Paketcheck dennoch durchführen, private Referenzexporte und Credentials ausschließen |
+| O05 | Vortragsdauer unbekannt | K.-o. unter 10/über 20 Minuten; sehr gut 15 Minuten ±30 Sekunden | Gestoppte Live-Probe mit beiden Autorinnen; Video nur nach ausdrücklicher Erlaubnis als Prüfungsersatz |
+| O06 | Einordnung der bestätigten Themenabstimmung zur geforderten Anmeldung | Mehrere fachliche Vorlesungsabstimmungen und positive Eignungs-/Machbarkeitseinschätzung sind nun persönlich bestätigt (E50); R/B nennen vorab angemeldete Frage/Datensatz | Mit Prof. Schieder klären, ob diese Abstimmung die Anforderung abdeckt; gesonderte formale Anmeldung nur bei tatsächlich vorhandenem Nachweis angeben. Keine fehlende Abstimmung und kein vorgeschriebenes Formular behaupten |
+
+## 2. Fachliche und wissenschaftliche Lücken
+
+| ID | Punkt | Vorhandene Substanz | Noch erforderlich |
+| --- | --- | --- | --- |
+| O07 | Ursprüngliche fachliche Nutzenschwelle und reale Geschäftswirkung | Retrospektive Sechs-Bereiche-Tabelle in §15.1, überprüfte technische Sportpassung und vor Zyklus 2 übernommene Heuristik vorhanden | Anfangs fehlende quantitative Akzeptanzschwellen sind nun persönlich bestätigt und ehrlich dokumentiert, keine noch wiederherzustellende Festlegung. Reale Relevanz-/Wirtschaftsmessung und prospektive fachliche Schwelle bleiben für künftige Untersuchungen offen |
+| O08 | Reale Übertragbarkeit / unabhängiger Test | Synthetischer Test und interne Validierung | Als Grenze belassen; neue empirische Untersuchung wäre eigener Auftrag, kein Teil dieser Rekonstruktion |
+| O09 | Unsicherheit / Abhängigkeit | Nutzer-/Wochenabhängigkeit und kleine Gruppen erläutert | Keine Signifikanz oder Intervalle erfinden; eventuelle zukünftige Unsicherheitsanalyse separat planen |
+| O10 | Geschäftswirkung der Empfehlungen | 64 veränderte Listen und 344 A-Slots belegt | Keine Relevanz-/Conversion-/Umsatzverbesserung behaupten; tatsächliche Labels/Nutzungsdaten fehlen |
+| O11 | Fachliteratur | Methodische Begründungen im Repository | Konkrete verwendete Literatur und geforderter Zitierstil bestätigen; keine ungelesenen Quellen als benutzt ausgeben |
+| O12 | Quellenangabe der Schieder-Lehrgrafik | Rastervorlage und Zuschreibung vom Team | Foliensatz, Jahr, Folien-/Seitenzahl, ggf. Nutzungsangabe ergänzen; Bewertungsbogen identifiziert nicht automatisch Grafikquelle |
+
+## 3. Team, persönliche Angaben und KI-Nachweise
+
+| ID | Punkt | Benötigte Information |
+| --- | --- | --- |
+| O13 | Vollständige Namen und Matrikelnummern | Teamdaten für Deckblatt; Vornamen Hanna und Patricia sind bekannt |
+| O14 | Tatsächlicher persönlicher Arbeitszeitraum und Aufwand | Nur wenn zuverlässig vorhanden; Richtwert 30 h/Person ist kein ausgefülltes Zeitprotokoll |
+| O15 | Gemeinsame Facharbeit – geklärt | Alle fachlichen/technischen Bestandteile, regelmäßige Bildschirm-Videokonferenzen, gemeinsamer Ausgangsstand und Lernzweck sind persönlich bestätigt (E02). Keine noch fehlende künstliche Aufgabenaufteilung; selbstständiges Erklären im Prüfungsgespräch bleibt separat zu üben |
+| O16 | Videoorganisation – geklärt | Gemeinsam: Inhalt, Sprachgenerierung, Endprüfung/Freigabe. Hanna: PowerPoint-Überarbeitung, Bildschirmaufnahmen/Abfilmen. Patricia: weiterer Schnitt, Soundbearbeitung (E51). Keine noch fehlenden Produktionsrollen; tatsächliches Abgabeformat, Laufzeit und Vortragsprobe bleiben offen |
+| O17 | Original-KI-Belege K1–K3 | Promptausschnitt oder dokumentierter Vorschlag/Initialdiff, Reaktion und Kontrolle; technischer Fehler bereits belegt, KI-Ursache nur teilweise |
+| O18 | Originalgespräch Empfehlungszyklus K5 | Vorschlag, fachliche Rückfrage und Entscheidung zum Regressionszyklus archivieren |
+| O19 | Dauerhafte Quellenablage der persönlichen Bestätigungen | Geeignete datensparsame Gesprächsauszüge zu E47–E49 ggf. archivieren; diese Quellenfrage nicht als zusätzlichen KI-Irrweg darstellen |
+| O20 | Historische Auditkategorien B/C | Für die aktuelle Vier-Fälle-Darstellung nicht erforderlich; kein offener inhaltlicher Bewertungsbedarf und keine Professorenvorgabe daraus ableiten |
+
+## 4. Vortrag und Live-Kompetenz
+
+Es fehlen ein finaler Foliensatz mit höchstens zwölf Inhaltsfolien, eine konkrete Publikumsaktivierung, gleichwertig sichtbare Redeanteile und eine Probe der Übergänge. Beide Autorinnen sollten alle drei Fragetypen auch zum nicht selbst präsentierten Teil beantworten können. Der Methodenpfad führt von Datenannahmen über Featurefenster und Baseline bis zur UND-Regel. Der Live-Nachweis muss Code/Workflow öffnen und gegebenenfalls eine Parameterwirkung erklären. Der Transfer muss bei neuen Nutzern, mehr Daten oder anderer Kostenstruktur Grenzen der bisherigen Aussage erkennen. Die gemeinsame fachliche Arbeit ist dafür eine Grundlage, aber kein bereits bestandener Prüfungsnachweis.
+
+## 5. Redaktion, Reproduktion und technische Wartung
+
+- **PDF-Satz:** Originalunterlagen nennen keinen festen Umfang und 6–12 Seiten-Äquivalent als Richtwert. Teamziel zunächst 12–15 Seiten Haupttext. Den aktuellen langen Entwurf konzentrieren und Anhänge auslagern, ohne wissenschaftliche Begründungen zu verlieren.
+- **Abbildungen:** Detailgrafiken auf eigenen Querformatseiten bzw. gut lesbar im Anhang setzen. Keine unlesbare Verkleinerung auf Hochformat. PNG/SVG sind unverändert vorhanden; finaler PDF-Check offen.
+- **Historische Formulierungen:** README und einzelne Manifeste enthalten alte Planstände. Neue Rekonstruktion erklärt die zeitliche Einordnung, verändert die alten Dateien nicht.
+- **Trainingsfreier Runner:** Nach Ergänzung von `test_cycle2.py` nicht ungeprüft vollständig ausführen. Alte Ausschlussliste kennt den neuen Fit-Test nicht. Wartung als separater zukünftiger Codeauftrag; derzeit keine Änderung.
+- **Reproduktionsanweisungen:** `cycle2_verify.py` ist schreibfrei, führt aber sechs Fits aus. Bei Trainingsverbot nicht starten. Historische Testzahlen nicht addieren oder als heute erneut ausgeführt darstellen.
+- **Original-PDFs:** In dieser Sitzung als Upload vorhanden, Hashes im Qualitätscheck. Dauerhafte nachvollziehbare Quellenablage bzw. gemeinsamer Zugriff noch zu sichern.
+- **Versionsstand:** Bisherige Dokumentfassungen sind bis `5215e5e209c6e612ff054136ad35c9fa397ab104` gesichert. Nur die aktuellen vier redaktionellen Ergänzungen sind uncommittet. Erst nach Inhaltsabnahme ggf. gesonderten Commit-/Pushauftrag erteilen; kein PR aus diesem Auftrag.
+
+## 6. Was ausdrücklich keine offene Nachmodellierung ist
+
+Die Entscheidung gegen das Zusatzmerkmal bleibt unverändert. Es werden keine neuen Modellvarianten gesucht, keine Testfälle neu zur Auswahl verwendet und keine Ergebnisse nachgebessert. Ein wissenschaftlich korrektes negatives Ergebnis muss nicht in eine Verbesserung umgeschrieben werden. Offene Punkte beziehen sich auf Nachweise, Übergabe und Prüfungsvorbereitung; neue Forschung benötigt eine neue begründete Hypothese und gesonderte Freigabe.
+
+
+## 7. Durch persönliche Bestätigung geklärt – keine fortbestehenden Sachlücken
+
+Hanna und Patricia bestätigen den ursprünglichen Garmin-Export mit 94 Zeilen/44 Spalten und dessen ausschließlich strukturelle Nutzung. Keine Exportwerte, Verteilungen oder personenbezogenen Aktivitätsdaten wurden zur synthetischen Erzeugung übernommen; keine empirische Kalibrierung oder echten Garmin-Trainingsdaten. Das begründet keine Repräsentativität und keine produktive Garmin-Anbindung. Der private Export muss dafür nicht in das öffentliche/prüfbare Modellpaket übernommen werden. Eine neue externe Prüfung seines Inhalts wurde nicht durchgeführt.
+
+Beide bestätigen außerdem: Zu Projektbeginn waren die später ausdrücklich bewerteten konkreten Erfolgskriterien noch nicht bekannt; zunächst standen Geschäftsidee, Methodenverständnis und Demonstrator im Vordergrund. Die nun vorhandene übergreifende Tabelle ist retrospektiv. Das frühere Fehlen quantitativer Akzeptanzschwellen wird nicht durch eine erfundene Vorabfestlegung „geschlossen“.
+
+Davon getrennt ist die spätere Zyklus-2-Regel: Codex schlug sie vor; beide übernahmen sie gemeinsam vor dem Vergleich. Gepoolter MAE-Gewinn UND mindestens zwei Foldgewinne bilden eine fachlich motivierte Projektheuristik, keinen Signifikanztest. Diese Herkunft und Übernahme sind jetzt persönlich bestätigt. Dauerhafte Archivierung der Chatbestätigungen, ursprünglicher ChatGPT-Vorschlag zum Empfehlungszyklus, finale Abgabe und Live-Prüfung bleiben eigenständige Nachweisthemen.
+
+
+Die Themenfindung ist ebenfalls geklärt: Hanna und Patricia entwickelten MOVA nach eigener Bestätigung über mehrere Vorlesungstermine im Austausch mit Prof. Dr. Schieder; dieser schätzte die Idee als geeignet und grundsätzlich machbar ein. Daraus wird keine gesonderte formale Vorabanmeldung abgeleitet. Offen bleibt nur deren Einordnung zur Anforderung im Originalrahmen (O06), nicht die Frage, ob überhaupt fachlicher Austausch stattfand.
+
+Die gemeinsame fachliche und technische Bearbeitung sowie die eng begrenzte Videoausnahme sind jetzt vollständig persönlich beschrieben (O15/O16). Zusätzliche Einzelzuständigkeiten oder private Gesprächsaufzeichnungen sind keine eigens verlangte formale Pflicht des Bewertungsbogens. Die schriftliche Beitragsdarstellung und die tatsächliche, gleichwertige Live-Leistung werden weiterhin getrennt beurteilt.

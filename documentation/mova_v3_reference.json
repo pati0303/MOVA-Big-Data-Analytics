@@ -1,0 +1,105 @@
+{
+  "reference_commit": "53595cbace3a5002a9401ba84d9512c1368127c5",
+  "main_basis": "9ec32dcbd683004cd640605a4c49db3cf007d3fe",
+  "ui": {
+    ".streamlit/config.toml": {
+      "sha256": "34bfd6e957d3d8ead234169f072eedc38ebd07e2c6022702a630c14e44cc7b89",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "app.py": {
+      "sha256": "c935a5ebe13cfaaf281ac5ad6fd6ae0199e7a2f8c8551e20820e6db619bacdd5",
+      "status": "bewusst erweitert",
+      "reason": "Technischer Status nutzt Dateiprüfsummen statt Git-Historie; Layout und Widgets unverändert."
+    },
+    "dashboard/__init__.py": {
+      "sha256": "1b0d18b5633cec79ad920034ae555479ae412b9985e8c160ead41fa5e1836dbe",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/analytics_data.py": {
+      "sha256": "9d6be3e0cc3c4e6aa3eb3b8fc29208ef5b205171d56128a7f952d333bc6a7872",
+      "status": "bewusst erweitert",
+      "reason": "Gleiche Analytics-Daten; Dateiprüfsummen ersetzen historische Git-Objekte."
+    },
+    "dashboard/analytics_view.py": {
+      "sha256": "590104efe3574aa65e48baced00864ade05c55da9e7da4b69bfd034a34ead324",
+      "status": "bewusst erweitert",
+      "reason": "V2-Erklärungen bleiben; historische Auswertung und aktuelle ML-Integration werden zusätzlich unterschieden."
+    },
+    "dashboard/charts.py": {
+      "sha256": "5651ec85214250b37a8fad8385b67ce1ff9fbafd7bf0eb96c3a2f6d9c294ed81",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/components.py": {
+      "sha256": "f538fee10234b78adf9bbf4f205bd41dc49aec0bc9e0980698036f4a470604c9",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/cycle2.py": {
+      "sha256": "bc999e76e539ab72d3ca711e00e0afa126bc760761a6aaebf7a800b42ba44a95",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/data_access.py": {
+      "sha256": "299547d0a14368a6ef20181f7cfa105d5f675c93e32df895728fd75c43a6ac4e",
+      "status": "bewusst erweitert",
+      "reason": "Dateiverifikation ohne Git-Historie; keine Änderung der Aktivitätsaggregation."
+    },
+    "dashboard/design.py": {
+      "sha256": "d708ff02f49f0cd78d3f6173ddc2b74070d4fe5a945a2173263f9f127dbb48a1",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/services.py": {
+      "sha256": "d96ea47245beeedc92dad7fdce4ec8d779a2bcbfca6a3cf6c17e38013e14048b",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/state.py": {
+      "sha256": "00a30880056ed6f7b0a33379e2ff424850a97f150bc49be0902927988a5d3275",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/styles.css": {
+      "sha256": "22c44ece579df0fc8b86e0037f669f8b0e4efe3e4e918b507e47228a2a21d30b",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    },
+    "dashboard/user_view.py": {
+      "sha256": "9735dd1b65d7de5df972d03ebae7ec83a7cc4c9eb62a5c3f9682286a58be72a4",
+      "status": "bewusst erweitert",
+      "reason": "Bestehende Karten zeigen zusätzliche tatsächliche ML-Begründungen; Layout und Diagramme bleiben."
+    },
+    "dashboard/views.py": {
+      "sha256": "c7935e99e4bdb7f7f4e2c6b03e19a1aa993186ebb1bbc0742aca14a9587bdc52",
+      "status": "unverändert",
+      "reason": "Bytegleiche V2-Referenz."
+    }
+  },
+  "lab_artifacts": {
+    "documentation/MOVA_Lab_Log.docx": "34b8769a8a5571e6425aaf6f417cfdc4b2e8fa9943a3cacb0de8fbe4ddc2c72a",
+    "documentation/MOVA_Lab_Log_DOCX_Check.md": "5a7015305b631e6efacc85e39009b6451ef9dfd17fe8d59e57f1151673ca06ba",
+    "documentation/MOVA_Lab_Log_full_documentation.docx": "4d21a26b3ee7eec247f77978e15dd55af740ffc4087b233e20549706ccf2ce38",
+    "documentation/ai_missteps_audit.md": "7162b20dc9a00fa1da0747f0979901f53b421a1a4bec2885ccc363f5de9bfa38",
+    "documentation/figures/01_crisp_dm_gesamtprozess.png": "60cd941d5fa24f5539ebeb8d443b2b5cf128400263bb8363f0e245cf99b8d91e",
+    "documentation/figures/01_crisp_dm_gesamtprozess.svg": "7faf174c32105676374d74c655d51648d4cea64cb130f2bb77c94ca7e55153e3",
+    "documentation/figures/02_crisp_dm_zyklus_1.png": "9a4f40808ba22a28152a1278c3e28d2553dea0b30fe14b1bfa68c1ebea1d16a6",
+    "documentation/figures/02_crisp_dm_zyklus_1.svg": "e44f82e395aa3c908be346de50fb69b42a31f5dff9a47fd6611d2d4223cb4ed6",
+    "documentation/figures/03_crisp_dm_zyklus_2.png": "466ce4388f5fa654a315dc802fd459068f2ef4ad619165aa38d728b393d1f964",
+    "documentation/figures/03_crisp_dm_zyklus_2.svg": "625ec0aaca77b54f87f0d5bf09c85539e1719578f16c24e001af3d26a2a8153f",
+    "documentation/figures/README.md": "8ef087c8077eb723ef2d776c61ba03f5a5ad2271608ca57880c9688fa7e3b9c2",
+    "documentation/figures/crisp_dm_content.json": "81e2f031184d58a586bc0c57e69798839d10a6ddece7113521156154d460df11",
+    "documentation/figures/generate_crisp_dm.py": "cc553d249b660fa65da021658917b6074cdf4870d551d89668cfed3410462d1a",
+    "documentation/figures/layout_checks.json": "5d88feaf063a0b03d3b45853a92e44f4b653d1a1d7bd9c6093842426f34c4480",
+    "documentation/final_lab_log_draft.md": "725b5b0c9a6e9039d5cc9377277a879d76ec531c3548636e108e949e63e66e45",
+    "documentation/final_lab_log_evidence.md": "e96895f3a7877ac6cae09c55fd14e9b1765c0ad0f974706983f21e39ef24131b",
+    "documentation/final_lab_log_open_items.md": "060a4ebd7257f837028fe0f91851dc38d41b75fbb66d26e794c369b9148bcf39",
+    "documentation/final_lab_log_quality_check.md": "c62c3a4266f0c6b2d418a5f5444d36722f1762a431756c4f5a24911a46a19c65",
+    "documentation/recommendation_sport_fit_retrospective.md": "46104a6eb423d1662c3614c55cff8bc36a3c8e3256c666e89f1fd9d578c3bacb",
+    "outputs/tables/recommendation_sport_fit_retrospective.json": "8d2edcd3aa72059a8319d1d71cb28529b11fb14871bfa886056ad1dc029b0878",
+    "src/recommendation_sport_fit.py": "91b78d4891536ab3ee2a0735f5ccba8fb47d166b0d05f4185147edfb177c416c",
+    "tests/test_recommendation_sport_fit.py": "97df53cfc201d5b437e0c306ab0488629dad5af34e5279db1d62f4070b6525f4"
+  }
+}

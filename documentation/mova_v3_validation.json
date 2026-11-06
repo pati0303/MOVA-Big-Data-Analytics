@@ -1,0 +1,51 @@
+{
+  "v2_reference": "53595cbace3a5002a9401ba84d9512c1368127c5",
+  "main_basis": "9ec32dcbd683004cd640605a4c49db3cf007d3fe",
+  "tests_run": 226,
+  "passed": 204,
+  "skipped": 22,
+  "failures": 0,
+  "errors": 0,
+  "model_training_performed": false,
+  "ui_files": 15,
+  "byte_identical_ui_files": 10,
+  "intentionally_extended_ui_files": 5,
+  "views_compared": 9,
+  "identical_plotly_specs": 16,
+  "navigation_widgets_and_metrics_identical": true,
+  "browser": "Chromium, Streamlit 1.66.1 / Plotly 6.4.0",
+  "desktop_card_styles": {
+    "background": "rgb(20, 32, 28)",
+    "color": "rgb(242, 247, 244)",
+    "border": "1px solid rgb(48, 72, 59)",
+    "borderRadius": "16px",
+    "padding": "24px",
+    "width": 624
+  },
+  "mobile_v2": {
+    "width": 390,
+    "scrollWidth": 390,
+    "cardWidth": 358
+  },
+  "mobile_v3": {
+    "width": 390,
+    "scrollWidth": 390,
+    "cardWidth": 358
+  },
+  "u070_top5": [
+    "O032",
+    "O034",
+    "O035",
+    "O006",
+    "O004"
+  ],
+  "model_effects": {
+    "kmeans": 63,
+    "regression": 9,
+    "both": 63
+  },
+  "lab_artifacts_preserved": 22,
+  "protected_original_files_unchanged": 156,
+  "main_merged": false,
+  "pushed": false
+}

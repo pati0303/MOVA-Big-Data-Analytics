@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1944pt" height="1231.2pt" viewBox="0 0 1944 1231.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-04T08:54:04.140984</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>MOVA – editable scientific figure</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1231.2 
+L 1944 1231.2 
+L 1944 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 25.2 140.4 
+L 327.6 140.4 
+L 327.6 356.4 
+L 25.2 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 331.042852 248.4 
+Q 335.522282 248.4 337.765643 248.4 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 329.765643 244.4 
+L 337.765643 248.4 
+L 329.765643 252.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 343.44 140.4 
+L 645.84 140.4 
+L 645.84 356.4 
+L 343.44 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 649.282852 248.4 
+Q 653.762282 248.4 656.005643 248.4 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 648.005643 244.4 
+L 656.005643 248.4 
+L 648.005643 252.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 661.68 140.4 
+L 964.08 140.4 
+L 964.08 356.4 
+L 661.68 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 967.522852 248.4 
+Q 972.002282 248.4 974.245643 248.4 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 966.245643 244.4 
+L 974.245643 248.4 
+L 966.245643 252.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 979.92 140.4 
+L 1282.32 140.4 
+L 1282.32 356.4 
+L 979.92 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 1285.762852 248.4 
+Q 1290.242282 248.4 1292.485643 248.4 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 1284.485643 244.4 
+L 1292.485643 248.4 
+L 1284.485643 252.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 1298.16 140.4 
+L 1600.56 140.4 
+L 1600.56 356.4 
+L 1298.16 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 1604.002852 248.4 
+Q 1608.482282 248.4 1610.725643 248.4 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 1602.725643 244.4 
+L 1610.725643 248.4 
+L 1602.725643 252.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 1616.4 140.4 
+L 1918.8 140.4 
+L 1918.8 356.4 
+L 1616.4 356.4 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 25.2 763.2 
+L 327.6 763.2 
+L 327.6 979.2 
+L 25.2 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 331.042852 871.2 
+Q 335.522282 871.2 337.765643 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 329.765643 867.2 
+L 337.765643 871.2 
+L 329.765643 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 343.44 763.2 
+L 645.84 763.2 
+L 645.84 979.2 
+L 343.44 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 649.282852 871.2 
+Q 653.762282 871.2 656.005643 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 648.005643 867.2 
+L 656.005643 871.2 
+L 648.005643 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 661.68 763.2 
+L 964.08 763.2 
+L 964.08 979.2 
+L 661.68 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 967.522852 871.2 
+Q 972.002282 871.2 974.245643 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 966.245643 867.2 
+L 974.245643 871.2 
+L 966.245643 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 979.92 763.2 
+L 1282.32 763.2 
+L 1282.32 979.2 
+L 979.92 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 1285.762852 871.2 
+Q 1290.242282 871.2 1292.485643 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 1284.485643 867.2 
+L 1292.485643 871.2 
+L 1284.485643 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 1298.16 763.2 
+L 1600.56 763.2 
+L 1600.56 979.2 
+L 1298.16 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 1604.002852 871.2 
+Q 1608.482282 871.2 1610.725643 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 1602.725643 867.2 
+L 1610.725643 871.2 
+L 1602.725643 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 1616.4 763.2 
+L 1918.8 763.2 
+L 1918.8 979.2 
+L 1616.4 979.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 302.4 399.6 
+L 1440 399.6 
+L 1440 540 
+L 302.4 540 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 493.406938 357.974121 
+Q 477.719427 378.000732 463.410813 396.267047 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 471.493021 392.435871 
+L 463.410813 396.267047 
+L 465.195197 387.502575 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 1322.841972 400.00965 
+Q 1062.408507 454.21711 816.824159 357.948316 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 822.812504 364.592089 
+L 816.824159 357.948316 
+L 825.732184 357.143904 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 309.6 612 
+L 1821.6 612 
+L 1821.6 718.56 
+L 309.6 718.56 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 1451.097726 357.391085 
+Q 1607.529747 446.940594 1683.006578 608.161666 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 1683.237289 599.22037 
+L 1683.006578 608.161666 
+L 1675.991968 602.61232 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 12.800391 871.2 
+Q 17.99969 871.2 20.962921 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+    <path d="M 12.962921 867.2 
+L 20.962921 871.2 
+L 12.962921 875.2 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #247d73; stroke: #247d73; stroke-width: 2; stroke-linecap: round"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 28.8 1022.4 
+L 1886.4 1022.4 
+L 1886.4 1125.36 
+L 28.8 1125.36 
+z
+" clip-path="url(#pdc8514e972)" style="fill: #f4f8f7; stroke: #8daca5; stroke-width: 1.2; stroke-linejoin: miter"/>
+   </g>
+   <g id="line2d_1">
+    <path d="M 309.6 665.28 
+L 10.8 665.28 
+L 10.8 871.2 
+" clip-path="url(#pdc8514e972)" style="fill: none; stroke: #247d73; stroke-width: 2; stroke-linecap: square"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 27px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="28.8" y="38.175469" transform="rotate(-0 28.8 38.175469)">MOVA – Zwei vollständige CRISP-DM-Zyklen</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="28.8" y="70.517344" transform="rotate(-0 28.8 70.517344)">Erkenntnis → neue Hypothese → neues Merkmal → erneute Modellierung → Evaluation → Entscheidung</text>
+   </g>
+   <g id="text_3">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="28.8" y="117.718125" transform="rotate(-0 28.8 117.718125)">ZYKLUS 1 · Aktivitätsanalyse und erste Prognose</text>
+   </g>
+   <g id="text_4">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(39.6 166.277344)">01 Business Understanding</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(39.6 186.996519)">Ziele und Rahmen</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 216.655256)">Aktivitätssegmente,</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 234.819694)">Folgewochenprognose und</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 252.984131)">nachvollziehbare Angebote.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(357.84 166.277344)">02 Data Understanding</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(357.84 186.996519)">Daten verstehen</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(357.84 216.655256)">Synthetische Aktivitätsdaten</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(357.84 234.819694)">prüfen; auffällig breite</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(357.84 252.984131)">Sportrepertoires erkennen.</text>
+   </g>
+   <g id="text_8">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(676.08 166.277344)">03 Data Preparation</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(676.08 186.863706)">Daten aufbereiten</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 216.655256)">V2: 100 Nutzer × 26 Wochen. Neun</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 234.819694)">K-Means- und zwei</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 252.984131)">Regressionseingänge.</text>
+   </g>
+   <g id="text_10">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(994.32 166.277344)">04 Modeling</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(994.32 186.996519)">Modelle erstellen</text>
+   </g>
+   <g id="text_11">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(994.32 216.655256)">K-Means k = 2 und globale OLS;</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(994.32 234.819694)">chronologischer Split 1.800 / 400.</text>
+   </g>
+   <g id="text_12">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1312.56 166.277344)">05 Evaluation</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1312.56 186.863706)">Ergebnisse bewerten</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 216.655256)">Test-MAE: OLS 1,489877; Persistenz</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 234.819694)">1,710000. Schwäche bei</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 252.984131)">zukünftigen Nullwochen.</text>
+   </g>
+   <g id="text_14">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1630.8 166.277344)">06 Deployment</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1630.8 187.312081)">Demonstrator übergeben</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 216.655256)">User View, Analytics Lab,</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 234.819694)">Ergebnisartefakte und kritischer</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 252.984131)">Abschlussbericht.</text>
+   </g>
+   <g id="text_16">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(39.6 789.077344)">01 Business Understanding</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(39.6 809.796519)">Neue Hypothese</text>
+   </g>
+   <g id="text_17">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 839.455256)">Historische Nullwochen könnten</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 857.619694)">zusätzliche Prognoseinformation</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(39.6 875.784131)">liefern.</text>
+   </g>
+   <g id="text_18">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(357.84 789.077344)">02 Data Understanding</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(357.84 809.796519)">Bestand wiederverwenden</text>
+   </g>
+   <g id="text_19">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(357.84 839.455256)">1.800 Entwicklungsfälle; keine</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(357.84 857.619694)">neuen Daten; Wochenhistorie 1–22.</text>
+   </g>
+   <g id="text_20">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(676.08 789.077344)">03 Data Preparation</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(676.08 809.979269)">Merkmal ergänzen</text>
+   </g>
+   <g id="text_21">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 839.455256)">zero_weeks_last_4_weeks:</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 858.036881)">Nullzählung aus t−3 bis t; Werte</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(676.08 876.201319)">0–4.</text>
+   </g>
+   <g id="text_22">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(994.32 789.077344)">04 Modeling</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(994.32 809.796519)">Erneut modellieren</text>
+   </g>
+   <g id="text_23">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(994.32 839.455256)">Drei chronologische Folds; zwei</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(994.32 857.619694)">OLS-Varianten, sechs Fits;</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(994.32 875.784131)">Persistenz als Referenz.</text>
+   </g>
+   <g id="text_24">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1312.56 789.077344)">05 Evaluation</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1312.56 809.663706)">Intern validieren</text>
+   </g>
+   <g id="text_25">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 839.455256)">1.200 Fälle: MAE 1,522613 (2</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 857.619694)">Merkmale), 1,523105 (3); kein</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1312.56 875.784131)">Gesamtgewinn.</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1630.8 789.077344)">06 Deployment</text>
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; fill: #247d73" transform="translate(1630.8 810.112081)">Entscheidung übergeben</text>
+   </g>
+   <g id="text_27">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 839.455256)">Zusatzmerkmal verwerfen;</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 857.619694)">bisheriges Modell erhalten; Befund</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(1630.8 875.784131)">im Lab zeigen.</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #247d73" x="316.8" y="425.716406" transform="rotate(-0 316.8 425.716406)">Rücksprung in Zyklus 1 · Datengenerierung</text>
+   </g>
+   <g id="text_29">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(316.8 454.197656)">Data Understanding → Data Preparation / Construct Data → erneute Qualitätsprüfung. Sportgewichte mit Exponent 1,3 verstärkt; technische</text>
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; fill: #1d3440" transform="translate(316.8 472.362094)">Kontrolle mit 1,0. Gepaarter Vergleich Kontrolle → V2: Top-2-Anteil +6,507 Prozentpunkte; V2 übernommen.</text>
+   </g>
+   <g id="text_30">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="324" y="566.477813" transform="rotate(-0 324 566.477813)">Frühe Dateniteration innerhalb von Zyklus 1 – noch kein zusätzlicher vollständiger Modellierungszyklus.</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #247d73" x="324" y="640.687656" transform="rotate(-0 324 640.687656)">Übergang von Zyklus 1 zu Zyklus 2</text>
+   </g>
+   <g id="text_32">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="324" y="670.197656" transform="rotate(-0 324 670.197656)">Nullzielschwäche → vorab begrenzte Hypothese → Prüfung auf historischen Entwicklungsdaten. Die ursprünglichen 400 Testfälle bleiben von Entwicklung und Modellentscheidung ausgeschlossen.</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="28.8" y="742.396875" transform="rotate(-0 28.8 742.396875)">ZYKLUS 2 · Gezielter Merkmalsvergleich</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #247d73" x="43.2" y="1048.277344" transform="rotate(-0 43.2 1048.277344)">Vorab definierte Entscheidung: beide Bedingungen erforderlich</text>
+   </g>
+   <g id="text_35">
+    <text style="font-size: 15px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="43.2" y="1076.997656" transform="rotate(-0 43.2 1076.997656)">Niedrigerer gepoolter MAE UND MAE-Gewinn in mindestens 2 von 3 Folds. Zwei Foldgewinne reichen nicht: Der gepoolte MAE ist höher → Erweiterung verworfen.</text>
+   </g>
+   <g id="text_36">
+    <text style="font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #1d3440" x="28.8" y="1162.637813" transform="rotate(-0 28.8 1162.637813)">Abgrenzung: Zyklus 1 berichtet historische Testleistung; Zyklus 2 interne zeitliche Validierung. Kennzahlen nicht direkt als Fortschrittsmaß vergleichen.</text>
+   </g>
+   <g id="text_37">
+    <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #5b6266" x="28.8" y="1197.877969" transform="rotate(-0 28.8 1197.877969)">Synthetische V2 · bekannte Nutzer · Hypothese nach Zyklus 1 entwickelt · keine unabhängige Testbestätigung für Zyklus 2</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pdc8514e972">
+   <rect x="0" y="0" width="1944" height="1231.2"/>
+  </clipPath>
+ </defs>
+</svg>

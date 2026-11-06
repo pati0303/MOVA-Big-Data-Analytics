@@ -1,0 +1,651 @@
+{
+  "analysis": "retrospective_rule_based_sport_fit",
+  "calculation": "JSON-decode stored ordered lists; validate keys, profiles, tags, candidates, lengths and documented ordering; count matches with one shared mapping; divide matching slots by all slots",
+  "criterion": {
+    "definition": "Retrospective technical criterion: higher matching-slot share with unchanged positive-category constraints and per-user list lengths",
+    "formulated_post_hoc": true,
+    "met": true,
+    "prospective_success_threshold": null
+  },
+  "data_version": "synthetic V2",
+  "definition": "A recommendation slot matches iff at least one final confirmed offer tag has historical sport share > 0 for that user. Count each slot once. Require positive interest category separately.",
+  "delta_matching_slots": 93,
+  "delta_percentage_points": 19.57894736842105,
+  "interpretation": "Technical rule fit only; no real user survey, relevance labels, purchase probabilities or economic impact measured",
+  "observation_period_end": "2026-07-05",
+  "paired_user_matches": [
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 1,
+      "delta_matching_slots": 3,
+      "user_id": "U001"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U002"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U003"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U004"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 3,
+      "user_id": "U005"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U006"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U007"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U008"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U009"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U010"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U011"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U012"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U013"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U014"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U015"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U016"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U017"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U018"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U019"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U020"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U021"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U022"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U023"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 1,
+      "delta_matching_slots": 4,
+      "user_id": "U024"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U025"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U026"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U027"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U028"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U029"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U030"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U031"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U032"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U033"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U034"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 2,
+      "user_id": "U035"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U036"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U037"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U038"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U039"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U040"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 3,
+      "user_id": "U041"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U042"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U043"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U044"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U045"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U046"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U047"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U048"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U049"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U050"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U051"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U052"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U053"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U054"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U055"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U056"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U057"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U058"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U059"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U060"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U061"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U062"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 1,
+      "delta_matching_slots": 4,
+      "user_id": "U063"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U064"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U065"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U066"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U067"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U068"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U069"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U070"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U071"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U072"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U073"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U074"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U075"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U076"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U077"
+    },
+    {
+      "after_matching_slots": 4,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 1,
+      "user_id": "U078"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U079"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U080"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U081"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U082"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U083"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U084"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U085"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U086"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U087"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U088"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U089"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U090"
+    },
+    {
+      "after_matching_slots": 3,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 1,
+      "user_id": "U091"
+    },
+    {
+      "after_matching_slots": 2,
+      "before_matching_slots": 2,
+      "delta_matching_slots": 0,
+      "user_id": "U092"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U093"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U094"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U095"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U096"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 3,
+      "delta_matching_slots": 2,
+      "user_id": "U097"
+    },
+    {
+      "after_matching_slots": 5,
+      "before_matching_slots": 4,
+      "delta_matching_slots": 1,
+      "user_id": "U098"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U099"
+    },
+    {
+      "after_matching_slots": 0,
+      "before_matching_slots": 0,
+      "delta_matching_slots": 0,
+      "user_id": "U100"
+    }
+  ],
+  "population": "All 100 users in stored comparison, including five empty-list users; categories taken from that same stored comparison",
+  "reproduction": "python src/recommendation_sport_fit.py",
+  "script_sha256": "91b78d4891536ab3ee2a0735f5ccba8fb47d166b0d05f4185147edfb177c416c",
+  "source_sha256": {
+    "data/processed/kmeans_user_features.csv": "bb6b0c4e9307ab286f9f6e76d04b9b1446a9ab322e31784c8883a6a596ca7a28",
+    "data/raw/offers_simulated.csv": "83748cb66918c08e3061889834e24452d0dc9feb6581690c4959cb3ba3775fa6",
+    "documentation/offer_sport_tags_approved.csv": "a637ec2ff2cfb4fd7b3cfef1a441c144917560cf03bee2ea0cea79675989cfc9",
+    "outputs/tables/recommendation_before_after_users.csv": "47725202a467eeff3120ac98799bffd7d92d4c27e1f1675e34ea6f0eac1df3d2"
+  },
+  "tag_mapping": "Final manually confirmed mapping applied retrospectively to both saved variants; not claimed available at the historical observation cutoff",
+  "temporal_scope": "Profiles describe completed synthetic weeks through 2026-07-05; no later activity, target labels, model inference or future outcomes used",
+  "variants": {
+    "after": {
+      "category_violations": 0,
+      "matching_slot_pct": 72.42105263157895,
+      "matching_slots": 344,
+      "slots": 475,
+      "users": 100,
+      "users_with_match": 81,
+      "users_with_match_pct_all_users": 81.0,
+      "users_without_recommendations": 5
+    },
+    "before": {
+      "category_violations": 0,
+      "matching_slot_pct": 52.8421052631579,
+      "matching_slots": 251,
+      "slots": 475,
+      "users": 100,
+      "users_with_match": 81,
+      "users_with_match_pct_all_users": 81.0,
+      "users_without_recommendations": 5
+    }
+  }
+}

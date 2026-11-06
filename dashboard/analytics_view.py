@@ -324,7 +324,7 @@ def crisp(d,state):
     goal,text,paths=PHASES[phase];st.markdown('### '+goal);st.write(text)
     if phase=='Business Understanding':
         st.markdown('- Wir segmentieren Aktivitätsprofile mit K-Means.\n- Wir prognostizieren die Aktivitätszahl der Folgewoche durch lineare Regression.\n- Wir wählen passende Angebote anhand von Interessen und beobachteten Sportarten regelbasiert aus.')
-        st.caption('Der gespeicherte AP-6-Vergleich zeigt Interessen und Sportarten. In der aktuellen User View wählen K-Means und Regression zusätzlich dokumentierte Angebotsvarianten (AP 2.2).' )
+        st.caption('Der gespeicherte AP-6-Vergleich zeigt Interessen und Sportarten. In der aktuellen User View wählen K-Means und Regression zusätzlich dokumentierte Angebotsvarianten (AP 2.2).')
     for path in paths:st.code(path,language=None)
     st.markdown('### Tatsächliche Iteration · MOVA-ITER-001')
     st.write('Data Understanding → Construct Data → erneute Qualitätsprüfung: Die breite Sportartenvielfalt war auffällig. Der Präferenzexponent wurde von 1,0 auf 1,3 erhöht, um individuelle Schwerpunkte zu verstärken. Das ist eine fachliche Änderung, keine bloße Fehlerkorrektur.')
