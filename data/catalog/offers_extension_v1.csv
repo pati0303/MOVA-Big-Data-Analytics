@@ -1,0 +1,9 @@
+offer_id,category,title,price_eur,discount_pct
+O031,Sport,FIKTIV – Komfort-Laufschuhe für gelegentliche Nutzung,89.00,10
+O032,Sport,FIKTIV – Laufschuhe für häufige Nutzung,139.00,15
+O033,Sport,FIKTIV – Laufworkshop – Einzeltermin,35.00,10
+O034,Sport,FIKTIV – Laufkurs – drei Termine pro Woche,69.00,15
+O035,Sport,FIKTIV – Halbmarathon-Veranstaltung,49.00,5
+O036,Outdoor,FIKTIV – Wanderausrüstungs-Set für gelegentliche Nutzung,99.00,10
+O037,Outdoor,FIKTIV – Wanderausrüstungs-Set für häufige Nutzung,179.00,15
+O038,Outdoor,FIKTIV – Geführte Tageswanderung,29.00,5

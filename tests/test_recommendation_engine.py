@@ -153,7 +153,7 @@ class RecommendationTests(unittest.TestCase):
         self.assertEqual(out['profile']['prediction_status'],'available')
         self.assertTrue(out['recommendations'])
 
-    def test_model_context_does_not_rank(self):
+    def test_legacy_reference_model_context_does_not_rank(self):
         baseline = self.call()['recommendations']
         data = copy.deepcopy(self.data)
         data.clusters['U001'] = dict(user_id='U001', cluster_id='1',
@@ -245,11 +245,11 @@ class RecommendationTests(unittest.TestCase):
         self.assertNotIn('regression_test.csv',source)
         self.assertNotIn('activities_next_week',source)
 
-    def test_original_tracked_files_unchanged(self):
+    def test_original_data_models_and_metrics_unchanged(self):
         tracked=subprocess.check_output(['git','-C',str(e.ROOT),'ls-tree','-r','HEAD'],text=True)
         for line in tracked.splitlines():
             metadata,path=line.split('\t'); mode,typ,sha=metadata.split()
-            if typ=='blob':
+            if typ=='blob' and path.startswith(('data/', 'outputs/')):
                 content=(e.ROOT/path).read_bytes()
                 actual=hashlib.sha1(b'blob '+str(len(content)).encode()+b'\0'+content).hexdigest()
                 self.assertEqual(actual,sha,path)

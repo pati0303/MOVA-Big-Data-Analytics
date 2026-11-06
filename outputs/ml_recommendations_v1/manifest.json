@@ -1,0 +1,34 @@
+{
+  "policy_version": "AP2.2-v1",
+  "training_performed": false,
+  "source_sha256": {
+    "src/recommendation_engine.py": "c6464753a83232736c123f47be8857b5e09d530c0d194e104100a601f85f116a",
+    "src/ml_recommendation_rules.py": "784659afcfbab2fa489943935f353795d6a7ee3d6015773e719d57b83575f5ef",
+    "src/ml_recommendation_evaluation.py": "8543a4bb6711c8a572efe781fe22ef690a949485224c53f8606473b155692032",
+    "data/catalog/offers_extension_v1.csv": "53acdb681f3076c2f07272c38762a371ed0e60c04fc698d8e682bbd629adb727",
+    "data/catalog/recommendation_metadata_v1.json": "886118f6deda0bc2cc0425446c01352686b49cbff76b50ded70a27d8558bbc64",
+    "documentation/offer_sport_tags_approved.csv": "a637ec2ff2cfb4fd7b3cfef1a441c144917560cf03bee2ea0cea79675989cfc9",
+    "data/raw/users_simulated.csv": "6ba9f8398707412bf922c76e352d2a6a7f86857e7a54dbbf1421555b1dbf99f9",
+    "data/raw/activities_simulated.csv": "c3789d26f00cba3ba14952cf99909b091cb263045b8993ed366fe5aa64a4ee6b",
+    "data/raw/offers_simulated.csv": "83748cb66918c08e3061889834e24452d0dc9feb6581690c4959cb3ba3775fa6",
+    "data/processed/kmeans_user_features.csv": "bb6b0c4e9307ab286f9f6e76d04b9b1446a9ab322e31784c8883a6a596ca7a28",
+    "data/processed/user_weekly_activities.csv": "c34a7bd16d1cdc3e91388cc35b8c784afde0b53c1dbfdd24de97148350359b74",
+    "data/processed/user_clusters.csv": "79169f3d95ae9c22fc9cc94022a75d20777fe7b8eb77569bac3cdbc7a52e261d",
+    "outputs/models/regression_linear.joblib": "0b26c352ff98d31c02552c3226f839b6eef6b74032070b2086aae1686865a882",
+    "outputs/models/regression_linear_metadata.json": "8db82d9750ed95aa7d4864f2fc409a8ac4524111f79b94f3808bde907f3b809c",
+    "outputs/models/kmeans_final.joblib": "db285f3d0ccf5315bb5a70cfc4750a31e59eb3f5d00a3f1d96473348c08d2a2f",
+    "outputs/models/kmeans_final_metadata.json": "f0863192f4b22f14a60acd17db332a5506bc1369d34bdc6d79f5fbb2d2e9823b"
+  },
+  "artifact_sha256": {
+    "comparison.json": "992752d52968cd24207963dbf1586199595f506bde76956f08f8f34fca605523",
+    "top5.csv": "a4979bc6fb4bb977d603b06b3f37b6620d603febc9fd32a78e282622bf08ae62"
+  },
+  "source_updates": [
+    {
+      "work_package": "AP2.4",
+      "path": "src/recommendation_engine.py",
+      "previous_sha256": "4b95d65f548119025384b45dbdb8da665a76b1d5b36a5187e379eb7033d970e0",
+      "reason": "Robust fallbacks; full 100-user comparison reproduced exactly, existing result artifacts unchanged."
+    }
+  ]
+}

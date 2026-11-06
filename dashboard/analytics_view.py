@@ -261,7 +261,8 @@ def evaluation(d,state):
 
 
 def recommendations(d,state):
-    st.caption('Fragestellung · Wie verändern bestätigte Sporttags die Top-5-Zusammensetzung?')
+    st.caption('Historischer AP-6-Referenzvergleich mit 30 Angeboten · Wie verändern bestätigte Sporttags die Top-5-Zusammensetzung?')
+    st.info('Die aktuelle User View nutzt zusätzlich acht fiktive Angebote und ML-Variantenwahl. Dieser gespeicherte Referenzvergleich bleibt unverändert; AP-2.2-Ergebnisse liegen separat unter outputs/ml_recommendations_v1/.')
     st.markdown('**Stufe A – Sportbezogen:** Das Angebot gehört zu einer positiv ausgewählten Interessenkategorie und besitzt zusätzlich einen bestätigten Bezug zu einer beobachteten Sportart.')
     st.markdown('**Stufe B – Interessenbasiert:** Das Angebot gehört zu einer positiv ausgewählten Interessenkategorie, besitzt aber keinen zusätzlich bestätigten Sportartenbezug.')
     st.caption('Stufe A wird bei der Sortierung bevorzugt. Die Einstufung beschreibt die technische Sportpassung, nicht die tatsächliche Angebotsqualität oder Kaufwahrscheinlichkeit.')
@@ -323,7 +324,7 @@ def crisp(d,state):
     goal,text,paths=PHASES[phase];st.markdown('### '+goal);st.write(text)
     if phase=='Business Understanding':
         st.markdown('- Wir segmentieren Aktivitätsprofile mit K-Means.\n- Wir prognostizieren die Aktivitätszahl der Folgewoche durch lineare Regression.\n- Wir wählen passende Angebote anhand von Interessen und beobachteten Sportarten regelbasiert aus.')
-        st.caption('K-Means und Regression bestimmen die Angebotsreihenfolge nicht direkt.')
+        st.caption('Der gespeicherte AP-6-Vergleich zeigt Interessen und Sportarten. In der aktuellen User View wählen K-Means und Regression zusätzlich dokumentierte Angebotsvarianten (AP 2.2).' )
     for path in paths:st.code(path,language=None)
     st.markdown('### Tatsächliche Iteration · MOVA-ITER-001')
     st.write('Data Understanding → Construct Data → erneute Qualitätsprüfung: Die breite Sportartenvielfalt war auffällig. Der Präferenzexponent wurde von 1,0 auf 1,3 erhöht, um individuelle Schwerpunkte zu verstärken. Das ist eine fachliche Änderung, keine bloße Fehlerkorrektur.')

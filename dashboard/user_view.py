@@ -54,7 +54,9 @@ def offers_view(result, allowed):
         st.info(unavailable(result['personalization_status']))
         return
     st.caption('A: bestätigter Sportbezug und beobachtete Aktivität. B: zulässiges Kategorieangebot. '
-               'Die Rangstufe ist keine Bewertung deiner Fitness oder der Angebotsqualität.')
+               'Die Rangstufe ist keine Bewertung deiner Fitness oder der Angebotsqualität. '
+               'Je Vergleichsgruppe erscheint höchstens eine Variante. Preise und Rabatte der neuen '
+               'Angebote O031–O038 sind frei erfundene Demonstrationswerte.')
     # Render in original ranking order. No sorting, matching or additional offers.
     for start in range(0, len(offers), 2):
         for col, offer in zip(st.columns(2, gap='medium'), offers[start:start+2]):
@@ -143,7 +145,7 @@ def user_view(state):
                            f"Ziel: {profile['target_week_start']} bis {profile['target_week_end']}.")
                 st.write('Ungerundete Modellschätzung:',profile['regression_prediction'])
                 st.caption('Nur zur Anzeige gerundet; keine Kappung, kein neues Training und kein erfundenes Prognoseintervall. '
-                           'Segment und Schätzung beeinflussen die Angebotsreihenfolge nicht.')
+                           'Segment und Schätzung wählen ausschließlich fachlich zugeordnete Angebotsvarianten; die Begründung steht am jeweiligen Angebot.')
             else:
                 st.write(unavailable(profile['prediction_status']))
     offers_view(result,access['offers'])

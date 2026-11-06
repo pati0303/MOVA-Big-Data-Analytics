@@ -68,6 +68,7 @@ class ProjectData:
     weeks: list = field(default_factory=list)
     records_verified: bool = False
     known_sports: bool = False
+    catalog_metadata: dict = field(default_factory=dict)
     root: Path = ROOT
 
 
@@ -111,10 +112,10 @@ def verify_tracked_bytes(root, path):
         raise ValueError(f'Unverified V2 source: {path}')
 
 
-def load_data(root=ROOT, *, include_activity=False):
+def load_data(root=ROOT, *, include_activity=False, include_catalog_extension=False):
     root = Path(root)
-    if type(include_activity) is not bool:
-        raise ValueError('include_activity must be boolean')
+    if type(include_activity) is not bool or type(include_catalog_extension) is not bool:
+        raise ValueError('Data loading switches must be boolean')
     users = index_unique(read_csv(root / 'data/raw/users_simulated.csv'), 'user_id')
     offers = read_csv(root / 'data/raw/offers_simulated.csv')
     index_unique(offers, 'offer_id')
@@ -126,6 +127,10 @@ def load_data(root=ROOT, *, include_activity=False):
             raise ValueError('Invalid catalog price/discount')
     data = ProjectData(users, offers, load_confirmed_tags(
         root / 'documentation/offer_sport_tags_approved.csv', offers), root=root)
+    if include_catalog_extension:
+        from ml_recommendation_rules import extend_catalog
+        data.offers, data.approved_tags, data.catalog_metadata = extend_catalog(
+            root, data.offers, data.approved_tags)
     if include_activity:
         # Coverage is a documented property of hash-verified synthetic V2 only.
         try:
@@ -198,14 +203,33 @@ def match_reason(offer, matching):
     return reason
 
 
-def recommendations(user_id, offers, categories, approved_tags, shares):
+def recommendations(user_id, offers, categories, approved_tags, shares, *,
+                    catalog_metadata=None, profile=None, use_kmeans=True, use_regression=True):
     results = []
-    for position, (tier, _, _, offer, matching) in enumerate(
-            rank_offers(filter_offers(offers, categories), approved_tags, shares)[:5], 1):
+    ranked = rank_offers(filter_offers(offers, categories), approved_tags, shares)
+    decisions = {}
+    if catalog_metadata:
+        from ml_recommendation_rules import select_variants
+        ranked, decisions = select_variants(ranked, catalog_metadata, profile or {},
+                                           use_kmeans=use_kmeans, use_regression=use_regression)
+    for position, (tier, _, _, offer, matching) in enumerate(ranked[:5], 1):
         results.append(dict(user_id=user_id, ranking_position=position, offer_id=offer['offer_id'],
                             offer_title=offer['title'], category=offer['category'],
                             price_eur=float(offer['price_eur']), discount_pct=int(offer['discount_pct']),
                             ranking_tier='A' if tier == 0 else 'B', match_reason=match_reason(offer, matching)))
+    if catalog_metadata:
+        from ml_recommendation_rules import explain
+        for result in results:
+            decision = decisions[result['offer_id']]
+            result.update(decision)
+            if result['metadata_status'] == 'demonstration_assumption':
+                result['match_reason'] = result['match_reason'].replace(
+                    'der Angebotsbezug ist manuell bestätigt.',
+                    'die Sportzuordnung ist im fiktiven Demo-Katalog ausdrücklich festgelegt.')
+            result['match_reason'] += explain(decision, profile or {})
+            if result['historical_sport_share'] > 0:
+                result['match_reason'] += (f" Historischer Anteil: {result['historical_sport_share']:.1%} der Aktivitäten; "
+                                           "dies beschreibt beobachtetes Verhalten, keine gesicherte persönliche Relevanz.")
     return results
 
 
@@ -269,7 +293,12 @@ def predict_activity(data, user_id, *, garmin_permission, as_of):
             raise ValueError('Model hash mismatch')
         if meta['feature_order'] != FEATURES:
             raise ValueError('Feature order mismatch')
-        model = joblib.load(model_path)
+        try:
+            model = joblib.load(model_path)
+        except (EOFError, AttributeError) as exc:
+            result.update(prediction_status='model_unavailable_or_invalid',
+                          prediction_error_type=type(exc).__name__)
+            return result
         if (list(model.feature_names_in_) != FEATURES or model.get_params() != meta['parameters']
                 or float(model.intercept_) != meta['intercept']
                 or list(model.coef_) != [meta['coefficients'][f] for f in FEATURES]):
@@ -285,7 +314,8 @@ def predict_activity(data, user_id, *, garmin_permission, as_of):
     return result
 
 
-def recommend_user(data, user_id, *, interests_permission, garmin_permission, as_of=PROFILE_END):
+def recommend_user(data, user_id, *, interests_permission, garmin_permission, as_of=PROFILE_END,
+                   use_kmeans=True, use_regression=True):
     flags = permission_flags(interests_permission, garmin_permission)
     if type(as_of) is not date:
         raise ValueError('as_of must be a date (inclusive completed-week cutoff)')
@@ -298,8 +328,10 @@ def recommend_user(data, user_id, *, interests_permission, garmin_permission, as
         profile['sport_profile_status'] = status
         cluster = data.clusters.get(user_id) if status == 'available' else None
         expected = {'0': 'Geringere Trainingshäufigkeit', '1': 'Höhere Trainingshäufigkeit'}
-        if cluster and cluster.get('segment_label') == expected.get(cluster.get('cluster_id')):
-            profile.update(segment_label=cluster['segment_label'], cluster_id=int(cluster['cluster_id']),
+        cluster_id = cluster.get('cluster_id') if isinstance(cluster, dict) else None
+        if (type(cluster_id) is str and cluster_id in expected
+                and cluster.get('segment_label') == expected[cluster_id]):
+            profile.update(segment_label=cluster['segment_label'], cluster_id=int(cluster_id),
                            segment_status='available', segment_source='stored_user_clusters',
                            segment_period_end=PROFILE_END.isoformat())
         else:
@@ -319,13 +351,16 @@ def recommend_user(data, user_id, *, interests_permission, garmin_permission, as
         return output
     output['interest_categories'] = sorted(categories)
     output['personalization_status'] = 'available' if categories else 'no_positive_interests'
-    output['recommendations'] = recommendations(user_id, data.offers, categories, data.approved_tags, shares)
+    output['recommendations'] = recommendations(
+        user_id, data.offers, categories, data.approved_tags, shares,
+        catalog_metadata=data.catalog_metadata, profile=profile,
+        use_kmeans=use_kmeans, use_regression=use_regression)
     return output
 
 
 def run(user_id, *, interests_permission, garmin_permission, as_of=PROFILE_END, root=ROOT):
     permission_flags(interests_permission, garmin_permission)
-    return recommend_user(load_data(root, include_activity=garmin_permission), user_id,
+    return recommend_user(load_data(root, include_activity=garmin_permission, include_catalog_extension=True), user_id,
                           interests_permission=interests_permission,
                           garmin_permission=garmin_permission, as_of=as_of)
 

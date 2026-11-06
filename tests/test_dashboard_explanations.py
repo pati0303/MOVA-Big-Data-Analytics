@@ -44,7 +44,7 @@ class ExplanationTests(unittest.TestCase):
 
     def test_iteration_dynamic_definitions_and_all_six_phases(self):
         self.section('CRISP-DM')
-        self.assertIn('K-Means und Regression bestimmen die Angebotsreihenfolge nicht direkt', self.text())
+        self.assertIn('K-Means und Regression zusätzlich dokumentierte Angebotsvarianten', self.text())
         select = next(w for w in self.app.selectbox if w.key == 'iteration_metric')
         for value, phrase in [('Top2_Mittel_%', 'beiden häufigsten Sportarten'),
                               ('Mittlere_Sportartenanzahl', 'Durchschnittliche Anzahl unterschiedlicher Sportarten'),

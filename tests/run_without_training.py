@@ -21,6 +21,7 @@ def main():
             if isinstance(value, type) and issubclass(value, unittest.TestCase):
                 unittest.skip('AP 7.3: Klassen-Setup trainiert K-Means; Training ausdrücklich untersagt.')(value)
     methods = {
+        'test_cycle2': ['test_exact_six_fits_training_only_and_frozen_prediction'],
         'test_modeling_kmeans_final': ['test_no_scaling_and_exact_input_reproduction'],
         'test_modeling_regression_train': ['test_training_without_test_access_scaling_or_scoring',
                                          'test_loaded_training_predictions_equal_fresh_fit']}

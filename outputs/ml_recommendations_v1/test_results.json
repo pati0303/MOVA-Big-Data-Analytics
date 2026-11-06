@@ -1,0 +1,13 @@
+{
+  "tests_run": 205,
+  "passed": 183,
+  "skipped": 22,
+  "failures": 0,
+  "errors": 0,
+  "skip_reason": "Existing training tests excluded under explicit no-training requirement.",
+  "new_ap22_tests": 11,
+  "protected_original_files": 156,
+  "protected_files_changed": 0,
+  "model_training_performed": false,
+  "git_diff_check": "passed"
+}

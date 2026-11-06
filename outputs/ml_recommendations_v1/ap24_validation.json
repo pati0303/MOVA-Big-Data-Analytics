@@ -1,0 +1,23 @@
+{
+  "work_package": "AP2.4",
+  "tests_run": 209,
+  "passed": 187,
+  "skipped": 22,
+  "failures": 0,
+  "errors": 0,
+  "training_performed": false,
+  "skip_reason": "Existing training tests explicitly excluded.",
+  "changed_top5_vs_no_ml": {
+    "kmeans_only": 63,
+    "regression_only": 9,
+    "both": 63
+  },
+  "full_previous_comparison_unchanged": true,
+  "protected_files": 156,
+  "protected_files_changed": 0,
+  "source_sha256": {
+    "src/recommendation_engine.py": "c6464753a83232736c123f47be8857b5e09d530c0d194e104100a601f85f116a",
+    "tests/test_ml_recommendations.py": "b2ccf668133e7c123b92942e22af0f626d9914fcdcb3a9e60ade95d41a070056",
+    ".gitattributes": "dc007084d521a0ea16337f6532b702a7293b41be56e7b0f565978bb30a82b858"
+  }
+}

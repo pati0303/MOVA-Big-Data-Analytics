@@ -1,0 +1,385 @@
+{
+  "schema_version": 1,
+  "policy_version": "AP2.2-v1",
+  "prices_and_discounts": "Für O031–O038 frei erfundene synthetische Demonstrationswerte; keine Marktpreise.",
+  "thresholds": {
+    "single_below": 2,
+    "multiple_from": 3
+  },
+  "offers": {
+    "O001": {
+      "group": "running_shoes",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Allgemeine Laufschuhe ohne belegte Nutzungsspezifikation; neutrale Referenzvariante."
+    },
+    "O002": {
+      "group": "offer_O002",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O003": {
+      "group": "offer_O003",
+      "sport_tags": [
+        "Swimming"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O004": {
+      "group": "offer_O004",
+      "sport_tags": [
+        "Tennis"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O005": {
+      "group": "offer_O005",
+      "sport_tags": [
+        "Padel"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O006": {
+      "group": "offer_O006",
+      "sport_tags": [
+        "Cycling"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O007": {
+      "group": "offer_O007",
+      "sport_tags": [
+        "Strength"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O008": {
+      "group": "offer_O008",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O009": {
+      "group": "offer_O009",
+      "sport_tags": [
+        "Hiking"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O010": {
+      "group": "offer_O010",
+      "sport_tags": [
+        "Hiking"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O011": {
+      "group": "offer_O011",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O012": {
+      "group": "offer_O012",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O013": {
+      "group": "offer_O013",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O014": {
+      "group": "offer_O014",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O015": {
+      "group": "offer_O015",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O016": {
+      "group": "offer_O016",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O017": {
+      "group": "offer_O017",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O018": {
+      "group": "offer_O018",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O019": {
+      "group": "offer_O019",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O020": {
+      "group": "offer_O020",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O021": {
+      "group": "offer_O021",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O022": {
+      "group": "offer_O022",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O023": {
+      "group": "offer_O023",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O024": {
+      "group": "offer_O024",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O025": {
+      "group": "offer_O025",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O026": {
+      "group": "offer_O026",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O027": {
+      "group": "offer_O027",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O028": {
+      "group": "offer_O028",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O029": {
+      "group": "offer_O029",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O030": {
+      "group": "offer_O030",
+      "sport_tags": [],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "neutral",
+      "rationale": "Kein belegter Bezug zur Aktivitätshäufigkeit. Bestehende bestätigte Sporttags unverändert."
+    },
+    "O031": {
+      "group": "running_shoes",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": "occasional",
+      "weekly_sessions": null,
+      "ml_rule": "kmeans",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Cluster 0 bevorzugt gelegentliche, Cluster 1 häufige vorgesehene Nutzung; keine Leistungsbewertung."
+    },
+    "O032": {
+      "group": "running_shoes",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": "frequent",
+      "weekly_sessions": null,
+      "ml_rule": "kmeans",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Cluster 0 bevorzugt gelegentliche, Cluster 1 häufige vorgesehene Nutzung; keine Leistungsbewertung."
+    },
+    "O033": {
+      "group": "running_instruction",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": 1,
+      "ml_rule": "regression",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Terminumfang dient nur der Priorisierung. Gesamtaktivitätsprognose belegt keine Verfügbarkeit für Laufkurse."
+    },
+    "O034": {
+      "group": "running_instruction",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": 3,
+      "ml_rule": "regression",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Terminumfang dient nur der Priorisierung. Gesamtaktivitätsprognose belegt keine Verfügbarkeit für Laufkurse."
+    },
+    "O035": {
+      "group": "offer_O035",
+      "sport_tags": [
+        "Running"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "demonstration_assumption",
+      "rationale": "Halbmarathon bleibt ML-neutral: Aktivitätshäufigkeit belegt keine Wettkampfeignung."
+    },
+    "O036": {
+      "group": "hiking_sets",
+      "sport_tags": [
+        "Hiking"
+      ],
+      "long_term_use": "occasional",
+      "weekly_sessions": null,
+      "ml_rule": "kmeans",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Cluster 0 bevorzugt gelegentliche, Cluster 1 häufige vorgesehene Nutzung; keine Leistungsbewertung."
+    },
+    "O037": {
+      "group": "hiking_sets",
+      "sport_tags": [
+        "Hiking"
+      ],
+      "long_term_use": "frequent",
+      "weekly_sessions": null,
+      "ml_rule": "kmeans",
+      "status": "demonstration_assumption",
+      "rationale": "Demonstrationsannahme: Cluster 0 bevorzugt gelegentliche, Cluster 1 häufige vorgesehene Nutzung; keine Leistungsbewertung."
+    },
+    "O038": {
+      "group": "offer_O038",
+      "sport_tags": [
+        "Hiking"
+      ],
+      "long_term_use": null,
+      "weekly_sessions": null,
+      "ml_rule": null,
+      "status": "demonstration_assumption",
+      "rationale": "Tageswanderung bleibt ML-neutral: Allgemeine Wochenaktivitätszahl belegt weder Toureneignung noch Terminverfügbarkeit."
+    }
+  }
+}

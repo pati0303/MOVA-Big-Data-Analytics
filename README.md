@@ -39,4 +39,28 @@ Die Versionsliste ist noch nicht fixiert. Für spätere reproduzierbare Analysen
 
 Persönliche Garmin-Originaldaten gehören ausschließlich in die lokal ignorierten Verzeichnisse `data/raw/` oder `data/reference/` und dürfen nicht in GitHub veröffentlicht werden. Zusätzliche Ignore-Regeln erfassen typische Garmin-Exportformate und Dateien mit „garmin“ im Namen. `.gitignore` schützt nicht bereits versionierte Dateien und kann nicht jede beliebig benannte Exportdatei erkennen; vor Commits deshalb die vorgemerkten Dateien prüfen.
 
-Aktuell ist ausschließlich die Projektstruktur eingerichtet. Es wurden keine synthetischen Daten, Modelle, Benutzeroberflächen, Analyseergebnisse oder CRISP-DM-Iterationen erstellt. Die Dokumentationsdateien enthalten Vorlagen für die spätere Arbeit.
+Der aktuelle Demonstrator enthält synthetische V2-Daten, gespeicherte Modelle, die Streamlit-Oberfläche und die Ergebnisse zweier CRISP-DM-Zyklen. Die ML-gestützte Empfehlungsintegration ist nachfolgend beschrieben.
+
+
+## Aktuelle Empfehlungsengine · AP 2.2
+
+Die User View verwendet 38 fiktive Angebote: 30 unveränderte Bestandsangebote und
+acht separat gespeicherte Ergänzungen. Interessen filtern verbindlich; historische
+Sportartenanteile bestimmen die übergeordnete Reihenfolge. Innerhalb vergleichbarer
+Varianten wählen gespeicherte K-Means-Segmente die vorgesehene langfristige
+Nutzungshäufigkeit und die bestehende Regression passende Terminformate.
+Je Angebotsgruppe erscheint höchstens eine Variante. Es gibt keinen ML-Gesamtscore.
+Die Zuordnungen und Schwellen sind dokumentierte Demonstrationsannahmen, keine
+Aussagen über Fitness, Terminzusagen oder nachgewiesene Empfehlungsqualität.
+
+- Implementierung und Ergebnisse: `documentation/ml_recommendations_ap22.md`
+- Abschluss und robuste Rückfälle: `documentation/ml_recommendations_ap24.md`
+- Katalogergänzung und versionierte Regeln: `data/catalog/`
+- Vierfachvergleich: `outputs/ml_recommendations_v1/`
+- Reproduktion ohne Training: `python src/ml_recommendation_evaluation.py`
+- Tests ohne Modelltraining: `python tests/run_without_training.py`
+
+Der historische AP-6-Vergleich im Analytics Lab bleibt bei 30 Angeboten.
+Die öffentliche Engine-Funktion `run()` und der Dashboard-Adapter nutzen die neue
+Logik. `load_data()` lädt standardmäßig weiterhin den Referenzkatalog; neue
+Analyseaufrufe verwenden ausdrücklich `include_catalog_extension=True`.

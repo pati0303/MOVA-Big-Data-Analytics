@@ -126,7 +126,15 @@ class ComparisonTests(unittest.TestCase):
         for k,v in self.summary.items():
             # JSON turns tag tuples into lists.
             self.assertEqual(json.loads(json.dumps(v)),saved[k])
-        for p,h in saved['input_sha256'].items():self.assertEqual(c.digest(e.ROOT/p),h)
+        for p,h in saved['input_sha256'].items():
+            if p.startswith('src/'):
+                # Historical source provenance remains pinned; AP 2.2 changes code, not saved results.
+                import subprocess
+                content=subprocess.check_output(['git','-C',str(e.ROOT),'show',
+                    f'4a312743928d0d2e3adf4e2a89c245302d9672f4:{p}'])
+                self.assertEqual(hashlib.sha256(content).hexdigest(),h)
+            else:
+                self.assertEqual(c.digest(e.ROOT/p),h)
         for name,expected in [('users',100),('offers',30)]:
             rows=e.read_csv(e.ROOT/f'outputs/tables/recommendation_before_after_{name}.csv')
             self.assertEqual(len(rows),expected)

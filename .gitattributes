@@ -2,3 +2,7 @@
 * text=auto eol=lf
 *.png binary
 *.joblib binary
+
+# Preserve byte-exact new CSV inputs and results referenced by the ML manifest.
+data/catalog/*.csv -text whitespace=cr-at-eol
+outputs/ml_recommendations_v1/*.csv -text whitespace=cr-at-eol
