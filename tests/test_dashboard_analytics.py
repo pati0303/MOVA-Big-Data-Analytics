@@ -185,13 +185,14 @@ class LabAppTests(unittest.TestCase):
         a.sidebar.radio[0].set_value('Empfehlungssystem').run()
         self.assertTrue(any('Interessenfreigabe' in x.value for x in a.info))
         a.toggle[0].set_value(True).run()
-        self.assertEqual(len(a.exception),0);self.assertTrue(any('Laufschuhe' in x.value for x in a.markdown))
+        self.assertEqual(len(a.exception),0);self.assertTrue(any('<div class="mova-compare-title">' in x.value for x in a.markdown))
         a.selectbox[0].select('U002').run()
         self.assertEqual([t.value for t in a.toggle],[False,False])
-        self.assertFalse(any('Laufschuhe' in x.value for x in a.markdown))
+        # Public ML examples name shoes too; only personal comparison cards must disappear.
+        self.assertFalse(any('<div class="mova-compare-title">' in x.value for x in a.markdown))
 
     def test_no_lab_training_calls(self):
-        for file in ['analytics_data.py','analytics_view.py']:
+        for file in ['analytics_data.py','analytics_view.py','ml_integration.py']:
             tree=ast.parse((ROOT/'dashboard'/file).read_text())
             for node in ast.walk(tree):
                 if isinstance(node,ast.Call) and isinstance(node.func,ast.Attribute):

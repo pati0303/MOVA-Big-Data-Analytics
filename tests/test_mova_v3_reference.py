@@ -19,7 +19,7 @@ class MOVAV3ReferenceTests(unittest.TestCase):
             if p not in extended:
                 self.assertEqual(hashlib.sha256((ROOT/p).read_bytes()).hexdigest(),record['sha256'],p)
         self.assertEqual({p.relative_to(ROOT).as_posix() for p in (ROOT/'dashboard').glob('*') if p.is_file()},
-                         {p for p in reference['ui'] if p.startswith('dashboard/')})
+                         {p for p in reference['ui'] if p.startswith('dashboard/')} | {'dashboard/ml_integration.py'})
 
     def test_all_v2_lab_documents_figures_and_retrospective_preserved(self):
         reference=json.loads((ROOT/'documentation/mova_v3_reference.json').read_text())
