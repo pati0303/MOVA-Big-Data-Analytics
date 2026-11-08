@@ -185,7 +185,14 @@ class MLRecommendationsTests(unittest.TestCase):
         saved=json.loads((ROOT/'outputs/ml_recommendations_v1/comparison.json').read_text())
         self.assertEqual(len(saved['users']),100)
         for row in saved['users']:
-            self.assertEqual(row['profile'],self.actual[row['user_id']]['profile'])
+            actual_profile = self.actual[row['user_id']]['profile']
+            # Only inference rounding may differ: observed <=2 binary64 ULPs
+            # (8.88e-16). Keep every other profile field and all offers exact.
+            self.assertEqual({k:v for k,v in row['profile'].items() if k != 'regression_prediction'},
+                             {k:v for k,v in actual_profile.items() if k != 'regression_prediction'})
+            self.assertAlmostEqual(row['profile']['regression_prediction'],
+                                   actual_profile['regression_prediction'], delta=1e-15,
+                                   msg=f"{row['user_id']}: regression inference rounding")
             for mode,flags in {'no_ml':(False,False),'kmeans_only':(True,False),
                                'regression_only':(False,True),'both':(True,True)}.items():
                 self.assertEqual(row['variants'][mode],self.variants(row['user_id'],

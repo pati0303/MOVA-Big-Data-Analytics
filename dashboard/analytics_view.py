@@ -10,6 +10,7 @@ from dashboard.design import plotly_layout, COLORS
 from dashboard.user_view import number
 from dashboard.state import capabilities
 from dashboard.cycle2 import TITLE as CYCLE2_TITLE, render_cycle2
+from dashboard.ml_integration import render_ml_integration
 
 
 def chart(fig, key, height=300):
@@ -302,6 +303,7 @@ def recommendations(d,state):
         st.caption('Kontrollierter historischer Versuch am 05.07.2026: beide simulierten Freigaben aktiv, identische Kategorien und Sportanteile. Nur die Tagmenge unterscheidet sich. Engine-Replay im Speicher gegen gespeicherte IDs geprüft; keine Modellinferenz und keine Änderung der Tagdatei.')
     takeaway('64 veränderte Zusammensetzungen zeigen Regelwirkung, keine nachgewiesene höhere Empfehlungsqualität. 81 Nutzer mit A-Angebot sind nicht 81 veränderte Listen.')
     sources('outputs/tables/recommendation_before_after_users.csv','outputs/tables/recommendation_before_after_summary.json','src/recommendation_engine.py')
+    render_ml_integration(chart)
 
 
 PHASES={
